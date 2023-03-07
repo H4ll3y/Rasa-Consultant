@@ -1,0 +1,35 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - Xin chào
+    - Chào bạn
+    
+- intent: give_offer
+  examples: |
+    - Bạn có thể hỗ trợ tôi được không?
+    - Tôi cần hỗ trợ
+
+- intent: give_info
+  examples: |
+    - Tôi học ngành [Công nghệ thông tin](major)
+    - Tôi học ngành [Khoa học máy tính](major)
+    - [Công nghệ thông tin](major)
+    - [Khoa học máy tính](marjor)
+
+- intent: need_info_sub
+  examples: |
+    - Tôi cần biết thông tin về môn [Tiếng Anh trung cấp 3](subject)
+    - Tôi muốn biết về môn [Tiếng Nhật 2](subject)
+    - Cho tôi thông tin về môn [Giải tích 2](subject)
+    - Cho tôi biết thêm về môn [Tiếng Ý 2](subject)
+
+- intent: need_offer_sub
+  examples: |
+    - Tôi đang có [120](credit) tín chỉ và môn [Giải tích 1](list), [Tiếng Anh trung cấp 2](list)
+    - Tôi đã học [Giải tích 1](list)
+    - Tôi học [110](credit) tín chỉ
+    - [Giải tích 2](list)
+    - [Tiếng Anh trung cấp 1](list)
+    - [100](credit) [Đại số tuyến tính](list), [Cấu trúc dữ liệu](list), [Cơ sở dữ liệu](list) 

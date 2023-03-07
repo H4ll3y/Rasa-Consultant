@@ -1,0 +1,34 @@
+version: "3.1"
+
+stories:
+- story: story1
+  steps:
+    - intent: greet
+    - action: utter_greet
+
+- story: story2
+  steps:
+    - intent: give_offer
+    - action: utter_ask_info
+
+- story: story3
+  steps:
+    - intent: give_info
+      entities:
+        - major
+    - action: utter_response_info
+
+- story: story4
+  steps:
+    - intent: need_info_sub
+      entities:
+        - subject
+    - action: response_info_sub
+
+- story: story5
+  steps:
+    - intent: need_offer_sub
+      entities:
+        - credit
+        - list
+    - action: response_offer_sub

@@ -1,0 +1,56 @@
+version: "3.1"
+
+intents:
+  - greet
+  - give_offer
+  - give_info
+  - need_info_sub
+  - need_offer_sub
+
+actions:
+  - response_info_sub
+  - response_offer_sub
+
+entities:
+  - major
+  - year
+  - subject
+  - list
+  - credit
+
+slots:
+  credit:
+    type: float
+    mappings:
+    - type: from_entity
+      entity: credit
+  list:
+    type: list
+    mappings:
+    - type: from_entity
+      entity: list
+  major:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: major
+  subject:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: subject
+  
+responses:
+  utter_greet:
+  - text: "Xin chào tôi có thể giúp gì cho bạn?"
+
+  utter_ask_info:
+  - text: "Bạn có thể cho tôi biết ngành học của bạn được không?"
+
+  utter_response_info:
+  - text: "Bạn học ngành {major}"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
