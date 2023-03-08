@@ -13,22 +13,11 @@ actions:
 
 entities:
   - major
-  - year
   - subject
   - list
   - credit
 
 slots:
-  credit:
-    type: float
-    mappings:
-    - type: from_entity
-      entity: credit
-  list:
-    type: list
-    mappings:
-    - type: from_entity
-      entity: list
   major:
     type: text
     influence_conversation: true
@@ -37,9 +26,28 @@ slots:
       entity: major
   subject:
     type: text
+    influence_conversation: true
     mappings:
     - type: from_entity
       entity: subject
+      intent: need_info_sub
+      not_intent: need_offer_sub
+  credit:
+    type: float
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: credit
+      intent: need_offer_sub
+      not_intent: need_info_sub
+  list:
+    type: list
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: list
+      intent: need_offer_sub
+      not_intent: need_info_sub
   
 responses:
   utter_greet:

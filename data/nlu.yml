@@ -15,7 +15,9 @@ nlu:
     - Tôi học ngành [Công nghệ thông tin](major)
     - Tôi học ngành [Khoa học máy tính](major)
     - [Công nghệ thông tin](major)
-    - [Khoa học máy tính](marjor)
+    - [Khoa học máy tính](major)
+    - Mình ngành [Công nghệ thông tin](major)
+    - Mình học [Khoa học máy tính](major)
 
 - intent: need_info_sub
   examples: |
@@ -26,21 +28,31 @@ nlu:
     - Tớ cần biết về môn [Lập trình hướng đối tượng](subject)
     - Em muốn biết thêm về môn [Cơ sở dữ liệu](subject)
     - Mình muốn thông tin về môn [Học máy](subject)
-    - [Lập trình hướng đối tượng](subject)
-    - Môn [Nguyên lý hệ điều hành](subject)
+    - Tớ muốn có chi tiết về môn [Kiến trúc máy tính](subject)
+    - Mình cần thêm chi tiết về môn [Số và cấu trúc đại số](subject)
+    - Cho tớ biết thông tin môn [Ngôn ngữ lập trình](subject)
+    - Thông tin môn học [Đồ họa](subject)
+    - Chi tiết môn [Giao diện người máy](subject)
 
 - intent: need_offer_sub
   examples: |
+    - Hoàn thành các môn học [Đồ họa](list), [An toàn thông tin](list), [An toàn mạng](list)
+    - [101](credit) và qua các môn [Kiến trúc máy tính](list) và [Nguyên lý hệ điều hành](list)
+    - [Lập trình hướng đối tượng](list), [Hệ thống thông tin](list) và [110](credit) tín chỉ
+    - Mình đã xong môn [Ngôn ngữ lập trình](list) và đang có [100](credit) tín chỉ
+    - Mình qua môn [Số và cấu trúc đại số](list) mình nên học gì đây?
+    - Tôi đã học môn [Tiếng Ý 1](list)
+    - Tớ đã qua môn [Kỹ thuật số](list)
     - Tôi đang có [120](credit) tín chỉ và môn [Giải tích 1](list), [Tiếng Anh trung cấp 2](list)
-    - Tôi đã học [Giải tích 1](list)
+    - Tôi đã học [Mạng máy tính](list)
     - Tôi học [110](credit) tín chỉ
-    - Mình có [100](credit) tín chỉ và đã học [Lập trình hướng đối tượng](list)
+    - Mình có [100](credit) tín chỉ và đã học [Cơ sở dữ liệu](list)
     - Tôi có [110](credit) tín chỉ
     - Tớ có [109](credit) tín chỉ học [Học máy](list)
     - Tớ đã học môn [Tiếng Anh sơ cấp 1](list), [Tiếng Nhật 1](list) có [100](credit) tín chỉ
     - Mình đã học môn [Giải tích 2](list)
     - Mình đã hoàn thành môn [Tiếng Anh trung cấp 1](list)
-    - Mình đã có [100](credit) và hoàn thành các môn [Đại số tuyến tính](list), [Cấu trúc dữ liệu](list), [Cơ sở dữ liệu](list)
-    - Tớ đã học được [90](credit) và có các môn [Học máy](list), [Phân tích và thiết kế hệ thống thông tin](list), [Khai phá dữ liệu](list)
+    - Mình đã có [100](credit) và hoàn thành các môn [Đại số tuyến tính](list), [Cấu trúc dữ liệu](list), [Toán rời rạc](list)
+    - Tớ đã học được [90](credit) và có các môn [Hệ thống thông tin](list), [Phân tích và thiết kế hệ thống thông tin](list), [Khai phá dữ liệu](list)
     - Với [100](credit) tín chỉ và môn [Hệ điều hành Linux] mình có thể  học được những gì?
     - Đã học các môn [Lập trình hệ thống](list), [Lập trình PHP](list) và [Công nghệ Web](list) với [100](credit) tín chỉ thì tôi có thể học những môn gì?
