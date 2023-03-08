@@ -33,7 +33,7 @@ slots:
       intent: need_info_sub
       not_intent: need_offer_sub
   credit:
-    type: float
+    type: text
     influence_conversation: true
     mappings:
     - type: from_entity
