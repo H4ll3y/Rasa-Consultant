@@ -24,12 +24,24 @@ nlu:
     - Tôi muốn biết về môn [Tiếng Nhật 2](subject)
     - Cho tôi thông tin về môn [Giải tích 2](subject)
     - Cho tôi biết thêm về môn [Tiếng Ý 2](subject)
+    - Tớ cần biết về môn [Lập trình hướng đối tượng](subject)
+    - Em muốn biết thêm về môn [Cơ sở dữ liệu](subject)
+    - Mình muốn thông tin về môn [Học máy](subject)
+    - [Lập trình hướng đối tượng](subject)
+    - Môn [Nguyên lý hệ điều hành](subject)
 
 - intent: need_offer_sub
   examples: |
     - Tôi đang có [120](credit) tín chỉ và môn [Giải tích 1](list), [Tiếng Anh trung cấp 2](list)
     - Tôi đã học [Giải tích 1](list)
     - Tôi học [110](credit) tín chỉ
-    - [Giải tích 2](list)
-    - [Tiếng Anh trung cấp 1](list)
-    - [100](credit) [Đại số tuyến tính](list), [Cấu trúc dữ liệu](list), [Cơ sở dữ liệu](list) 
+    - Mình có [100](credit) tín chỉ và đã học [Lập trình hướng đối tượng](list)
+    - Tôi có [110](credit) tín chỉ
+    - Tớ có [109](credit) tín chỉ học [Học máy](list)
+    - Tớ đã học môn [Tiếng Anh sơ cấp 1](list), [Tiếng Nhật 1](list) có [100](credit) tín chỉ
+    - Mình đã học môn [Giải tích 2](list)
+    - Mình đã hoàn thành môn [Tiếng Anh trung cấp 1](list)
+    - Mình đã có [100](credit) và hoàn thành các môn [Đại số tuyến tính](list), [Cấu trúc dữ liệu](list), [Cơ sở dữ liệu](list)
+    - Tớ đã học được [90](credit) và có các môn [Học máy](list), [Phân tích và thiết kế hệ thống thông tin](list), [Khai phá dữ liệu](list)
+    - Với [100](credit) tín chỉ và môn [Hệ điều hành Linux] mình có thể  học được những gì?
+    - Đã học các môn [Lập trình hệ thống](list), [Lập trình PHP](list) và [Công nghệ Web](list) với [100](credit) tín chỉ thì tôi có thể học những môn gì?

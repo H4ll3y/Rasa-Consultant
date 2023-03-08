@@ -146,7 +146,7 @@ DC[GK101] = [2, ]
 DC[GK102] = [2, [GK101]]
 DC[PG100] = [4, ]
 DC[PG121] = [4, ]
-
+##########################################################
 CSKN[MA103] = [3, [MA101]]
 CSKN[MA110] = [3, [MA101]]
 CSKN[MA111] = [3, [MA110]]
@@ -193,19 +193,6 @@ TTKLCD[SE487] = [6, [110, SE302]]
 
 CNTT = [DC, CSKN, HPBB, HPLC, TTKLCD]
 case = []
-
-class ResponseOfferSub(Action):
-      def name(self) -> Text:
-            return "response_offer_sub"
-      
-      def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict) -> List[Dict[Text, Any]]:
-            sub = tracker.get_slot("list")
-            cre = tracker.get_slot("credit")
-            
-            dispatcher.utter_message(text = sub)
-            dispatcher.utter_message(text = cre)
-            
-            return []
             
 class ResponseInfoSub(Action):
       def name(self) -> Text:
@@ -213,42 +200,42 @@ class ResponseInfoSub(Action):
 
       def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict) -> List[Dict[Text, Any]]:
             sub = tracker.get_slot("subject").lower()
-            dispatcher.utter_message(
-                  text=sub)
             case.append(sub)
             check = False
             for i in range(0, 5):
                   for key, value in CNTT[i].items():
                         if [key.lower()] == case:
                               if i == 0:
-                                    dispatcher.utter_message(
-                                          text="Đây là môn thuộc các môn đại cương")
+                                    dispatcher.utter_message(text = "Đây là môn thuộc các môn đại cương")
                               elif i == 1:
-                                    dispatcher.utter_message(
-                                          text="Đây là môn thuộc các môn cơ sở khối ngành")
+                                    dispatcher.utter_message(text = "Đây là môn thuộc các môn cơ sở khối ngành")
                               elif i == 2:
-                                    dispatcher.utter_message(
-                                          text="Đây là môn thuộc các môn học phần bắt buộc")
+                                    dispatcher.utter_message(text = "Đây là môn thuộc các môn học phần bắt buộc")
                               elif i == 3:
-                                    dispatcher.utter_message(
-                                          text="Đây là môn thuộc các môn học phần lựa chọn")
+                                    dispatcher.utter_message(text = "Đây là môn thuộc các môn học phần lựa chọn")
                               elif i == 4:
-                                    dispatcher.utter_message(
-                                          text="Đây là môn thuộc các môn thực tập, khóa luận và chuyên đề tốt nghiệp")
-                              dispatcher.utter_message(
-                                    text="Đây là số tín chỉ của môn %s: %d" % (key, value[0]))
-                              dispatcher.utter_message(
-                                    text="Để có thể học được môn này cần đáp ứng yêu cầu sau:")
+                                    dispatcher.utter_message(text = "Đây là môn thuộc các môn thực tập, khóa luận và chuyên đề tốt nghiệp")
+                              dispatcher.utter_message(text = "Đây là số tín chỉ của môn %s: %d" % (key, value[0]))
+                              dispatcher.utter_message(text = "Để có thể học được môn này cần đáp ứng yêu cầu sau:")
                               for j in range(0, len(value[1])):
                                     if isinstance(value[1][j], str):
                                           check = True
-                                          dispatcher.utter_message(
-                                                text="Hoàn thành môn học tiên quyết: %s" % value[1][j])
+                                          dispatcher.utter_message(text = "Hoàn thành môn học tiên quyết: %s" % value[1][j])
                                     else:
                                           check = True
-                                          dispatcher.utter_message(
-                                                text="Cần có: %d tín chỉ" % value[1][j])
+                                          dispatcher.utter_message(text = "Cần có: %d tín chỉ" % value[1][j])
             if check == False:
-                  dispatcher.utter_message(
-                        text="ERROR")
+                  dispatcher.utter_message(text = "ERROR")
+            return []
+
+class ResponseOfferSub(Action):
+      def name(self) -> Text:
+            return "response_offer_sub"
+      
+      def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict) -> List[Dict[Text, Any]]:
+            # sub = tracker.get_slot("list")
+            # cre = tracker.get_slot("credit")           
+            # dispatcher.utter_message(text = sub)
+            # dispatcher.utter_message(text = cre)
+            dispatcher.utter_message(text = "hello world")
             return []
