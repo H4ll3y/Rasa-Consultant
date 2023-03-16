@@ -228,7 +228,7 @@ class ResponseInfoSub(Action):
                               dispatcher.utter_message(text = "%s" % key)
                               check = True
             if check == False:
-                  dispatcher.utter_message(text = "ERROR response_info_sub")
+                  dispatcher.utter_message(text = "Vui lòng kiểm tra lại tên môn học!")
                   
             return []
 
