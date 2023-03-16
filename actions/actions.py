@@ -224,8 +224,12 @@ class ResponseInfoSub(Action):
                                     else:
                                           check = True
                                           dispatcher.utter_message(text = "Cần có: %d tín chỉ" % value[1][j])
+                        elif case[0] in key.lower():
+                              dispatcher.utter_message(text = "%s" % key)
+                              check = True
             if check == False:
                   dispatcher.utter_message(text = "ERROR response_info_sub")
+                  
             return []
 
 class ResponseOfferSub(Action):

@@ -33,8 +33,13 @@ nlu:
     - Cho tớ biết thông tin môn [Ngôn ngữ lập trình](subject)
     - Thông tin môn học [Đồ họa](subject)
     - Chi tiết môn [Giao diện người máy](subject)
-    - Thông tin môn [Giáo dục thể chất](subject)
     - Cho tớ biết chi tiết môn [Giáo dục quốc phòng](subject)
+    - Thông tin môn [Giáo dục thể chất](subject)
+    - Thông tin môn [Kiến trúc máy tính](subject)
+    - Thông tin môn [An toàn thông tin](subject)
+    - Thông tin môn [Công dân số](subject)
+    - Thông tin môn [Triết học Mác-Lênin](subject)
+    - Thông tin môn [Đường lối cách mạng của Đảng CS Việt Nam](subject)
 
 - intent: need_offer_sub
   examples: |
@@ -71,3 +76,9 @@ nlu:
     - Tớ đã học được [90 tín chỉ](credit) và có các môn [Hệ thống thông tin](list), [Phân tích và thiết kế hệ thống thông tin](list), [Khai phá dữ liệu](list)
     - Với [100 tín chỉ](credit) và môn [Hệ điều hành Linux] mình có thể  học được những gì?
     - Đã học các môn [Lập trình hệ thống](list), [Lập trình PHP](list) và [Công nghệ Web](list) với [100 tín chỉ](credit) thì tôi có thể học những môn gì?
+    - Mình đã học [Học máy](list)
+    - Tớ học môn [Học máy](list)
+    - Tôi đã hoàn thành môn học [Học máy](list) [110 tín](credit)
+    - Đã qua môn [Học máy](list) và [90 tín](credit)
+    - Đã hoàn thành [Học máy](list) [100 tín](credit)
+    - Mình đã học xong [110 tín](credit) và môn [Học máy](list)
