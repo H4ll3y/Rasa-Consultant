@@ -259,7 +259,6 @@ class ResponseOfferSub(Action):
                                     case.append(100)
             if subs or cres:
                   index = 0
-                  dispatcher.utter_message(text = "Trường hợp của bạn có thể học được những môn sau:")
                   for i in range (0, 5):
                         for key, value in CNTT[i].items():
                               if len(value) > 1:
@@ -270,11 +269,13 @@ class ResponseOfferSub(Action):
                                           else:
                                                 temp.append(v)
                                     if set(temp).issubset(set(case)):
+                                          if index == 0:
+                                                dispatcher.utter_message(text = "Trường hợp của bạn có thể học được những môn sau:")
                                           index += 1
                                           dispatcher.utter_message(text = "%d. %s" %(index, key))
                                     temp.clear()
                   index = 0
-                  dispatcher.utter_message(text = "Ngoài ra còn có thể học được những môn sau không có điều kiện tiên quyết khác:")
+                  dispatcher.utter_message(text = "Bạn có thể học được những môn sau không có điều kiện tiên quyết khác như:")
                   for i in range (0, 5):
                         for key, value in CNTT[i].items():
                               if len(value) == 1 and set([key.lower()]).issubset(set(case)) == False:
