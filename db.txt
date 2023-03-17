@@ -175,94 +175,28 @@ TTKLCD[IT499] = [6, [120]]
 TTKLCD[IS484] = [6, [110, IS322]]
 TTKLCD[SE487] = [6, [110, SE302]]
 ###############################################################################
-# CNTT = [DC, CSKN, HPBB, HPLC, TTKLCD]
+# class Major:
+#	def __init__(self, DC, CSKN, HPBB, HPLC, TTKLCD):
+#		self.DC = DC
+#		self.CSKN = CSKN
+#		self.HPBB = HPBB
+#		self.HPLC = HPLC
+#		self.TTKLCD = TTKLCD
+#	def GetDC(self):
+#		return self.DC
+#	def GetCSKN(self):
+#		return self.CSKN
+#	def GetHPBB(self):
+#		return self.HPBB
+#	def GetHPLC(self):
+#		return self.HPLC
+#	def GetTTKLCD(self):
+#		return self.TTKLCD
+# CNTT = Major(DC, CSKN, HPBB, HPLC, TTKLCD)
 ###############################################################################
-# sub = 0;
-# for key, value in CNTT[sub].items():
-# 	print(key)
-#####################################
-# x = 120
-# if x >= 100:
-# 	case.append(100)
-# if x >= 120:
-# 	case.append(120)
-# if x >= 110:
-# 	case.append(110)
-# case.append(GJ101)
-# offer = 6
-# if offer ==  6:
-# 	index = 0
-# 	print("Trường hợp của bạn có thể học được những môn sau:")
-# 	for i in range (0, 5):
-# 		for key, value in CNTT[i].items():
-# 			if len(value) > 1 and set(value[1]).issubset(set(case)):
-# 				index += 1
-# 				print("%d. %s" %(index, key))
-# 	index = 0
-# 	print("Ngoài ra còn có thể học được những môn sau không có điều kiện tiên quyết khác:")
-# 	for i in range (0, 5):
-# 		for key, value in CNTT[i].items():
-# 			if len(value) == 1 and set([key]).issubset(set(case)) == False:
-# 				index += 1
-# 				print("%d. %s" %(index, key))
-# elif offer < 5 and offer >= 0:
-# 	index = 0
-# 	print("Trường hợp của bạn có thể học được những môn sau:")
-# 	for key, value in CNTT[offer].items():
-# 		if len(value) > 1 and set(value[1]).issubset(set(case)):
-# 			index += 1
-# 			print("%d. %s" %(index, key))
-# #####################################
-# case.clear()
-# case.append(MI312)
-# check = False
-# for i in range (0, 5):
-# 	for key, value in CNTT[i].items():
-# 		if [key] == case:
-# 			match i:
-# 				case 0:
-# 					print("Đây là môn thuộc các môn đại cương")
-# 				case 1:	
-# 					print("Đây là môn thuộc các môn cơ sở khối ngành")
-# 				case 2:
-# 					print("Đây là môn thuộc các môn học phần bắt buộc")
-# 				case 3:
-# 					print("Đây là môn thuộc các môn học phần lựa chọn")
-# 				case 4:
-# 					print("Đây là môn thuộc các môn thực tập, khóa luận và chuyên đề tốt nghiệp")
-# 			print("Số tín chỉ của môn %s: %d" %(key, value[0]))
-# 			print("Để có thể học được môn này cần đáp ứng yêu cầu sau:")
-# 			for j in range(0, len(value[1])):
-# 				if isinstance(value[1][j], str):
-# 					check = True
-# 					print("Hoàn thành môn học tiên quyết: %s" % value[1][j])
-# 				else:
-# 					check = True
-# 					print("Cần có: %d tín chỉ" % value[1][j])
-# if check == False:
-# 	print("ERROR")
-#####################################
-class Major:
-	def __init__(self, DC, CSKN, HPBB, HPLC, TTKLCD):
-		self.DC = DC
-		self.CSKN = CSKN
-		self.HPBB = HPBB
-		self.HPLC = HPLC
-		self.TTKLCD = TTKLCD
-	def GetDC(self):
-		return self.DC
-	def GetCSKN(self):
-		return self.CSKN
-	def GetHPBB(self):
-		return self.HPBB
-	def GetHPLC(self):
-		return self.HPLC
-	def GetTTKLCD(self):
-		return self.TTKLCD
-CNTT = Major(DC, CSKN, HPBB, HPLC, TTKLCD)
-print(CNTT.GetDC())
+CNTT = [DC, CSKN, HPBB, HPLC, TTKLCD]
 ###############################################################################
-# CNTT.clear()
+CNTT.clear()
 CSKN.clear()
 HPBB.clear()
 HPLC.clear()
@@ -324,8 +258,6 @@ case.clear()
 # TTKLCD[NW439] = [6, [110, NW312]]
 # ###############################################################################
 # KHMT = [DC, CSKN, HPBB, HPLC, TTKLCD]
-# ###############################################################################
-# print(KHMT)
 # ###############################################################################
 # KHMT.clear()
 # CSKN.clear()
