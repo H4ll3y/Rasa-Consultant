@@ -15,7 +15,7 @@ nlu:
 - intent: give_info
   examples: |
     - Tôi học ngành [Công nghệ thông tin](major)
-    - Tôi học ngành [Khoa học máy tính](major)
+    - Tôi học [Khoa học máy tính](major)
     - [Công nghệ thông tin](major)
     - [Khoa học máy tính](major)
     - Mình ngành [Công nghệ thông tin](major)
@@ -94,8 +94,12 @@ nlu:
     - [Tiếng Ý 2](list), [Tiếng Pháp 1](list), [Tiếng Trung 1](list) sẽ học được những môn gì?
     - [Tiếng Pháp 2](list) và [Tiếng anh sơ cấp 1] mình có thể đăng ký những môn gì?
     - Tớ có thể đăng ký học những môn gì khi đã học xong [Học máy](list), [Tiếng Pháp 1](list), [Tiếng anh sơ trung cấp 2](list) và [100 tín](credit)
-    - [Tiếng Anh sơ cấp 1](list), [Tiếng Anh sơ cấp 2](list), [Tiếng Anh sơ cấp 3](list), [Tiếng Anh sơ trung cấp 1](list), [Tiếng Anh sơ trung cấp 2](list)
-    - [Tiếng Anh sơ trung cấp 3](list), [Tiếng Anh trung cấp 1](list), [Tiếng Anh trung cấp 2](list)
-    - [Tiếng Anh trung cấp 3](list), [Tiếng Pháp 1](list), [Tiếng Pháp 2](list), [Tiếng Nhật 1](list)
-    - [Tiếng Nhật 2](list), [Tiếng Trung 1](list), [Tiếng Trung 2](list), [Tiếng Ý 2](list)
-    - [Tiếng Hàn 1](list), [Tiếng Hàn 2](list), [Giải tích 1](list), [Giải tích 2](list)
+    - Mình đã học hết [Tiếng Anh sơ cấp 1](list), [90 tín chỉ](credit), [Tiếng Anh sơ cấp 2](list), [Tiếng Anh sơ cấp 3](list), [Tiếng Anh sơ trung cấp 1](list), [Tiếng Anh sơ trung cấp 2](list)
+    - Mình có [Tiếng Anh sơ trung cấp 3](list), [Tiếng Anh trung cấp 1](list), [Tiếng Anh trung cấp 2](list) [110 tín chỉ](credit)
+    - Đã có [100 tín](credit) qua môn [Tiếng Anh trung cấp 3](list), [Tiếng Pháp 1](list), [Tiếng Pháp 2](list), [Tiếng Nhật 1](list)
+    - Tớ đã xong [Tiếng Nhật 2](list), [Tiếng Trung 1](list), [Tiếng Trung 2](list), [Tiếng Ý 2](list) [90 tín chỉ](credit)
+    - Tôi hoàn thành [Tiếng Hàn 1](list), [Tiếng Hàn 2](list), [Giải tích 1](list), [Giải tích 2](list) [100 tín chỉ](credit)
+    - Tôi đã xong [học máy](list)
+    - Mình hoàn thành môn học [học máy](list)
+    - Đã hoàn thành môn [học máy](list)
+    - Mình đã học [học máy](list)
