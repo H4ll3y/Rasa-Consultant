@@ -272,6 +272,7 @@ class ResponseOfferSub(Action):
                                     if set(temp).issubset(set(case)):
                                           index += 1
                                           dispatcher.utter_message(text = "%d. %s" %(index, key))
+                                    temp.clear()
                   index = 0
                   dispatcher.utter_message(text = "Ngoài ra còn có thể học được những môn sau không có điều kiện tiên quyết khác:")
                   for i in range (0, 5):
