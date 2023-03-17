@@ -275,10 +275,11 @@ class ResponseOfferSub(Action):
                                           dispatcher.utter_message(text = "%d. %s" %(index, key))
                                     temp.clear()
                   index = 0
-                  dispatcher.utter_message(text = "Bạn có thể học được những môn sau không có điều kiện tiên quyết khác như:")
                   for i in range (0, 5):
                         for key, value in CNTT[i].items():
                               if len(value) == 1 and set([key.lower()]).issubset(set(case)) == False:
+                                    if index == 0:
+                                          dispatcher.utter_message(text = "Bạn có thể học được những môn sau không có điều kiện tiên quyết khác như:")
                                     index += 1
                                     dispatcher.utter_message(text = "%d. %s" %(index, key))
             case.clear()
