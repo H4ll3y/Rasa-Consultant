@@ -239,12 +239,13 @@ class ResponseOfferSub(Action):
       
       def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict) -> List[Dict[Text, Any]]:
             subs = tracker.get_slot("list")
-            cres = tracker.get_slot("credit").split()
+            cres = tracker.get_slot("credit")
             if subs:
                   print(subs)
                   for sub in subs:
                         case.append(sub.lower())
             if cres:
+                  cres = cres.split()
                   print(cres)
                   for cre in cres:
                         if cre.isdigit():
@@ -281,5 +282,7 @@ class ResponseOfferSub(Action):
                               if len(value) == 1 and set([key.lower()]).issubset(set(case)) == False:
                                     index += 1
                                     dispatcher.utter_message(text = "%d. %s" %(index, key))
+            else:
+                  dispatcher.utter_message(text = "Vui lòng thêm thông tin cho yêu cầu của bạn!")
             case.clear()
             return []
