@@ -243,7 +243,7 @@ class ResponseOfferSub(Action):
             if subs:
                   print(subs)
                   for sub in subs:
-                        case.append(sub)
+                        case.append(sub.lower())
             if cres:
                   print(cres)
                   for cre in cres:
@@ -262,14 +262,21 @@ class ResponseOfferSub(Action):
                   dispatcher.utter_message(text = "Trường hợp của bạn có thể học được những môn sau:")
                   for i in range (0, 5):
                         for key, value in CNTT[i].items():
-                              if len(value) > 1 and set(value[1]).issubset(set(case)):
-                                    index += 1
-                                    dispatcher.utter_message(text = "%d. %s" %(index, key))
+                              if len(value) > 1:
+                                    temp = []
+                                    for v in value[1]:
+                                          if isinstance(v, str):
+                                                temp.append(v.lower())
+                                          else:
+                                                temp.append(v)
+                                    if set(temp).issubset(set(case)):
+                                          index += 1
+                                          dispatcher.utter_message(text = "%d. %s" %(index, key))
                   index = 0
                   dispatcher.utter_message(text = "Ngoài ra còn có thể học được những môn sau không có điều kiện tiên quyết khác:")
                   for i in range (0, 5):
                         for key, value in CNTT[i].items():
-                              if len(value) == 1 and set([key]).issubset(set(case)) == False:
+                              if len(value) == 1 and set([key.lower()]).issubset(set(case)) == False:
                                     index += 1
                                     dispatcher.utter_message(text = "%d. %s" %(index, key))
             case.clear()
