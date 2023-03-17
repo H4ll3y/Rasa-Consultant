@@ -244,4 +244,5 @@ class ResponseOfferSub(Action):
                         dispatcher.utter_message(text = sub)
             if cre:
                   dispatcher.utter_message(text = cre)
+
             return []

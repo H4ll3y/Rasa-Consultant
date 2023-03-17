@@ -20,13 +20,13 @@ entities:
 slots:
   major:
     type: text
-    # influence_conversation: true
+    influence_conversation: true
     mappings:
     - type: from_entity
       entity: major
   subject:
     type: text
-    # influence_conversation: true
+    influence_conversation: true
     mappings:
     - type: from_entity
       entity: subject
@@ -34,7 +34,7 @@ slots:
       not_intent: need_offer_sub
   credit:
     type: text
-    # influence_conversation: true
+    influence_conversation: true
     mappings:
     - type: from_entity
       entity: credit
@@ -42,7 +42,7 @@ slots:
       not_intent: need_info_sub
   list:
     type: list
-    # influence_conversation: true
+    influence_conversation: true
     mappings:
     - type: from_entity
       entity: list
