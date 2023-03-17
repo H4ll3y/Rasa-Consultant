@@ -200,6 +200,7 @@ class ResponseInfoSub(Action):
 
       def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict) -> List[Dict[Text, Any]]:
             sub = tracker.get_slot("subject").lower()
+            print(sub)
             case.append(sub)
             check = False
             for i in range(0, 5):
@@ -229,7 +230,7 @@ class ResponseInfoSub(Action):
                               check = True
             if check == False:
                   dispatcher.utter_message(text = "Vui lòng kiểm tra lại tên môn học!")
-                  
+            case.clear()
             return []
 
 class ResponseOfferSub(Action):
@@ -238,11 +239,38 @@ class ResponseOfferSub(Action):
       
       def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict) -> List[Dict[Text, Any]]:
             subs = tracker.get_slot("list")
-            cre = tracker.get_slot("credit")
+            cres = tracker.get_slot("credit").split()
             if subs:
+                  print(subs)
                   for sub in subs:
-                        dispatcher.utter_message(text = sub)
-            if cre:
-                  dispatcher.utter_message(text = cre)
-
+                        case.append(sub)
+            if cres:
+                  print(cres)
+                  for cre in cres:
+                        if cre.isdigit():
+                              if int(cre) >= 100:
+                                    case.append(100)
+                              if int(cre) >= 110:
+                                    case.append(110)
+                                    case.append(100)                 
+                              if int(cre) >= 120:
+                                    case.append(120)
+                                    case.append(110)
+                                    case.append(100)
+            if subs or cres:
+                  index = 0
+                  dispatcher.utter_message(text = "Trường hợp của bạn có thể học được những môn sau:")
+                  for i in range (0, 5):
+                        for key, value in CNTT[i].items():
+                              if len(value) > 1 and set(value[1]).issubset(set(case)):
+                                    index += 1
+                                    dispatcher.utter_message(text = "%d. %s" %(index, key))
+                  index = 0
+                  dispatcher.utter_message(text = "Ngoài ra còn có thể học được những môn sau không có điều kiện tiên quyết khác:")
+                  for i in range (0, 5):
+                        for key, value in CNTT[i].items():
+                              if len(value) == 1 and set([key]).issubset(set(case)) == False:
+                                    index += 1
+                                    dispatcher.utter_message(text = "%d. %s" %(index, key))
+            case.clear()
             return []
