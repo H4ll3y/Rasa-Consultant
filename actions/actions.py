@@ -228,7 +228,7 @@ class ResponseInfoSub(Action):
                               dispatcher.utter_message(text = "%s" % key)
                               check = True
             if check == False:
-                  dispatcher.utter_message(text = "ERROR response_info_sub")
+                  dispatcher.utter_message(text = "Vui lòng kiểm tra lại tên môn học!")
                   
             return []
 
@@ -237,9 +237,11 @@ class ResponseOfferSub(Action):
             return "response_offer_sub"
       
       def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict) -> List[Dict[Text, Any]]:
-            # sub = tracker.get_slot("list")
-            # cre = tracker.get_slot("credit")           
-            # dispatcher.utter_message(text = sub)
-            # dispatcher.utter_message(text = cre)
-            dispatcher.utter_message(text = "Hello World")
+            subs = tracker.get_slot("list")
+            cre = tracker.get_slot("credit")
+            if subs:
+                  for sub in subs:
+                        dispatcher.utter_message(text = sub)
+            if cre:
+                  dispatcher.utter_message(text = cre)
             return []

@@ -1,0 +1,44 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-credit",
+      "2": "I-credit",
+      "3": "L-credit",
+      "4": "U-credit",
+      "5": "B-list",
+      "6": "I-list",
+      "7": "L-list",
+      "8": "U-list",
+      "9": "B-major",
+      "10": "I-major",
+      "11": "L-major",
+      "12": "U-major",
+      "13": "B-subject",
+      "14": "I-subject",
+      "15": "L-subject",
+      "16": "U-subject",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-credit": 1,
+      "I-credit": 2,
+      "L-credit": 3,
+      "U-credit": 4,
+      "B-list": 5,
+      "I-list": 6,
+      "L-list": 7,
+      "U-list": 8,
+      "B-major": 9,
+      "I-major": 10,
+      "L-major": 11,
+      "U-major": 12,
+      "B-subject": 13,
+      "I-subject": 14,
+      "L-subject": 15,
+      "U-subject": 16,
+      "O": 0
+    },
+    "num_tags": 17
+  }
+]

@@ -1,13 +1,27 @@
-# version: "3.1"
+version: "3.1"
 
-# rules:
+rules:
+  - rule: rule1
+    steps:
+      - intent: greet
+      - action: utter_greet
 
-# - rule: Say goodbye anytime the user says goodbye
-#   steps:
-#   - intent: goodbye
-#   - action: utter_goodbye
+  - rule: rule2
+    steps:
+      - intent: give_offer
+      - action: utter_ask_info
 
-# - rule: Say 'I am a bot' anytime the user challenges
-#   steps:
-#   - intent: bot_challenge
-#   - action: utter_iamabot
+  - rule: rule3
+    steps:
+      - intent: give_info
+      - action: utter_response_info
+
+  - rule: rule4
+    steps:
+      - intent: need_info_sub
+      - action: response_info_sub
+
+  - rule: rule5
+    steps:
+      - intent: need_offer_sub
+      - action: response_offer_sub
