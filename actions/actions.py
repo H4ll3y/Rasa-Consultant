@@ -243,6 +243,8 @@ class ResponseOfferSub(Action):
             if subs:
                   print(subs)
                   for sub in subs:
+                        if sub == "máy":
+                              sub = "Học máy"
                         case.append(sub.lower())
             if cres:
                   cres = cres.split()
@@ -275,6 +277,8 @@ class ResponseOfferSub(Action):
                                           index += 1
                                           dispatcher.utter_message(text = "%d. %s" %(index, key))
                                     temp.clear()
+                  if index == 0:
+                        dispatcher.utter_message(text = "Những môn học này hiện tại không phải điều kiện tiên quyết của môn nào")
                   index = 0
                   dispatcher.utter_message(text = "Bạn có thể học được những môn sau không có điều kiện tiên quyết khác như:")
                   for i in range (0, 5):

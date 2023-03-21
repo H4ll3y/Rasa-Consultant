@@ -17,7 +17,6 @@ entities:
   - list
   - credit
   - year
-  
 
 slots:
   major:
