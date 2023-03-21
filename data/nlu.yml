@@ -37,11 +37,12 @@ nlu:
     - Chi tiết môn [Giao diện người máy](subject)
     - Cho tớ biết chi tiết môn [Giáo dục quốc phòng](subject)
     - Thông tin môn [Giáo dục thể chất](subject)
-    - Thông tin môn [Kiến trúc máy tính](subject)
-    - Thông tin môn [An toàn thông tin](subject)
-    - Thông tin môn [Công dân số](subject)
-    - Thông tin môn [Triết học Mác-Lênin](subject)
-    - Thông tin môn [Đường lối cách mạng của Đảng CS Việt Nam](subject)
+    - Chi tiết môn học [Kiến trúc máy tính](subject)
+    - Thông tin cụ thể môn [An toàn thông tin](subject)
+    - Cụ thể về môn [Công dân số](subject)
+    - Thông tin môn học [Triết học Mác-Lênin](subject)
+    - Thông tin chi tiết môn [Đường lối cách mạng của Đảng CS Việt Nam](subject)
+    - Chi tiết thông tin [Tiếng anh sơ trung cấp 2](subject)
 
 - intent: need_offer_sub
   examples: |
@@ -103,3 +104,35 @@ nlu:
     - Mình hoàn thành môn học [học máy](list)
     - Đã hoàn thành môn [học máy](list)
     - Mình đã học [học máy](list)
+    - Tôi đã học môn học [Đường lối cách mạng của Đảng CS Việt Nam](list)
+    - Mình đã học 1 số môn học sau [Kiểm thử và đảm bảo chất lượng phần mềm](list) [Quản lý dự án phần mềm](list) [Tiếng Anh sơ trung cấp 2](list) và [An toàn mạng](list) thì có thể học môn nào?
+    - Tớ có học 1 số môn [Tiếng Ý 1](list) [Project](list) và [Trí tuệ nhân tạo và công nghệ tri thức](list) có thể học gì?
+    - Đã hoàn thành 2 môn học [Lập trình .Net](list) và [Lập trình Java](list) thì có thể đăng ký môn học nào?
+    - Tôi đã học [Công nghệ Web](list) [Internet of thing](list) thì tôi có thể học cái gì?
+    - Nếu đã hoàn thành 1 vài môn như [Lập trình Python](list) [Lập trình hướng đối tượng](list) thì có thể học những môn nào?
+    - Giả sử đã xong các môn học như [Công nghệ phần mềm](list) và [Tiếng Anh trung cấp 1](list) thì học gì được?
+    - Mình có thể đăng ký môn học gì khi đã học [Phân tích và thiết kế thuận toán](list) có [100 tín chỉ](credit)?
+    - Mình đang học [Đồ họa](list) và môn [Giao diện người máy](list) thì có thể đăng ký môn học gì?
+    - Hoàn thành 1 số môn học như [Học máy](list) [Kiểm thử và đảm bảo chất lượng phần mềm](list) có thể học môn gì?
+    - [Tiếng Anh trung cấp 2](list) và [Tiếng Ý 2](list) học môn gì tiếp theo?
+    - [Tiếng Anh sơ trung cấp 3](list) và [100 tín chỉ](credit) có thể đăng ký môn học nào?
+    - Nếu đã hoàn thành 1 số môn học như [Tiếng Anh sơ cấp 1](list) và có [100 tín chỉ](credit) thì đăng ký được những môn học gì?
+    - Giả sử mình đã học [Lập trình hệ thống](list) [Khai phá dữ liệu](list) [Tiếng Pháp 1](list) và [110 tín chỉ](credit) những môn học nào được đăng ký?
+    - Mình đã qua 1 số môn học [Thiết kết và quản trị mạng](list), [Dự án công nghệ thông tin](list), [Lý thuyết thông tin và mã hóa](list), và [90 tín](credit) mình sẽ đăng ký được những môn gì?
+    - Tôi đã qua môn học như [Hệ điều hành Linux](list), [An toàn thông tin](list), [Lập trình hệ thống](list) thì học được gì?
+    - Đã qua 1 số môn như [Project](list), [Lập trình PHP](list) [Kỹ thuật số](list) [Xác xuất thống kê](list) thì đăng ký môn gì?
+    - Mình có [Xác xuất thống kê](list), [Toán rời rạc](list) [Kỹ thuật số](list), [Số và cấu trúc đại số](list) và [100 tín chỉ](credit) thì học môn gì tiếp theo?
+    - [Tiếng Hàn 1](list) [Tiếng Pháp 1](list) [Tiếng Trung 1](list) thì học được những môn tiếng gì?
+    - Đã học môn học [Triết học Mác-Lênin](list), [Kinh tế chính trị và CNXH khoa học](list) và [Tư tưởng Hồ Chí Minh](list) thì học cái gì tiếp theo?
+    - [Tin đại cương](list), [Khoa học môi trường](list) và [Kinh tế học đại cương](list) nên học môn học gì?
+    - Tôi đã học [Tiếng Việt thực hành](list), [Pháp luật đại cương](list), [Tiếng Anh trung cấp 3](list) và [100 tín](credit) nên học gì?
+    - Tớ có [Tiếng Hàn 1](list) [Tiếng Pháp 1](list), [Tiếng Ý 1](list) và [Tiếng Anh trung cấp 2](list) [110 tín chỉ](credit) có thể học môn học gì?
+    - Tôi học [học máy](list), [Tiếng Anh sơ cấp 1](list) và có [110 tín chỉ](credit) thì học gì?
+    - Mình đã học [học máy](list) và đã học thêm 1 số môn [Công dân số](list), [Tiếng Anh sơ trung cấp 1](list)
+    - Tớ đã học [học máy](list), học môn [Tiếng Anh sơ cấp 1](list) có thể đăng ký học thêm môn gì?
+    - Đã học xong [học máy](list), thì nên học gì?
+    - Với 1 số môn học [Lập trình Python](list), [Tiếng Anh sơ cấp 2], [học máy](list) những môn học này thì có thể học môn học nào?
+    - Với vài môn học như [Tiếng Trung 1](list), [Công dân số](list) và [100 tín](credit) những môn này học môn gì?
+    - 1 số môn học mình đã học như [Lập trình .Net](list), [Kỹ thuật số](list), [Project](list) có thể học môn học gì?
+    - Tớ đã học 1 số môn học [Lập trình ứng dụng di động](list), [Cấu trúc dữ liệu](list) và [100 tín chỉ](credit)
+    - Mình đã học [Lập trình hướng đối tượng](list)

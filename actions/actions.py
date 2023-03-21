@@ -207,17 +207,17 @@ class ResponseInfoSub(Action):
                   for key, value in CNTT[i].items():
                         if [key.lower()] == case:
                               if i == 0:
-                                    dispatcher.utter_message(text = "Đây là môn thuộc các môn đại cương")
+                                    dispatcher.utter_message(text = "Đây là môn thuộc các môn học đại cương")
                               elif i == 1:
-                                    dispatcher.utter_message(text = "Đây là môn thuộc các môn cơ sở khối ngành")
+                                    dispatcher.utter_message(text = "Đây là môn thuộc các môn học cơ sở khối ngành")
                               elif i == 2:
                                     dispatcher.utter_message(text = "Đây là môn thuộc các môn học phần bắt buộc")
                               elif i == 3:
                                     dispatcher.utter_message(text = "Đây là môn thuộc các môn học phần lựa chọn")
                               elif i == 4:
-                                    dispatcher.utter_message(text = "Đây là môn thuộc các môn thực tập, khóa luận và chuyên đề tốt nghiệp")
+                                    dispatcher.utter_message(text = "Đây là môn thuộc các môn học thực tập, khóa luận và chuyên đề tốt nghiệp")
                               dispatcher.utter_message(text = "Đây là số tín chỉ của môn %s: %d" % (key, value[0]))
-                              dispatcher.utter_message(text = "Để có thể học được môn này cần đáp ứng yêu cầu sau:")
+                              dispatcher.utter_message(text = "Để có thể đăng ký được môn học này cần đáp ứng yêu cầu sau:")
                               for j in range(0, len(value[1])):
                                     if isinstance(value[1][j], str):
                                           check = True
@@ -243,9 +243,11 @@ class ResponseOfferSub(Action):
             if subs:
                   print(subs)
                   for sub in subs:
+                        if sub != "học":
+                              case.append(sub.lower())
                         if sub == "máy":
                               sub = "Học máy"
-                        case.append(sub.lower())
+                              case.append(sub.lower())
             if cres:
                   cres = cres.split()
                   print(cres)
@@ -260,6 +262,7 @@ class ResponseOfferSub(Action):
                                     case.append(120)
                                     case.append(110)
                                     case.append(100)
+            print(case)
             if subs or cres:
                   index = 0
                   for i in range (0, 5):
@@ -273,12 +276,12 @@ class ResponseOfferSub(Action):
                                                 temp.append(v)
                                     if set(temp).issubset(set(case)):
                                           if index == 0:
-                                                dispatcher.utter_message(text = "Trường hợp của bạn có thể học được những môn sau:")
+                                                dispatcher.utter_message(text = "Trường hợp của bạn có thể học được những môn học sau:")
                                           index += 1
                                           dispatcher.utter_message(text = "%d. %s" %(index, key))
                                     temp.clear()
                   if index == 0:
-                        dispatcher.utter_message(text = "Những môn học này hiện tại không phải điều kiện tiên quyết của môn nào")
+                        dispatcher.utter_message(text = "Những môn học này hiện tại không phải điều kiện tiên quyết của môn học nào")
                   index = 0
                   dispatcher.utter_message(text = "Bạn có thể học được những môn sau không có điều kiện tiên quyết khác như:")
                   for i in range (0, 5):
