@@ -241,16 +241,16 @@ class ResponseOfferSub(Action):
             subs = tracker.get_slot("list")
             cres = tracker.get_slot("credit")
             if subs:
-                  print(subs)
+                  # print(subs)
                   for sub in subs:
-                        if sub != "học":
+                        if sub != "học" and sub != "máy":
                               case.append(sub.lower())
-                        if sub == "máy":
+                        elif sub == "máy":
                               sub = "Học máy"
                               case.append(sub.lower())
             if cres:
                   cres = cres.split()
-                  print(cres)
+                  # print(cres)
                   for cre in cres:
                         if cre.isdigit():
                               if int(cre) >= 100:
@@ -263,11 +263,14 @@ class ResponseOfferSub(Action):
                                     case.append(110)
                                     case.append(100)
             print(case)
+            check = False
             if subs or cres:
                   index = 0
                   for i in range (0, 5):
                         for key, value in CNTT[i].items():
-                              if len(value) > 1:
+                              if set([key.lower()]).issubset(set(case)):
+                                    check = True
+                              elif len(value) > 1:
                                     temp = []
                                     for v in value[1]:
                                           if isinstance(v, str):
@@ -280,16 +283,18 @@ class ResponseOfferSub(Action):
                                           index += 1
                                           dispatcher.utter_message(text = "%d. %s" %(index, key))
                                     temp.clear()
-                  if index == 0:
+                  if index == 0 and check:
                         dispatcher.utter_message(text = "Những môn học này hiện tại không phải điều kiện tiên quyết của môn học nào")
-                  index = 0
-                  dispatcher.utter_message(text = "Bạn có thể học được những môn sau không có điều kiện tiên quyết khác như:")
-                  for i in range (0, 5):
-                        for key, value in CNTT[i].items():
-                              if len(value) == 1 and set([key.lower()]).issubset(set(case)) == False:
-                                    index += 1
-                                    dispatcher.utter_message(text = "%d. %s" %(index, key))
+                  elif check == False:
+                        dispatcher.utter_message(text = "Vui lòng kiểm tra lại tên môn học")
+                  # index = 0
+                  # dispatcher.utter_message(text = "Bạn có thể học được những môn sau không có điều kiện tiên quyết khác như:")
+                  # for i in range (0, 5):
+                  #       for key, value in CNTT[i].items():
+                  #             if len(value) == 1 and set([key.lower()]).issubset(set(case)) == False:
+                  #                   index += 1
+                  #                   dispatcher.utter_message(text = "%d. %s" %(index, key))
             else:
-                  dispatcher.utter_message(text = "Vui lòng thêm thông tin cho yêu cầu của bạn!")
+                  dispatcher.utter_message(text = "Vui lòng kiểm tra thông tin cho yêu cầu của bạn!")
             case.clear()
             return []

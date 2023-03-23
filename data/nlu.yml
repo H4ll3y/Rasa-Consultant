@@ -20,6 +20,12 @@ nlu:
     - [Khoa học máy tính](major)
     - Mình ngành [Công nghệ thông tin](major)
     - Mình học [Khoa học máy tính](major)
+    - Tớ ngành [Công nghệ thông tin](major)
+    - Tớ học ngành [Khoa học máy tính](major)
+    - Ngành [Công nghệ thông tin](major)
+    - Tớ theo [Công nghệ thông tin](major)
+    - Mình đang học [Công nghệ thông tin](major)
+    - Tớ đang học ngành [Công nghệ thông tin](major)
 
 - intent: need_info_sub
   examples: |
@@ -43,6 +49,10 @@ nlu:
     - Thông tin môn học [Triết học Mác-Lênin](subject)
     - Thông tin chi tiết môn [Đường lối cách mạng của Đảng CS Việt Nam](subject)
     - Chi tiết thông tin [Tiếng anh sơ trung cấp 2](subject)
+    - Điều kiện để học môn [Học máy](subject) là gì?
+    - Điều kiện môn [học máy](subject) là gì?
+    - Điều kiện học [học máy](subject)
+    - Điều kiện để học được [Tiếng Trung 1](subject)
 
 - intent: need_offer_sub
   examples: |
@@ -136,3 +146,4 @@ nlu:
     - 1 số môn học mình đã học như [Lập trình .Net](list), [Kỹ thuật số](list), [Project](list) có thể học môn học gì?
     - Tớ đã học 1 số môn học [Lập trình ứng dụng di động](list), [Cấu trúc dữ liệu](list) và [100 tín chỉ](credit)
     - Mình đã học [Lập trình hướng đối tượng](list)
+    - Với [Tiếng Anh trung cấp 1](list) thì mình sẽ học được môn nào?
