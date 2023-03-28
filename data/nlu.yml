@@ -20,6 +20,12 @@ nlu:
     - [Khoa học máy tính](major)
     - Mình ngành [Công nghệ thông tin](major)
     - Mình học [Khoa học máy tính](major)
+    - Tớ ngành [Công nghệ thông tin](major)
+    - Tớ học ngành [Khoa học máy tính](major)
+    - Ngành [Công nghệ thông tin](major)
+    - Tớ theo [Công nghệ thông tin](major)
+    - Mình đang học [Công nghệ thông tin](major)
+    - Tớ đang học ngành [Công nghệ thông tin](major)
 
 - intent: need_info_sub
   examples: |
