@@ -318,10 +318,10 @@ class ResponseYearSemester(Action):
                   3: ["ba", "3"]
             }
             dys = {
-                  2: ["hai năm rưỡi", "2 năm rưỡi"],
-                  3: ["ba năm rưỡi", "3 năm rưỡi"],
-                  4: ["bốn năm rưỡi", "4 năm rưỡi"],
-                  5: ["năm năm rưỡi", "5 năm rưỡi"]
+                  2: ["hai năm rưỡi", "2 năm rưỡi", "nửa năm 2", "nửa năm hai"],
+                  3: ["ba năm rưỡi", "3 năm rưỡi", "nửa năm 3", "nửa năm ba"],
+                  4: ["bốn năm rưỡi", "4 năm rưỡi", "nửa năm 4", "nửa năm bốn"],
+                  5: ["năm năm rưỡi", "5 năm rưỡi", "nửa năm 5", "nửa năm năm"]
             }
             
             year = tracker.get_slot("year")
@@ -345,5 +345,6 @@ class ResponseYearSemester(Action):
             if year_semester:
                   year = {i for i in dys if set([year_semester.lower()]).issubset(set(dys[i]))}
                   semester = 2
-
+                  print(year)
+                  print(semester)
             return []

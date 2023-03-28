@@ -20,15 +20,10 @@ nlu:
     - [Khoa học máy tính](major)
     - Mình ngành [Công nghệ thông tin](major)
     - Mình học [Khoa học máy tính](major)
-    - Tớ ngành [Công nghệ thông tin](major)
-    - Tớ học ngành [Khoa học máy tính](major)
-    - Ngành [Công nghệ thông tin](major)
-    - Tớ theo [Công nghệ thông tin](major)
-    - Mình đang học [Công nghệ thông tin](major)
-    - Tớ đang học ngành [Công nghệ thông tin](major)
 
 - intent: need_info_sub
   examples: |
+    - Chi tiết [Học máy](subject)
     - Tôi cần biết thông tin về môn [Tiếng Anh trung cấp 3](subject)
     - Tôi muốn biết về môn [Tiếng Nhật 2](subject)
     - Cho tôi thông tin về môn [Giải tích 2](subject)
@@ -49,10 +44,7 @@ nlu:
     - Thông tin môn học [Triết học Mác-Lênin](subject)
     - Thông tin chi tiết môn [Đường lối cách mạng của Đảng CS Việt Nam](subject)
     - Chi tiết thông tin [Tiếng anh sơ trung cấp 2](subject)
-    - Điều kiện để học môn [Học máy](subject) là gì?
-    - Điều kiện môn [học máy](subject) là gì?
-    - Điều kiện học [học máy](subject)
-    - Điều kiện để học được [Tiếng Trung 1](subject)
+    - Thông tin môn [Project](subject)
 
 - intent: need_offer_sub
   examples: |
@@ -146,8 +138,7 @@ nlu:
     - 1 số môn học mình đã học như [Lập trình .Net](list), [Kỹ thuật số](list), [Project](list) có thể học môn học gì?
     - Tớ đã học 1 số môn học [Lập trình ứng dụng di động](list), [Cấu trúc dữ liệu](list) và [100 tín chỉ](credit)
     - Mình đã học [Lập trình hướng đối tượng](list)
-    - Với [Tiếng Anh trung cấp 1](list) thì mình sẽ học được môn nào?
-  
+    
 - intent: year_semester
   examples: |
     - Hiện tại tôi đang học năm [nhất](year) thì nên học gì?
@@ -162,3 +153,12 @@ nlu:
     - Tôi đang chuẩn bị đăng ký học tôi nên học môn gì hiện tại tôi đã học được [ba năm rưỡi](ysem) rồi?
     - Đang học năm [ba](year) kỳ [1](semester) tôi nên học môn gì trong kỳ này?
     - Tôi chuẩn bị học năm [nhất](year) kỳ [3](semester) tôi nên học môn gì trong kỳ này?
+    - Tớ đang học [nửa năm 2](ysem) thì đăng ký môn gì?
+    - Tôi đang học [2 năm rưỡi](ysem) thì nên học gì trong năm nay?
+    - Tớ hiện tại đang là năm [3](year) và kỳ [2](semester) nên đăng ký gì?
+    - Mình học được [ba năm rưỡi](ysem) rồi mình nên đăng ký gì?
+    - Mình đã học [nửa năm hai](ysem) mình nên đăng ký môn gì kỳ tiếp theo?
+    - Kỳ này là kỳ [3](semester) năm [2](year) thì mình nên học gì đây?
+    - Năm [4](year) kỳ [1](semester) tôi nên đăng ký môn học gì?
+    - Năm [nhất](year) học kỳ [hai](semester) tôi nên học gì tiếp theo?
+    - Năm [2](year) thì tôi nên học môn học gì trong năm này?
