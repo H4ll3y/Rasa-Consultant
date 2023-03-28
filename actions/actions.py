@@ -240,6 +240,7 @@ class ResponseOfferSub(Action):
       def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict) -> List[Dict[Text, Any]]:
             subs = tracker.get_slot("list")
             cres = tracker.get_slot("credit")
+            check = False
             if subs:
                   # print(subs)
                   for sub in subs:
@@ -255,15 +256,17 @@ class ResponseOfferSub(Action):
                         if cre.isdigit():
                               if int(cre) >= 100:
                                     case.append(100)
+                                    check = True
                               if int(cre) >= 110:
                                     case.append(110)
-                                    case.append(100)                 
+                                    case.append(100)
+                                    check = True             
                               if int(cre) >= 120:
                                     case.append(120)
                                     case.append(110)
                                     case.append(100)
+                                    check = True
             print(case)
-            check = False
             if subs or cres:
                   index = 0
                   for i in range (0, 5):
@@ -286,7 +289,7 @@ class ResponseOfferSub(Action):
                   if index == 0 and check:
                         dispatcher.utter_message(text = "Những môn học này hiện tại không phải điều kiện tiên quyết của môn học nào")
                   elif check == False:
-                        dispatcher.utter_message(text = "Vui lòng kiểm tra lại tên môn học")
+                        dispatcher.utter_message(text = "Vui lòng kiểm tra lại thông tin bạn cung cấp")
                   # index = 0
                   # dispatcher.utter_message(text = "Bạn có thể học được những môn sau không có điều kiện tiên quyết khác như:")
                   # for i in range (0, 5):
@@ -347,4 +350,5 @@ class ResponseYearSemester(Action):
                   semester = 2
                   print(year)
                   print(semester)
+            
             return []
