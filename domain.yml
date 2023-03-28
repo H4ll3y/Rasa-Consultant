@@ -6,17 +6,21 @@ intents:
   - give_info
   - need_info_sub
   - need_offer_sub
+  - year_semester
 
 actions:
   - response_info_sub
   - response_offer_sub
+  - response_year_semester
 
 entities:
   - major
   - subject
-  - list
   - credit
+  - list
   - year
+  - semester
+  - ysem
 
 slots:
   major:
@@ -49,7 +53,25 @@ slots:
       entity: list
       intent: need_offer_sub
       not_intent: need_info_sub
-  
+  year:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: year
+  semester:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: semester
+  ysem:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: ysem
+
 responses:
   utter_greet:
   - text: "Xin chào tôi có thể giúp gì cho bạn?"

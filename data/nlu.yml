@@ -147,3 +147,18 @@ nlu:
     - Tớ đã học 1 số môn học [Lập trình ứng dụng di động](list), [Cấu trúc dữ liệu](list) và [100 tín chỉ](credit)
     - Mình đã học [Lập trình hướng đối tượng](list)
     - Với [Tiếng Anh trung cấp 1](list) thì mình sẽ học được môn nào?
+  
+- intent: year_semester
+  examples: |
+    - Hiện tại tôi đang học năm [nhất](year) thì nên học gì?
+    - Tôi đang học năm [2](year) thì đăng ký gì?
+    - Tớ học năm [hai](year) nên đăng ký môn học gì?
+    - Năm [3](year) học gì?
+    - Kỳ [1](semester) năm [nhất](year) học môn gì?
+    - Kỳ [một](semester) năm [ba](year) học môn gì?
+    - Tôi sắp đăng ký học cho kỳ [3](semester) năm [1](year) tôi nên chọn môn gì?
+    - Năm [hai](year) kỳ [3](semester) nên học gì?
+    - Tôi học [2 năm rưỡi](ysem) nên học gì?
+    - Tôi đang chuẩn bị đăng ký học tôi nên học môn gì hiện tại tôi đã học được [ba năm rưỡi](ysem) rồi?
+    - Đang học năm [ba](year) kỳ [1](semester) tôi nên học môn gì trong kỳ này?
+    - Tôi chuẩn bị học năm [nhất](year) kỳ [3](semester) tôi nên học môn gì trong kỳ này?

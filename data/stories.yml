@@ -37,3 +37,13 @@ stories:
         - list
     - action: response_offer_sub
     - action: action_restart
+
+- story: story6
+  steps:
+    - intent: year_semester
+      entities:
+        - year
+        - semester
+        - year_semester
+    - action: response_year_semester
+    - action: action_restart

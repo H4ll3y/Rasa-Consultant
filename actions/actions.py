@@ -298,3 +298,52 @@ class ResponseOfferSub(Action):
                   dispatcher.utter_message(text = "Vui lòng kiểm tra thông tin cho yêu cầu của bạn!")
             case.clear()
             return []
+
+class ResponseYearSemester(Action):
+      def name(self) -> Text:
+            return "response_year_semester"
+      
+      def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict) -> List[Dict[Text, Any]]:
+            dyear = {
+                  1: ["nhất", "một", "1"],
+                  2: ["hai", "hai năm rưỡi", "2"],
+                  3: ["ba", "ba năm rưỡi", "3"],
+                  4: ["bốn", "bốn năm rưỡi", "4"],
+                  5: ["năm", "5"],
+                  6: ["sáu", "6"]
+            }
+            dsemester = {
+                  1: ["một", "nhất", "1"],
+                  2: ["hai", "2"],
+                  3: ["ba", "3"]
+            }
+            dys = {
+                  2: ["hai năm rưỡi", "2 năm rưỡi"],
+                  3: ["ba năm rưỡi", "3 năm rưỡi"],
+                  4: ["bốn năm rưỡi", "4 năm rưỡi"],
+                  5: ["năm năm rưỡi", "5 năm rưỡi"]
+            }
+            
+            year = tracker.get_slot("year")
+            semester = tracker.get_slot("semester")
+            year_semester = tracker.get_slot("ysem")
+            
+            if year:
+                  year = {i for i in dyear if set([year.lower()]).issubset(set(dyear[i]))}
+                  if year:
+                        print(year)
+                  else:
+                        dispatcher.utter_message(text = "Vui lòng kiểm tra lại năm học")
+                        return []
+            if semester:
+                  semester = {i for i in dsemester if set([semester.lower()]).issubset(set(dsemester[i]))}
+                  if semester:
+                        print(semester)
+                  else:
+                        dispatcher.utter_message(text = "Vui lòng kiểm tra lại kỳ học")
+                        return []
+            if year_semester:
+                  year = {i for i in dys if set([year_semester.lower()]).issubset(set(dys[i]))}
+                  semester = 2
+
+            return []

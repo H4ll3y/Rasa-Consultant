@@ -30,3 +30,9 @@ rules:
       - intent: need_offer_sub
       - action: response_offer_sub
       - action: action_restart
+
+  - rule: rule6
+    steps:
+      - intent: year_semester
+      - action: response_year_semester
+      - action: action_restart
