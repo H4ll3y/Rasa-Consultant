@@ -51,6 +51,9 @@ nlu:
     - Thông tin chi tiết môn [Đường lối cách mạng của Đảng CS Việt Nam](subject)
     - Chi tiết thông tin [Tiếng anh sơ trung cấp 2](subject)
     - Thông tin môn [Project](subject)
+    - Mình cần thông tin 1 số môn [Giáo dục thể chất](subject)
+    - Tớ muốn học 1 số môn [Thể dục](subject)
+    - Một số môn [Thể chất](subject) ở trường là gì thế?
 
 - intent: need_offer_sub
   examples: |
@@ -168,3 +171,32 @@ nlu:
     - Năm [4](year) kỳ [1](semester) tôi nên đăng ký môn học gì?
     - Năm [nhất](year) học kỳ [hai](semester) tôi nên học gì tiếp theo?
     - Năm [2](year) thì tôi nên học môn học gì trong năm này?
+    - Tôi đã học được [nửa năm](ysem) tôi nên học gì trong kỳ này?
+    - Tôi hoàn thành xong kỳ [2](semester) năm [nhất](year) tôi nên học gì trong năm nay?
+    - Tớ chuẩn bị lên năm [2](semester) tớ nên học gì đây?
+    - Mình chuẩn bị đăng ký học cho kỳ [3](semester) năm [3](year) thì mình nên đăng ký những môn học gì?
+    - Em đang lên kế hoạch học tập cho năm [cuối](year) em nên học tập như thế nào ạ?
+    - Học gì trong kỳ [3](semester) năm [2](year)?
+    - Những môn tôi cần học ở năm học [cuối](year) là gì?
+    - Đã học được [2 năm rưỡi](ysem) tôi nên học gì tiếp theo?
+    - Tôi cần lời khuyên cho năm [3](year)
+    - Tôi cần lộ trình học tập cho năm [2](year) kỳ [1](semester)
+    - Tớ muốn biết mình nên học gì cho năm [cuối](year) ở trường?
+    - Tớ đã học được [nửa năm](ysem) tớ nên học gì đây?
+    - Em muốn biết lộ trình năm [ba](year) để lên kế hoạch học tập cho phù hợp
+    - Cho mình hỏi là hiện tại mình đang là năm [cuối](year) thì mình nên bắt đầu học những gì?
+    - Cho em hỏi năm [hai](year) kỳ [hai](semester) thì nên học gì ạ?
+    - Tôi học năm [nhất](year) đại học
+    - Tớ năm [hai](year) đại học
+    - Mình đang học năm [ba](year) đại học
+    - Tớ chuẩn bị học năm [1](year) đại học
+    - Năm [3](year) đại học kỳ [2](semester)
+    - Kỳ [2](semester) đại học năm [ba](year)
+    - Kỳ này là kỳ [1](semester) năm [hai](year) đại học
+    - Mình học [2 năm rưỡi](ysem) đại học
+    - Kỳ [3](semester) năm [2](year)
+    - Năm [nhất](year) kỳ [ba](semester)
+    - [Nửa năm](ysem) đại học thì học gì tiếp theo?
+    - Mình học được [2](year) năm rồi
+    - Hiện tại tôi đang chuẩn bị học kỳ [2](semester) năm [nhất](year) thì nên chuẩn bị học môn gì?
+    - Tôi đang học năm [ba](year) kỳ [3](semester) thì cần học gì?

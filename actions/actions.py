@@ -114,82 +114,82 @@ HPBB = dict()
 HPLC = dict()
 TTKLCD = dict()
 
-DC[ML111] = [2, ]
-DC[ML112] = [3, [ML111]]
-DC[ML202] = [2, [ML112]]
-DC[ML203] = [3, [ML202]]
-DC[CS101] = [2, ]
-DC[MA101] = [3, ]
-DC[CS100] = [2, ]
-DC[NA151] = [2, ]
-DC[EC101] = [3, ]
-DC[VL101] = [2, ]
-DC[SH131] = [2, ]
-DC[GE101] = [2, ]
-DC[GE102] = [2, [GE101]]
-DC[GE103] = [2, [GE102]]
-DC[GE201] = [2, [GE103]]
-DC[GE202] = [2, [GE201]]
-DC[GE205] = [2, [GE202]]
-DC[GE301] = [2, [GE205]]
-DC[GE303] = [2, [GE301]]
-DC[GE305] = [2, [GE303]]
-DC[GF101] = [2, ]
-DC[GF102] = [2, [GF101]]
-DC[GJ101] = [2, ]
-DC[GJ102] = [2, [GJ101]]
-DC[GZ101] = [2, ]
-DC[GZ102] = [2, [GZ101]]
-DC[GI101] = [2, ]
-DC[GI102] = [2, [GI101]]
-DC[GK101] = [2, ]
-DC[GK102] = [2, [GK101]]
-DC[PG100] = [4, ]
-DC[PG121] = [4, ]
+DC[ML111] = [2, [], 1, [1]]
+DC[ML112] = [3, [ML111], 1, [2]]
+DC[ML202] = [2, [ML112], 2, [1]]
+DC[ML203] = [3, [ML202], 1, [3]]
+DC[CS101] = [2, [], 1, [1]]
+DC[MA101] = [3, [], 1, [1]]
+DC[CS100] = [2, [], 1, [1]]
+DC[NA151] = [2, [], 1, [3]]
+DC[EC101] = [3, [], 2, [1]]
+DC[VL101] = [2, [], 1, [1]]
+DC[SH131] = [2, [], 1, [2]]
+DC[GE101] = [2, [], 1, [1]]
+DC[GE102] = [2, [GE101], 1, [2]]
+DC[GE103] = [2, [GE102], 1, [3]]
+DC[GE201] = [2, [GE103], 2, [1]]
+DC[GE202] = [2, [GE201], 2, [2]]
+DC[GE205] = [2, [GE202], 2, [3]]
+DC[GE301] = [2, [GE205], 3, [1]]
+DC[GE303] = [2, [GE301], 3, [2]]
+DC[GE305] = [2, [GE303], 3, [3]]
+DC[GF101] = [2, [], 3, [2]]
+DC[GF102] = [2, [GF101], 3, [3]]
+DC[GJ101] = [2, [], 3, [2]]
+DC[GJ102] = [2, [GJ101], 3, [3]]
+DC[GZ101] = [2, [], 3, [2]]
+DC[GZ102] = [2, [GZ101], 3, [3]]
+DC[GI101] = [2, [], 3, [2]]
+DC[GI102] = [2, [GI101], 3, [3]]
+DC[GK101] = [2, [], 3, [2]]
+DC[GK102] = [2, [GK101], 3, [3]]
+DC[PG100] = [4, [], 1, [1]]
+DC[PG121] = [4, [], 1, [1]]
 ##########################################################
-CSKN[MA103] = [3, [MA101]]
-CSKN[MA110] = [3, [MA101]]
-CSKN[MA111] = [3, [MA110]]
-CSKN[MA120] = [3, [MA101]]
-CSKN[MA231] = [4, [MA120, CS101]]
-CSKN[MI201] = [3, [CS122]]
-CSKN[CF212] = [3, [CS122]]
-CSKN[CS110] = [2, [MA101]]
-CSKN[CS121] = [3, [CS100]]
-CSKN[CS122] = [3, [CS121]]
-CSKN[CS212] = [3, [CS110, CS122]]
-CSKN[CS315] = [3, [CS212]]
-CSKN[IS222] = [3, [CS121, MA103]]
-CSKN[NW212] = [2, [CS212]]
+CSKN[MA103] = [3, [MA101], 1, [3]]
+CSKN[MA110] = [3, [MA101], 2, [1]]
+CSKN[MA111] = [3, [MA110], 2, [2]]
+CSKN[MA120] = [3, [MA101], 1, [2]]
+CSKN[MA231] = [4, [MA120, CS101], 2, [3]]
+CSKN[MI201] = [3, [CS122], 2, [1]]
+CSKN[CF212] = [3, [CS122], 2, [2]]
+CSKN[CS110] = [2, [MA101], 1, [2]]
+CSKN[CS121] = [3, [CS100], 1, [2]]
+CSKN[CS122] = [3, [CS121], 1, [3]]
+CSKN[CS212] = [3, [CS110, CS122], 1, [3]]
+CSKN[CS315] = [3, [CS212], 2, [3]]
+CSKN[IS222] = [3, [CS121, MA103], 2, [2]]
+CSKN[NW212] = [2, [CS212], 2, [1]]
 
-HPBB[IS314] = [3, [IS222]]
-HPBB[IS322] = [3, [IS222]]
-HPBB[IS329] = [2, [IS222]]
-HPBB[IS332] = [3, [CS122, IS222]]
-HPBB[IS334] = [3, [IS314]]
-HPBB[MI322] = [3, [MI201, CF212]]
-HPBB[SE302] = [2, [IS322]]
-HPBB[CS311] = [2, [CS122]]
-HPBB[IT320] = [3, [MA120, CF212]]
-HPBB[IT332] = [2, [SE302]]
-HPBB[IT333] = [3, [NW212]]
-HPBB[IT380] = [2, [IS314]]
+HPBB[IS314] = [3, [IS222], 3, [2]]
+HPBB[IS322] = [3, [IS222], 3, [1]]
+HPBB[IS329] = [2, [IS222], 3, [3]]
+HPBB[IS332] = [3, [CS122, IS222], 3, [1]]
+HPBB[IS334] = [3, [IS314], 3, [3]]
+HPBB[MI322] = [3, [MI201, CF212], 3, [1]]
+HPBB[SE302] = [2, [IS322], 3, [2]]
+HPBB[CS311] = [2, [CS122], 3, [1]]
+HPBB[IT320] = [3, [MA120, CF212], 3, [2]]
+HPBB[IT332] = [2, [SE302], 4, [1]]
+HPBB[IT333] = [3, [NW212], 3, [3]]
+HPBB[IT380] = [2, [IS314], 4, [1]]
 
-HPLC[CF211] = [2, [CS121]]
-HPLC[CS223] = [3, [CS122]]
-HPLC[CS224] = [3, [IS222]]
-HPLC[CS320] = [3, [MA231]]
-HPLC[CS325] = [3, [IS222]]
-HPLC[IS324] = [3, [IS322]]
-HPLC[IS424] = [3, [IS322]]
-HPLC[SE312] = [3, [SE302]]
-HPLC[MI312] = [2, [CS122, MA120]]
-HPLC[MI414] = [2, [MI312]]
+HPLC[CF211] = [2, [CS121], 4, [1, 2, 3]]
+HPLC[CS223] = [3, [CS122], 4, [1, 2, 3]]
+HPLC[CS224] = [3, [IS222], 4, [1, 2, 3]]
+HPLC[CS320] = [3, [MA231], 4, [1, 2, 3]]
+HPLC[CS325] = [3, [IS222], 4, [1, 2, 3]]
+HPLC[IS324] = [3, [IS322], 4, [1, 2, 3]]
+HPLC[IS424] = [3, [IS322], 4, [1, 2, 3]]
+HPLC[SE312] = [3, [SE302], 4, [1, 2, 3]]
+HPLC[MI312] = [2, [CS122, MA120], 4, [1, 2, 3]]
+HPLC[MI414] = [2, [MI312], 4, [1, 2, 3]]
 
-TTKLCD[IP404] = [2, [100]]
-TTKLCD[IT499] = [6, [120]]
-TTKLCD[IS484] = [6, [110, IS322]]
-TTKLCD[SE487] = [6, [110, SE302]]
+TTKLCD[IP404] = [2, [100], 4, [2, 3]]
+TTKLCD[IT499] = [6, [120], 4, [2, 3]]
+TTKLCD[IS484] = [6, [110, IS322], 4, [2, 3]]
+TTKLCD[SE487] = [6, [110, SE302], 4, [2, 3]]
 
 CNTT = [DC, CSKN, HPBB, HPLC, TTKLCD]
 case = []
@@ -201,6 +201,10 @@ class ResponseInfoSub(Action):
       def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict) -> List[Dict[Text, Any]]:
             sub = tracker.get_slot("subject").lower()
             print(sub)
+            if sub == "thể chất" or sub == "thể dục" or sub == "giáo dục thể chất":
+                  dispatcher.utter_message(text = "Đây là môn giáo dục thể chất và đều là 1 tín chỉ:")
+                  dispatcher.utter_message(text = "1. Thể chất cơ bản\n2. Thể chất nâng cao\n3. Thế chất cổ truyền\n4. Bóng bàn\n5.Bóng rổ\n6. Bóng chuyền\n7. Bóng chuyền nâng cao")
+                  return []
             case.append(sub)
             check = False
             for i in range(0, 5):
@@ -273,7 +277,7 @@ class ResponseOfferSub(Action):
                         for key, value in CNTT[i].items():
                               if set([key.lower()]).issubset(set(case)):
                                     check = True
-                              elif len(value) > 1:
+                              elif len(value[1]) > 0:
                                     temp = []
                                     for v in value[1]:
                                           if isinstance(v, str):
@@ -305,22 +309,23 @@ class ResponseOfferSub(Action):
 class ResponseYearSemester(Action):
       def name(self) -> Text:
             return "response_year_semester"
-      
+                        
       def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict) -> List[Dict[Text, Any]]:
             dyear = {
                   1: ["nhất", "một", "1"],
                   2: ["hai", "hai năm rưỡi", "2"],
                   3: ["ba", "ba năm rưỡi", "3"],
-                  4: ["bốn", "bốn năm rưỡi", "4"],
+                  4: ["bốn", "bốn năm rưỡi", "4", " cuối"],
                   5: ["năm", "5"],
                   6: ["sáu", "6"]
             }
             dsemester = {
                   1: ["một", "nhất", "1"],
                   2: ["hai", "2"],
-                  3: ["ba", "3"]
+                  3: ["ba", "3", "cuối"]
             }
             dys = {
+                  1: ["nửa năm"],
                   2: ["hai năm rưỡi", "2 năm rưỡi", "nửa năm 2", "nửa năm hai"],
                   3: ["ba năm rưỡi", "3 năm rưỡi", "nửa năm 3", "nửa năm ba"],
                   4: ["bốn năm rưỡi", "4 năm rưỡi", "nửa năm 4", "nửa năm bốn"],
@@ -328,27 +333,49 @@ class ResponseYearSemester(Action):
             }
             
             year = tracker.get_slot("year")
+            print(year)
             semester = tracker.get_slot("semester")
+            print(semester)
             year_semester = tracker.get_slot("ysem")
             
             if year:
+                  # print(year)
                   year = {i for i in dyear if set([year.lower()]).issubset(set(dyear[i]))}
-                  if year:
-                        print(year)
-                  else:
+                  if year == None:
                         dispatcher.utter_message(text = "Vui lòng kiểm tra lại năm học")
                         return []
             if semester:
+                  # print(semester)
                   semester = {i for i in dsemester if set([semester.lower()]).issubset(set(dsemester[i]))}
-                  if semester:
-                        print(semester)
-                  else:
+                  if semester == None:
                         dispatcher.utter_message(text = "Vui lòng kiểm tra lại kỳ học")
                         return []
             if year_semester:
+                  print(year_semester)
                   year = {i for i in dys if set([year_semester.lower()]).issubset(set(dys[i]))}
                   semester = 2
-                  print(year)
-                  print(semester)
             
+            if year == None and semester:
+                  dispatcher.utter_message(text = "Vui lòng cung cấp thêm năm học")
+            elif year and semester:
+                  y = list(year)
+                  s = list(semester)
+                  index = 1
+                  for i in range (0, 5):
+                        for key, value in CNTT[i].items():
+                              if set(y).issubset(set([value[2]])) and set(s).issubset(set(value[3])):
+                                    if index == 1:
+                                          dispatcher.utter_message(text = "Năm %s" %(tracker.get_slot("year")))
+                                    dispatcher.utter_message(text = "%d. %s" %(index, key))
+                                    index += 1                       
+            elif year:
+                  y = list(year)
+                  index = 1
+                  for i in range (0, 5):
+                        for key, value in CNTT[i].items():
+                              if set(y).issubset(set([value[2]])):
+                                    if index == 1:
+                                          dispatcher.utter_message(text = "Năm %s" %(tracker.get_slot("year")))
+                                    dispatcher.utter_message(text = "%d. %s" %(index, key))
+                                    index += 1
             return []
