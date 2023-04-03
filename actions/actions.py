@@ -81,7 +81,7 @@ SE422 = "Quản lý dự án phần mềm"
 IS345 = "An toàn thông tin"
 NW312 = "Thiết kế và quản trị mạng"
 NW332 = "An toàn mạng"
-CF211 = "Phân tích và thiết kế thuận toán"
+CF211 = "Phân tích và thiết kế thuật toán"
 CS223 = "Lập trình Java"
 CS224 = "Lập trình .Net"
 CS320 = "Học máy"
@@ -201,10 +201,11 @@ class ResponseInfoSub(Action):
       def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict) -> List[Dict[Text, Any]]:
             sub = tracker.get_slot("subject").lower()
             print(sub)
+            
             if sub == "thể chất" or sub == "thể dục" or sub == "giáo dục thể chất":
                   dispatcher.utter_message(text = "Đây là môn giáo dục thể chất và đều là 1 tín chỉ:")
                   dispatcher.utter_message(text = "1. Thể chất cơ bản\n2. Thể chất nâng cao\n3. Thế chất cổ truyền\n4. Bóng bàn\n5.Bóng rổ\n6. Bóng chuyền\n7. Bóng chuyền nâng cao")
-                  return []
+                  
             case.append(sub)
             check = False
             for i in range(0, 5):
@@ -229,6 +230,10 @@ class ResponseInfoSub(Action):
                                     else:
                                           check = True
                                           dispatcher.utter_message(text = "Cần có: %d tín chỉ" % value[1][j])
+                              text = "Bạn nên học môn này ở năm %d học kỳ " %value[2]
+                              for k in range(0, len(value[3])):
+                                    text += str(value[3][k]) + " "
+                              dispatcher.utter_message(text = text)
                         elif case[0] in key.lower():
                               dispatcher.utter_message(text = "%s" % key)
                               check = True

@@ -29,6 +29,8 @@ nlu:
 
 - intent: need_info_sub
   examples: |
+    - Tôi cần chi tiết môn [Tiếng Anh sơ trung cấp 2](subject)
+    - Thông tin môn [Tiếng Anh sơ trung cấp 1](subject) là gì?
     - Chi tiết [Học máy](subject)
     - Tôi cần biết thông tin về môn [Tiếng Anh trung cấp 3](subject)
     - Tôi muốn biết về môn [Tiếng Nhật 2](subject)
@@ -54,6 +56,7 @@ nlu:
     - Mình cần thông tin 1 số môn [Giáo dục thể chất](subject)
     - Tớ muốn học 1 số môn [Thể dục](subject)
     - Một số môn [Thể chất](subject) ở trường là gì thế?
+    - [Thể dục](subject) ở trường gồm có những môn gì?
 
 - intent: need_offer_sub
   examples: |
@@ -115,6 +118,7 @@ nlu:
     - Mình hoàn thành môn học [học máy](list)
     - Đã hoàn thành môn [học máy](list)
     - Mình đã học [học máy](list)
+    - Nếu hoàn thành xong [Lập trình ứng dụng di động](list) thì sẽ có thể học hay đăng ký môn học gì tiếp theo?
     - Tôi đã học môn học [Đường lối cách mạng của Đảng CS Việt Nam](list)
     - Mình đã học 1 số môn học sau [Kiểm thử và đảm bảo chất lượng phần mềm](list) [Quản lý dự án phần mềm](list) [Tiếng Anh sơ trung cấp 2](list) và [An toàn mạng](list) thì có thể học môn nào?
     - Tớ có học 1 số môn [Tiếng Ý 1](list) [Project](list) và [Trí tuệ nhân tạo và công nghệ tri thức](list) có thể học gì?
@@ -147,6 +151,8 @@ nlu:
     - 1 số môn học mình đã học như [Lập trình .Net](list), [Kỹ thuật số](list), [Project](list) có thể học môn học gì?
     - Tớ đã học 1 số môn học [Lập trình ứng dụng di động](list), [Cấu trúc dữ liệu](list) và [100 tín chỉ](credit)
     - Mình đã học [Lập trình hướng đối tượng](list)
+    - Môn học [Học máy](list) có phải điều kiện tiên quyết cho môn học nào không?
+    - [Tiếng Anh trung cấp 1](list) có thể học được gì?
     
 - intent: year_semester
   examples: |
@@ -200,3 +206,9 @@ nlu:
     - Mình học được [2](year) năm rồi
     - Hiện tại tôi đang chuẩn bị học kỳ [2](semester) năm [nhất](year) thì nên chuẩn bị học môn gì?
     - Tôi đang học năm [ba](year) kỳ [3](semester) thì cần học gì?
+    - Kỳ [một](semester) năm [một](year) thì học gì?
+    - Kỳ [cuối](semester) của năm [2](year) nên đăng ký học những môn học gì?
+    - Năm [cuối](year) kỳ học [cuối](semester) thì nên học gì?
+    - Năm học thứ [3](year) thì lộ trình học là gì?
+    - Năm học thứ [nhất](year) kỳ học thứ [2](semester) thì học gì?
+    - Kỳ học [cuối](semester) của năm học [3](year) thì tôi nên học môn gì tiếp theo?
