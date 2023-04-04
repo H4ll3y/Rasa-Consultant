@@ -316,19 +316,19 @@ class ResponseYearSemester(Action):
       def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict) -> List[Dict[Text, Any]]:
             dyear = {
                   1: ["nhất", "một", "1"],
-                  2: ["hai", "hai năm rưỡi", "2"],
-                  3: ["ba", "ba năm rưỡi", "3"],
-                  4: ["bốn", "bốn năm rưỡi", "4", " cuối"],
+                  2: ["hai", "2"],
+                  3: ["ba", "3"],
+                  4: ["bốn", "4", " cuối"],
                   5: ["năm", "5"],
                   6: ["sáu", "6"]
             }
             dsemester = {
                   1: ["một", "nhất", "1"],
-                  2: ["hai", "2"],
+                  2: ["hai", "2", "giữa"],
                   3: ["ba", "3", "cuối"]
             }
             dys = {
-                  1: ["nửa năm"],
+                  1: ["nửa năm", "một nửa năm", "1 nửa năm", "một năm rưỡi", "1 năm rưỡi"],
                   2: ["hai năm rưỡi", "2 năm rưỡi", "nửa năm 2", "nửa năm hai"],
                   3: ["ba năm rưỡi", "3 năm rưỡi", "nửa năm 3", "nửa năm ba"],
                   4: ["bốn năm rưỡi", "4 năm rưỡi", "nửa năm 4", "nửa năm bốn"],
