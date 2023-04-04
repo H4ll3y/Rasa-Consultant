@@ -5,19 +5,16 @@ rules:
     steps:
       - intent: greet
       - action: utter_greet
-      - action: action_restart
 
   - rule: rule2
     steps:
       - intent: give_offer
       - action: utter_ask_info
-      - action: action_restart
 
   - rule: rule3
     steps:
       - intent: give_info
       - action: utter_response_info
-      - action: action_restart
 
   - rule: rule4
     steps:

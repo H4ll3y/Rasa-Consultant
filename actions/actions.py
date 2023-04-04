@@ -251,7 +251,6 @@ class ResponseOfferSub(Action):
             cres = tracker.get_slot("credit")
             check = False
             if subs:
-                  # print(subs)
                   for sub in subs:
                         if sub != "học" and sub != "máy":
                               case.append(sub.lower())
@@ -260,7 +259,6 @@ class ResponseOfferSub(Action):
                               case.append(sub.lower())
             if cres:
                   cres = cres.split()
-                  # print(cres)
                   for cre in cres:
                         if cre.isdigit():
                               if int(cre) >= 100:
@@ -338,25 +336,24 @@ class ResponseYearSemester(Action):
             }
             
             year = tracker.get_slot("year")
-            print(year)
             semester = tracker.get_slot("semester")
-            print(semester)
             year_semester = tracker.get_slot("ysem")
             
+            print(year)
+            print(semester)
+            print(year_semester)
+            
             if year:
-                  # print(year)
                   year = {i for i in dyear if set([year.lower()]).issubset(set(dyear[i]))}
                   if year == None:
                         dispatcher.utter_message(text = "Vui lòng kiểm tra lại năm học")
                         return []
             if semester:
-                  # print(semester)
                   semester = {i for i in dsemester if set([semester.lower()]).issubset(set(dsemester[i]))}
                   if semester == None:
                         dispatcher.utter_message(text = "Vui lòng kiểm tra lại kỳ học")
                         return []
             if year_semester:
-                  print(year_semester)
                   year = {i for i in dys if set([year_semester.lower()]).issubset(set(dys[i]))}
                   semester = 2
             
@@ -370,7 +367,7 @@ class ResponseYearSemester(Action):
                         for key, value in CNTT[i].items():
                               if set(y).issubset(set([value[2]])) and set(s).issubset(set(value[3])):
                                     if index == 1:
-                                          dispatcher.utter_message(text = "Năm %s" %(tracker.get_slot("year")))
+                                          dispatcher.utter_message(text = "Năm %s Kỳ %s" %(y[0], s[0]))
                                     dispatcher.utter_message(text = "%d. %s" %(index, key))
                                     index += 1                       
             elif year:
