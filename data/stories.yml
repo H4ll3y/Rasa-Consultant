@@ -5,13 +5,11 @@ stories:
   steps:
     - intent: greet
     - action: utter_greet
-    - action: action_restart
 
 - story: story2
   steps:
     - intent: give_offer
     - action: utter_ask_info
-    - action: action_restart
 
 - story: story3
   steps:
@@ -19,7 +17,6 @@ stories:
       entities:
         - major
     - action: utter_response_info
-    - action: action_restart
 
 - story: story4
   steps:
