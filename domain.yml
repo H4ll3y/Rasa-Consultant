@@ -7,6 +7,7 @@ intents:
   - need_info_sub
   - need_offer_sub
   - year_semester
+  - thank_you
 
 actions:
   - response_info_sub
@@ -21,6 +22,7 @@ entities:
   - year
   - semester
   - ysem
+  - type
 
 slots:
   major:
@@ -71,6 +73,12 @@ slots:
     mappings:
     - type: from_entity
       entity: ysem
+  type:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: type
 
 responses:
   utter_greet:
@@ -81,6 +89,9 @@ responses:
 
   utter_response_info:
   - text: "Bạn học ngành {major}"
+
+  utter_thank_you:
+  - text: "Không có gì rất vui vì giúp được bạn"
 
 session_config:
   session_expiration_time: 60

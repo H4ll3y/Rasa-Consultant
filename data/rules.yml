@@ -33,3 +33,9 @@ rules:
       - intent: year_semester
       - action: response_year_semester
       - action: action_restart
+
+  - rule: rule7
+    steps:
+      - intent: thank_you
+      - action: utter_thank_you
+      - action: action_restart

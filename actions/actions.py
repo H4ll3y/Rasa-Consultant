@@ -199,46 +199,95 @@ class ResponseInfoSub(Action):
             return "response_info_sub"
 
       def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict) -> List[Dict[Text, Any]]:
-            sub = tracker.get_slot("subject").lower()
-            print(sub)
+            sub = tracker.get_slot("subject")
+            type = tracker.get_slot("type")
             
-            if sub == "thể chất" or sub == "thể dục" or sub == "giáo dục thể chất":
-                  dispatcher.utter_message(text = "Đây là môn giáo dục thể chất và đều là 1 tín chỉ:")
-                  dispatcher.utter_message(text = "1. Thể chất cơ bản\n2. Thể chất nâng cao\n3. Thế chất cổ truyền\n4. Bóng bàn\n5.Bóng rổ\n6. Bóng chuyền\n7. Bóng chuyền nâng cao")
-                  
-            case.append(sub)
-            check = False
-            for i in range(0, 5):
-                  for key, value in CNTT[i].items():
-                        if [key.lower()] == case:
-                              if i == 0:
-                                    dispatcher.utter_message(text = "Đây là môn thuộc các môn học đại cương")
-                              elif i == 1:
-                                    dispatcher.utter_message(text = "Đây là môn thuộc các môn học cơ sở khối ngành")
-                              elif i == 2:
-                                    dispatcher.utter_message(text = "Đây là môn thuộc các môn học phần bắt buộc")
-                              elif i == 3:
-                                    dispatcher.utter_message(text = "Đây là môn thuộc các môn học phần lựa chọn")
-                              elif i == 4:
-                                    dispatcher.utter_message(text = "Đây là môn thuộc các môn học thực tập, khóa luận và chuyên đề tốt nghiệp")
-                              dispatcher.utter_message(text = "Đây là số tín chỉ của môn %s: %d" % (key, value[0]))
-                              dispatcher.utter_message(text = "Để có thể đăng ký được môn học này cần đáp ứng yêu cầu sau:")
-                              for j in range(0, len(value[1])):
-                                    if isinstance(value[1][j], str):
-                                          check = True
-                                          dispatcher.utter_message(text = "Hoàn thành môn học tiên quyết: %s" % value[1][j])
-                                    else:
-                                          check = True
-                                          dispatcher.utter_message(text = "Cần có: %d tín chỉ" % value[1][j])
-                              text = "Bạn nên học môn này ở năm %d học kỳ " %value[2]
-                              for k in range(0, len(value[3])):
-                                    text += str(value[3][k]) + " "
-                              dispatcher.utter_message(text = text)
-                        elif case[0] in key.lower():
-                              dispatcher.utter_message(text = "%s" % key)
-                              check = True
-            if check == False:
-                  dispatcher.utter_message(text = "Vui lòng kiểm tra lại tên môn học!")
+            if sub == None and type == None:
+                  dispatcher.utter_message(text = "Vui lòng kiểm tra lại tên môn học")
+                  return []
+            
+            print(sub)
+            print(type)
+            
+            if type:
+                  text = ""
+                  type = type.lower()
+                  dtype = {
+                        0: ["đại cương", "học phần đại cương"],
+                        1: ["cơ sở khối ngành", "khối ngành", "học phần khối ngành"],
+                        2: ["học phần bắt buộc", "bắt buộc"],
+                        3: ["học phần lựa chọn", "lựa chọn"]
+                  }  
+                  t = {i for i in dtype if set([type]).issubset(set(dtype[i]))}
+                  t = list(t)
+                  index = 1
+                  if t[0] == 0:
+                        text += "Những môn thuộc đại cương:\n"
+                        for key, value in CNTT[t[0]].items():
+                              text += "%d. %s\n" %(index, key)
+                              index += 1
+                  elif t[0] == 1:
+                        text += "Những môn thuộc cơ sở khối ngành:\n"
+                        for key, value in CNTT[t[0]].items():
+                              text += "%d. %s\n" %(index, key)
+                              index += 1
+                  elif t[0] == 2:
+                        text += "Những môn thuộc học phần bắt buộc:\n"
+                        for key, value in CNTT[t[0]].items():
+                              text += "%d. %s\n" %(index, key)
+                              index += 1
+                  elif t[0] == 3:
+                        text += "Những môn thuộc học phần lựa chọn:\n"
+                        for key, value in CNTT[t[0]].items():
+                              text += "%d. %s\n" %(index, key)
+                              index += 1
+            
+            if sub:
+                  sub = sub.lower()  
+                  if sub == "thể chất" or sub == "thể dục" or sub == "giáo dục thể chất":
+                        dispatcher.utter_message(text = "Đây là môn giáo dục thể chất và đều là 1 tín chỉ:\n1. Thể chất cơ bản\n2. Thể chất nâng cao\n3. Thế chất cổ truyền\n4. Bóng bàn\n5.Bóng rổ\n6. Bóng chuyền\n7. Bóng chuyền nâng cao")
+                  if sub == "khóa luận tốt nghiệp" or sub == "khóa luận":
+                        case.append("KLTN".lower())
+                  elif sub == "chuyên đề tốt nghiệp" or sub == "chuyên đề":
+                        case.append("CĐTN".lower())
+                  else:
+                        case.append(sub)
+                  check = False
+                  text = ""
+                  for i in range(0, 5):
+                        for key, value in CNTT[i].items():
+                              if [key.lower()] == case:
+                                    if i == 0:
+                                          text += "Đây là môn thuộc các môn học đại cương"
+                                    elif i == 1:
+                                          text += "Đây là môn thuộc các môn học cơ sở khối ngành"
+                                    elif i == 2:
+                                          text += "Đây là môn thuộc các môn học phần bắt buộc"
+                                    elif i == 3:
+                                          text += "Đây là môn thuộc các môn học phần lựa chọn"
+                                    elif i == 4:
+                                          text += "Đây là môn thuộc các môn học thực tập, khóa luận và chuyên đề tốt nghiệp"
+                                    text += "\nSố tín chỉ của môn %s: %d\nĐể có thể đăng ký được môn học này cần đáp ứng yêu cầu sau:" % (key, value[0])
+                                    for j in range(0, len(value[1])):
+                                          if isinstance(value[1][j], str):
+                                                if check == False:
+                                                      text += "\nHoàn thành môn học tiên quyết:\n"
+                                                check = True
+                                                text += "%s\n" % value[1][j]
+                                          else:
+                                                check = True
+                                                text += "\nCần có: %d tín chỉ\n" % value[1][j]
+                                    text += "Bạn nên học môn này ở năm %d học kỳ " %value[2]
+                                    for k in range(0, len(value[3])):
+                                          text += str(value[3][k]) + " "
+                              elif case[0] in key.lower():
+                                    if check == False:
+                                          text += "Môn %s bao gồm:\n" %sub
+                                    text += "%s\n" %key
+                                    check = True
+                  if check == False:
+                        text += "Vui lòng kiểm tra lại tên môn học"
+            dispatcher.utter_message(text = text)
             case.clear()
             return []
 
@@ -274,6 +323,7 @@ class ResponseOfferSub(Action):
                                     case.append(100)
                                     check = True
             print(case)
+            text = ""
             if subs or cres:
                   index = 0
                   for i in range (0, 5):
@@ -289,23 +339,24 @@ class ResponseOfferSub(Action):
                                                 temp.append(v)
                                     if set(temp).issubset(set(case)):
                                           if index == 0:
-                                                dispatcher.utter_message(text = "Trường hợp của bạn có thể học được những môn học sau:")
+                                                text += "Trường hợp của bạn có thể học được những môn học sau:\n"
                                           index += 1
-                                          dispatcher.utter_message(text = "%d. %s" %(index, key))
+                                          text += "%d. %s\n" %(index, key)
                                     temp.clear()
                   if index == 0 and check:
-                        dispatcher.utter_message(text = "Những môn học này hiện tại không phải điều kiện tiên quyết của môn học nào")
+                        text += "Những môn học này hiện tại không phải điều kiện tiên quyết của môn học nào"
                   elif check == False:
-                        dispatcher.utter_message(text = "Vui lòng kiểm tra lại thông tin bạn cung cấp")
+                        text += "Vui lòng kiểm tra lại thông tin bạn cung cấp"
                   # index = 0
-                  # dispatcher.utter_message(text = "Bạn có thể học được những môn sau không có điều kiện tiên quyết khác như:")
+                  # text += "\nBạn có thể học được những môn sau không có điều kiện tiên quyết khác như:"
                   # for i in range (0, 5):
                   #       for key, value in CNTT[i].items():
                   #             if len(value) == 1 and set([key.lower()]).issubset(set(case)) == False:
                   #                   index += 1
-                  #                   dispatcher.utter_message(text = "%d. %s" %(index, key))
+                  #                   text += "%d. %s\n" %(index, key)
             else:
-                  dispatcher.utter_message(text = "Vui lòng kiểm tra thông tin cho yêu cầu của bạn!")
+                  text += "Vui lòng kiểm tra thông tin cho yêu cầu của bạn!"
+            dispatcher.utter_message(text = text)
             case.clear()
             return []
 
@@ -343,22 +394,24 @@ class ResponseYearSemester(Action):
             print(semester)
             print(year_semester)
             
+            text = ""
+            
             if year:
                   year = {i for i in dyear if set([year.lower()]).issubset(set(dyear[i]))}
                   if year == None:
-                        dispatcher.utter_message(text = "Vui lòng kiểm tra lại năm học")
+                        text += "Vui lòng kiểm tra lại năm học"
                         return []
             if semester:
                   semester = {i for i in dsemester if set([semester.lower()]).issubset(set(dsemester[i]))}
                   if semester == None:
-                        dispatcher.utter_message(text = "Vui lòng kiểm tra lại kỳ học")
+                        text += "Vui lòng kiểm tra lại kỳ học"
                         return []
             if year_semester:
                   year = {i for i in dys if set([year_semester.lower()]).issubset(set(dys[i]))}
                   semester = 2
             
             if year == None and semester:
-                  dispatcher.utter_message(text = "Vui lòng cung cấp thêm năm học")
+                  text += "Vui lòng cung cấp thêm năm học"
             elif year and semester:
                   y = list(year)
                   s = list(semester)
@@ -367,8 +420,8 @@ class ResponseYearSemester(Action):
                         for key, value in CNTT[i].items():
                               if set(y).issubset(set([value[2]])) and set(s).issubset(set(value[3])):
                                     if index == 1:
-                                          dispatcher.utter_message(text = "Năm %s Kỳ %s" %(y[0], s[0]))
-                                    dispatcher.utter_message(text = "%d. %s" %(index, key))
+                                          text += "Năm %s Kỳ %s\n" %(y[0], s[0])
+                                    text += "%d. %s\n" %(index, key)
                                     index += 1                       
             elif year:
                   y = list(year)
@@ -377,7 +430,8 @@ class ResponseYearSemester(Action):
                         for key, value in CNTT[i].items():
                               if set(y).issubset(set([value[2]])):
                                     if index == 1:
-                                          dispatcher.utter_message(text = "Năm %s" %(tracker.get_slot("year")))
-                                    dispatcher.utter_message(text = "%d. %s" %(index, key))
+                                          text += "Năm %s\n" %(tracker.get_slot("year"))
+                                    text += "%d. Môn %s [Học kỳ %s]\n" %(index, key, value[3])
                                     index += 1
+            dispatcher.utter_message(text = text)
             return []

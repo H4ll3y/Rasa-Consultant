@@ -2,223 +2,268 @@ version: "3.1"
 constrain_similarities: true
 
 nlu:
-- intent: greet
-  examples: |
-    - Xin chào
-    - Chào bạn
-    
-- intent: give_offer
-  examples: |
-    - Bạn có thể hỗ trợ tôi được không?
-    - Tôi cần hỗ trợ
+  - intent: greet
+    examples: |
+      - Xin chào
+      - Chào bạn
+      
+  - intent: give_offer
+    examples: |
+      - Bạn có thể hỗ trợ tôi được không?
+      - Tôi cần hỗ trợ
 
-- intent: give_info
-  examples: |
-    - Tôi học ngành [Công nghệ thông tin](major)
-    - Tôi học [Khoa học máy tính](major)
-    - [Công nghệ thông tin](major)
-    - [Khoa học máy tính](major)
-    - Mình ngành [Công nghệ thông tin](major)
-    - Mình học [Khoa học máy tính](major)
-    - Tớ ngành [Công nghệ thông tin](major)
-    - Tớ học ngành [Khoa học máy tính](major)
-    - Ngành [Công nghệ thông tin](major)
-    - Tớ theo [Công nghệ thông tin](major)
-    - Mình đang học [Công nghệ thông tin](major)
-    - Tớ đang học ngành [Công nghệ thông tin](major)
+  - intent: give_info
+    examples: |
+      - Tôi học ngành [Công nghệ thông tin](major)
+      - Tôi học [Khoa học máy tính](major)
+      - [Công nghệ thông tin](major)
+      - [Khoa học máy tính](major)
+      - Mình ngành [Công nghệ thông tin](major)
+      - Mình học [Khoa học máy tính](major)
+      - Tớ ngành [Công nghệ thông tin](major)
+      - Tớ học ngành [Khoa học máy tính](major)
+      - Ngành [Công nghệ thông tin](major)
+      - Tớ theo [Công nghệ thông tin](major)
+      - Mình đang học [Công nghệ thông tin](major)
+      - Tớ đang học ngành [Công nghệ thông tin](major)
 
-- intent: need_info_sub
-  examples: |
-    - Tôi cần chi tiết môn [Tiếng Anh sơ trung cấp 2](subject)
-    - Thông tin môn [Tiếng Anh sơ trung cấp 1](subject) là gì?
-    - Chi tiết [Học máy](subject)
-    - Tôi cần biết thông tin về môn [Tiếng Anh trung cấp 3](subject)
-    - Tôi muốn biết về môn [Tiếng Nhật 2](subject)
-    - Cho tôi thông tin về môn [Giải tích 2](subject)
-    - Cho tôi biết thêm về môn [Tiếng Ý 2](subject)
-    - Tớ cần biết về môn [Lập trình hướng đối tượng](subject)
-    - Em muốn biết thêm về môn [Cơ sở dữ liệu](subject)
-    - Mình muốn thông tin về môn [Học máy](subject)
-    - Tớ muốn có chi tiết về môn [Kiến trúc máy tính](subject)
-    - Mình cần thêm chi tiết về môn [Số và cấu trúc đại số](subject)
-    - Cho tớ biết thông tin môn [Ngôn ngữ lập trình](subject)
-    - Thông tin môn học [Đồ họa](subject)
-    - Chi tiết môn [Giao diện người máy](subject)
-    - Cho tớ biết chi tiết môn [Giáo dục quốc phòng](subject)
-    - Thông tin môn [Giáo dục thể chất](subject)
-    - Chi tiết môn học [Kiến trúc máy tính](subject)
-    - Thông tin cụ thể môn [An toàn thông tin](subject)
-    - Cụ thể về môn [Công dân số](subject)
-    - Thông tin môn học [Triết học Mác-Lênin](subject)
-    - Thông tin chi tiết môn [Đường lối cách mạng của Đảng CS Việt Nam](subject)
-    - Chi tiết thông tin [Tiếng anh sơ trung cấp 2](subject)
-    - Thông tin môn [Project](subject)
-    - Mình cần thông tin 1 số môn [Giáo dục thể chất](subject)
-    - Tớ muốn học 1 số môn [Thể dục](subject)
-    - Một số môn [Thể chất](subject) ở trường là gì thế?
-    - [Thể dục](subject) ở trường gồm có những môn gì?
+  - intent: need_info_sub
+    examples: |
+      - Thông tin [CĐTN: Phát triển phần mềm](subject) 
+      - Chi tiết cụ thể [CĐTN: Phát triển phần mềm](subject) là gì?
+      - Mình cần thông tin chuyên đề [CĐTN: Phát triển phần mềm](subject)
+      - Tớ muôn biết chi tiết chuyên đề [CĐTN: Phát triển phần mềm](subject)
+      - Tôi cần cụ thể chuyên đề [CĐTN: Cơ sở dữ liệu](subject)
+      - Chi tiết [CĐTN: Cơ sở dữ liệu](subject) là gì?
+      - Cụ thể chi tiết [CĐTN: Cơ sở dữ liệu](subject)
+      - 1 số thông tin [CĐTN: Cơ sở dữ liệu](subject)
+      - 1 số thông tin [KLTN ngành CNTT](subject)
+      - Chi tiết cụ thể [KLTN ngành CNTT](subject)
+      - Thông tin thêm [KLTN ngành CNTT](subject)
+      - Thông tin [khóa luận](subject)
+      - Thông tin [chuyên đề](subject)
+      - Cụ thể thông tin [khóa luận](subject)
+      - Cụ thể chi tiết [chuyên đề](subject)
+      - Thêm thông tin về chuyên đề [CĐTN: Cơ sở dữ liệu](subject) là gì?
+      - Thông tin [Chuyên đề tốt nghiệp](subject)
+      - Thông tin [Khóa luận tốt nghiệp](subject) là gì?
+      - Cho tôi chi tiết thông tin cụ thể của [Khóa luận tốt nghiệp](subject)
+      - Tôi cần chi tiết cụ thể  [Chuyên đề tốt nghiệp](subject)
+      - Cụ thể [Khóa luận tốt nghiệp](subject)
+      - Chi tiết [Chuyên đề tốt nghiệp](subject)
+      - Tôi cần chi tiết môn [Tiếng Anh sơ trung cấp 2](subject)
+      - Thông tin môn [Tiếng Anh sơ trung cấp 1](subject) là gì?
+      - Chi tiết [Học máy](subject)
+      - Tôi cần biết thông tin về môn [Tiếng Anh trung cấp 3](subject)
+      - Tôi muốn biết về môn [Tiếng Nhật 2](subject)
+      - Cho tôi thông tin về môn [Giải tích 2](subject)
+      - Cho tôi biết thêm về môn [Tiếng Ý 2](subject)
+      - Tớ cần biết về môn [Lập trình hướng đối tượng](subject)
+      - Em muốn biết thêm về môn [Cơ sở dữ liệu](subject)
+      - Mình muốn thông tin về môn [Học máy](subject)
+      - Tớ muốn có chi tiết về môn [Kiến trúc máy tính](subject)
+      - Mình cần thêm chi tiết về môn [Số và cấu trúc đại số](subject)
+      - Cho tớ biết thông tin môn [Ngôn ngữ lập trình](subject)
+      - Thông tin môn học [Đồ họa](subject)
+      - Chi tiết môn [Giao diện người máy](subject)
+      - Cho tớ biết chi tiết môn [Giáo dục quốc phòng](subject)
+      - Thông tin môn [Giáo dục thể chất](subject)
+      - Chi tiết môn học [Kiến trúc máy tính](subject)
+      - Thông tin cụ thể môn [An toàn thông tin](subject)
+      - Cụ thể về môn [Công dân số](subject)
+      - Thông tin môn học [Triết học Mác-Lênin](subject)
+      - Thông tin chi tiết môn [Đường lối cách mạng của Đảng CS Việt Nam](subject)
+      - Chi tiết thông tin [Tiếng anh sơ trung cấp 2](subject)
+      - Thông tin môn [Project](subject)
+      - Mình cần thông tin 1 số môn [Giáo dục thể chất](subject)
+      - Tớ muốn học 1 số môn [Thể dục](subject)
+      - Một số môn [Thể chất](subject) ở trường là gì thế?
+      - [Thể dục](subject) ở trường gồm có những môn gì?
+      - Tôi cần cụ thể các môn [Học phần bắt buộc](type)
+      - Tớ muốn biết các môn [Học phần lựa chọn](type)
+      - Chi tiết 1 số môn thuộc các môn [lựa chọn](type)
+      - Các môn [bắt buộc](type) cần học là gì?
+      - Cho tôi biết các môn [đại cương](type) gồm môn gì?
+      - Các môn [Cơ sở khối ngành](type) là gì?
+      - Các môn [Học phần đại cương](type) là gì?
+      - Chi tiết 1 số môn [Học phần khối ngành](type)
+      - Danh sách các môn [Khối ngành](type) là gì?
+      - Danh sách 1 vài môn học thuộc [Học phần lựa chọn](type)
+      - Các môn [lựa chọn](type) của ngành là gì?
+      - Tôi muốn có danh sách các môn [Đại cương](type) của ngành
 
-- intent: need_offer_sub
-  examples: |
-    - Hoàn thành các môn học [Đồ họa](list), [An toàn thông tin](list), [An toàn mạng](list)
-    - [101 tín chỉ](credit) và qua các môn [Kiến trúc máy tính](list) và [Nguyên lý hệ điều hành](list)
-    - [Lập trình hướng đối tượng](list), [Hệ thống thông tin](list) và [110 tín chỉ](credit)
-    - Mình đã xong môn [Ngôn ngữ lập trình](list) và đang có [100 tín chỉ](credit)
-    - Mình qua môn [Số và cấu trúc đại số](list) mình nên học gì đây?
-    - Tôi đã học môn [Tiếng Ý 1](list)
-    - Tớ đã qua môn [Kỹ thuật số](list)
-    - Tôi đang có [120 tín chỉ](credit) và môn [Giải tích 1](list), [Tiếng Anh trung cấp 2](list)
-    - Tôi đã học [Mạng máy tính](list)
-    - Tôi học [110 tín chỉ](credit)
-    - Hoàn thành môn [Tiếng Anh trung cấp 2](list), [110 tín chỉ](credit) môn [Một số vấn đề hiện đại trong khoa học máy tính](list)
-    - Qua môn [Lập trình Python](list), [Lập trình ứng dụng di động](list)
-    - Hiện đang có [110 tín chỉ](credit) và qua các môn [Dữ liệu lớn](list), [Hệ quản trị cơ sở dữ liệu](list)
-    - Mình có thể học những môn gì khi đã qua các môn [Hệ thống thông tin](list), [Mạng máy tính](list), [Kiến trúc máy tính](list)
-    - Khi học xong các môn [Hệ thống thông tin nâng cao](list), [Phân tích và thiết kế thuật toán](list)
-    - Hoàn thành 1 số môn sau [Lý thuyết thông tin và mã hóa](list), [Dự án Công nghệ thông tin](list)
-    - Tôi đã học 2 môn sau [Giải tích 1](list) và [Giải tích 2](list)
-    - Mình học 3 môn [Tiếng Hàn 1](list), [Tiếng Pháp 1](list), [Tiếng Trung 1](list)
-    - Hoàn thành xong 1 số môn [Đường lối cách mạng của Đảng CS Việt Nam](list), [Công dân số](list)
-    - Tớ đã có môn [Logic, suy luận toán học và kỹ thuật đếm](list), [Tin đại cương](list), [Khoa học môi trường](list)
-    - Tôi đã học [Tiếng Anh sơ cấp 1](list), [Tiếng Anh sơ cấp 2](list)
-    - Đã học các môn [Tiếng Anh trung cấp 1](list), [Giáo dục thể chất](list), [Giáo dục quốc phòng](list)
-    - Mình có [100 tín chỉ](credit) và đã học [Cơ sở dữ liệu](list)
-    - Tôi có [110 tín chỉ](credit)
-    - Mĩnh đã qua được môn [Ngôn ngữ hình thức và Otomat](list)
-    - Tớ có [109 tín chỉ](credit) học [Học máy](list)
-    - Tớ đã học môn [Tiếng Anh sơ cấp 1](list), [Tiếng Nhật 1](list) có [100 tín chỉ](credit)
-    - Mình đã học môn [Giải tích 2](list), [Kiểm thử và đảm bảo chất lượng phần mềm](list)
-    - Mình đã hoàn thành môn [Tiếng Anh trung cấp 1](list), [Lập trình Java](list)
-    - Mình đã có [100 tín chỉ](credit) và hoàn thành các môn [Đại số tuyến tính](list), [Cấu trúc dữ liệu](list), [Toán rời rạc](list)
-    - Tớ đã học được [90 tín chỉ](credit) và có các môn [Hệ thống thông tin](list), [Phân tích và thiết kế hệ thống thông tin](list), [Khai phá dữ liệu](list)
-    - Với [100 tín chỉ](credit) và môn [Hệ điều hành Linux] mình có thể  học được những gì?
-    - Đã học các môn [Lập trình hệ thống](list), [Lập trình PHP](list) và [Công nghệ Web](list) với [100 tín chỉ](credit) thì tôi có thể học những môn gì?
-    - Mình đã học [Học máy](list)
-    - Tớ học môn [Học máy](list)
-    - Tôi đã hoàn thành môn học [Học máy](list) [110 tín](credit)
-    - Đã qua môn [Học máy](list) và [90 tín](credit)
-    - Đã hoàn thành [Học máy](list) [100 tín](credit)
-    - Mình đã học xong [110 tín](credit) và môn [Học máy](list)
-    - Tôi đã học [Tiếng Trung 1](list) và [Tiếng Ý 1](list), [110 tín](credit)
-    - Tôi có thể học được những gì khi đã học các môn [Tiếng Trung 1](list), [Tiếng Ý 1](list), [Tiếng Pháp 2](list)?
-    - Mình đã xong [Tiếng Pháp 1](list) và [100 tín](credit)
-    - Mình có thể học gì khi đã xong các môn [Tiếng Ý 1](list), và [90 tín](credit)
-    - Mình đã xong môn [Học máy](list) ở kỳ trước
-    - Tôi đã qua được [Học máy](list) ở kỳ trước và có thể học gì?
-    - [Tiếng anh trung cấp 3](list) và [90 tín chỉ] có thể đăng ký môn gì?
-    - [Tiếng Ý 2](list), [Tiếng Pháp 1](list), [Tiếng Trung 1](list) sẽ học được những môn gì?
-    - [Tiếng Pháp 2](list) và [Tiếng anh sơ cấp 1] mình có thể đăng ký những môn gì?
-    - Tớ có thể đăng ký học những môn gì khi đã học xong [Học máy](list), [Tiếng Pháp 1](list), [Tiếng anh sơ trung cấp 2](list) và [100 tín](credit)
-    - Mình đã học hết [Tiếng Anh sơ cấp 1](list), [90 tín chỉ](credit), [Tiếng Anh sơ cấp 2](list), [Tiếng Anh sơ cấp 3](list), [Tiếng Anh sơ trung cấp 1](list), [Tiếng Anh sơ trung cấp 2](list)
-    - Mình có [Tiếng Anh sơ trung cấp 3](list), [Tiếng Anh trung cấp 1](list), [Tiếng Anh trung cấp 2](list) [110 tín chỉ](credit)
-    - Đã có [100 tín](credit) qua môn [Tiếng Anh trung cấp 3](list), [Tiếng Pháp 1](list), [Tiếng Pháp 2](list), [Tiếng Nhật 1](list)
-    - Tớ đã xong [Tiếng Nhật 2](list), [Tiếng Trung 1](list), [Tiếng Trung 2](list), [Tiếng Ý 2](list) [90 tín chỉ](credit)
-    - Tôi hoàn thành [Tiếng Hàn 1](list), [Tiếng Hàn 2](list), [Giải tích 1](list), [Giải tích 2](list) [100 tín chỉ](credit)
-    - Tôi đã xong [học máy](list)
-    - Mình hoàn thành môn học [học máy](list)
-    - Đã hoàn thành môn [học máy](list)
-    - Mình đã học [học máy](list)
-    - Nếu hoàn thành xong [Lập trình ứng dụng di động](list) thì sẽ có thể học hay đăng ký môn học gì tiếp theo?
-    - Tôi đã học môn học [Đường lối cách mạng của Đảng CS Việt Nam](list)
-    - Mình đã học 1 số môn học sau [Kiểm thử và đảm bảo chất lượng phần mềm](list) [Quản lý dự án phần mềm](list) [Tiếng Anh sơ trung cấp 2](list) và [An toàn mạng](list) thì có thể học môn nào?
-    - Tớ có học 1 số môn [Tiếng Ý 1](list) [Project](list) và [Trí tuệ nhân tạo và công nghệ tri thức](list) có thể học gì?
-    - Đã hoàn thành 2 môn học [Lập trình .Net](list) và [Lập trình Java](list) thì có thể đăng ký môn học nào?
-    - Tôi đã học [Công nghệ Web](list) [Internet of thing](list) thì tôi có thể học cái gì?
-    - Nếu đã hoàn thành 1 vài môn như [Lập trình Python](list) [Lập trình hướng đối tượng](list) thì có thể học những môn nào?
-    - Giả sử đã xong các môn học như [Công nghệ phần mềm](list) và [Tiếng Anh trung cấp 1](list) thì học gì được?
-    - Mình có thể đăng ký môn học gì khi đã học [Phân tích và thiết kế thuận toán](list) có [100 tín chỉ](credit)?
-    - Mình đang học [Đồ họa](list) và môn [Giao diện người máy](list) thì có thể đăng ký môn học gì?
-    - Hoàn thành 1 số môn học như [Học máy](list) [Kiểm thử và đảm bảo chất lượng phần mềm](list) có thể học môn gì?
-    - [Tiếng Anh trung cấp 2](list) và [Tiếng Ý 2](list) học môn gì tiếp theo?
-    - [Tiếng Anh sơ trung cấp 3](list) và [100 tín chỉ](credit) có thể đăng ký môn học nào?
-    - Nếu đã hoàn thành 1 số môn học như [Tiếng Anh sơ cấp 1](list) và có [100 tín chỉ](credit) thì đăng ký được những môn học gì?
-    - Giả sử mình đã học [Lập trình hệ thống](list) [Khai phá dữ liệu](list) [Tiếng Pháp 1](list) và [110 tín chỉ](credit) những môn học nào được đăng ký?
-    - Mình đã qua 1 số môn học [Thiết kết và quản trị mạng](list), [Dự án công nghệ thông tin](list), [Lý thuyết thông tin và mã hóa](list), và [90 tín](credit) mình sẽ đăng ký được những môn gì?
-    - Tôi đã qua môn học như [Hệ điều hành Linux](list), [An toàn thông tin](list), [Lập trình hệ thống](list) thì học được gì?
-    - Đã qua 1 số môn như [Project](list), [Lập trình PHP](list) [Kỹ thuật số](list) [Xác xuất thống kê](list) thì đăng ký môn gì?
-    - Mình có [Xác xuất thống kê](list), [Toán rời rạc](list) [Kỹ thuật số](list), [Số và cấu trúc đại số](list) và [100 tín chỉ](credit) thì học môn gì tiếp theo?
-    - [Tiếng Hàn 1](list) [Tiếng Pháp 1](list) [Tiếng Trung 1](list) thì học được những môn tiếng gì?
-    - Đã học môn học [Triết học Mác-Lênin](list), [Kinh tế chính trị và CNXH khoa học](list) và [Tư tưởng Hồ Chí Minh](list) thì học cái gì tiếp theo?
-    - [Tin đại cương](list), [Khoa học môi trường](list) và [Kinh tế học đại cương](list) nên học môn học gì?
-    - Tôi đã học [Tiếng Việt thực hành](list), [Pháp luật đại cương](list), [Tiếng Anh trung cấp 3](list) và [100 tín](credit) nên học gì?
-    - Tớ có [Tiếng Hàn 1](list) [Tiếng Pháp 1](list), [Tiếng Ý 1](list) và [Tiếng Anh trung cấp 2](list) [110 tín chỉ](credit) có thể học môn học gì?
-    - Tôi học [học máy](list), [Tiếng Anh sơ cấp 1](list) và có [110 tín chỉ](credit) thì học gì?
-    - Mình đã học [học máy](list) và đã học thêm 1 số môn [Công dân số](list), [Tiếng Anh sơ trung cấp 1](list)
-    - Tớ đã học [học máy](list), học môn [Tiếng Anh sơ cấp 1](list) có thể đăng ký học thêm môn gì?
-    - Đã học xong [học máy](list), thì nên học gì?
-    - Với 1 số môn học [Lập trình Python](list), [Tiếng Anh sơ cấp 2], [học máy](list) những môn học này thì có thể học môn học nào?
-    - Với vài môn học như [Tiếng Trung 1](list), [Công dân số](list) và [100 tín](credit) những môn này học môn gì?
-    - 1 số môn học mình đã học như [Lập trình .Net](list), [Kỹ thuật số](list), [Project](list) có thể học môn học gì?
-    - Tớ đã học 1 số môn học [Lập trình ứng dụng di động](list), [Cấu trúc dữ liệu](list) và [100 tín chỉ](credit)
-    - Mình đã học [Lập trình hướng đối tượng](list)
-    - Môn học [Học máy](list) có phải điều kiện tiên quyết cho môn học nào không?
-    - [Tiếng Anh trung cấp 1](list) có thể học được gì?
-    
-- intent: year_semester
-  examples: |
-    - Hiện tại tôi đang học năm [nhất](year) thì nên học gì?
-    - Tôi đang học năm [2](year) thì đăng ký gì?
-    - Tớ học năm [hai](year) nên đăng ký môn học gì?
-    - Năm [3](year) học gì?
-    - Kỳ [1](semester) năm [nhất](year) học môn gì?
-    - Kỳ [một](semester) năm [ba](year) học môn gì?
-    - Tôi sắp đăng ký học cho kỳ [3](semester) năm [1](year) tôi nên chọn môn gì?
-    - Năm [hai](year) kỳ [3](semester) nên học gì?
-    - Tôi học [2 năm rưỡi](ysem) nên học gì?
-    - Tôi đang chuẩn bị đăng ký học tôi nên học môn gì hiện tại tôi đã học được [ba năm rưỡi](ysem) rồi?
-    - Đang học năm [ba](year) kỳ [1](semester) tôi nên học môn gì trong kỳ này?
-    - Tôi chuẩn bị học năm [nhất](year) kỳ [3](semester) tôi nên học môn gì trong kỳ này?
-    - Tớ đang học [nửa năm 2](ysem) thì đăng ký môn gì?
-    - Tôi đang học [2 năm rưỡi](ysem) thì nên học gì trong năm nay?
-    - Tớ hiện tại đang là năm [3](year) và kỳ [2](semester) nên đăng ký gì?
-    - Mình học được [ba năm rưỡi](ysem) rồi mình nên đăng ký gì?
-    - Mình đã học [nửa năm hai](ysem) mình nên đăng ký môn gì kỳ tiếp theo?
-    - Kỳ này là kỳ [3](semester) năm [2](year) thì mình nên học gì đây?
-    - Năm [4](year) kỳ [1](semester) tôi nên đăng ký môn học gì?
-    - Năm [nhất](year) học kỳ [hai](semester) tôi nên học gì tiếp theo?
-    - Năm [2](year) thì tôi nên học môn học gì trong năm này?
-    - Tôi đã học được [nửa năm](ysem) tôi nên học gì trong kỳ này?
-    - Tôi hoàn thành xong kỳ [2](semester) năm [nhất](year) tôi nên học gì trong năm nay?
-    - Tớ chuẩn bị lên năm [2](semester) tớ nên học gì đây?
-    - Mình chuẩn bị đăng ký học cho kỳ [3](semester) năm [3](year) thì mình nên đăng ký những môn học gì?
-    - Em đang lên kế hoạch học tập cho năm [cuối](year) em nên học tập như thế nào ạ?
-    - Học gì trong kỳ [3](semester) năm [2](year)?
-    - Những môn tôi cần học ở năm học [cuối](year) là gì?
-    - Đã học được [2 năm rưỡi](ysem) tôi nên học gì tiếp theo?
-    - Tôi cần lời khuyên cho năm [3](year)
-    - Tôi cần lộ trình học tập cho năm [2](year) kỳ [1](semester)
-    - Tớ muốn biết mình nên học gì cho năm [cuối](year) ở trường?
-    - Tớ đã học được [nửa năm](ysem) tớ nên học gì đây?
-    - Em muốn biết lộ trình năm [ba](year) để lên kế hoạch học tập cho phù hợp
-    - Cho mình hỏi là hiện tại mình đang là năm [cuối](year) thì mình nên bắt đầu học những gì?
-    - Cho em hỏi năm [hai](year) kỳ [hai](semester) thì nên học gì ạ?
-    - Tôi học năm [nhất](year) đại học
-    - Tớ năm [hai](year) đại học
-    - Mình đang học năm [ba](year) đại học
-    - Tớ chuẩn bị học năm [1](year) đại học
-    - Năm [3](year) đại học kỳ [2](semester)
-    - Kỳ [2](semester) đại học năm [ba](year)
-    - Kỳ này là kỳ [1](semester) năm [hai](year) đại học
-    - Mình học [2 năm rưỡi](ysem) đại học
-    - Kỳ [3](semester) năm [2](year)
-    - Năm [nhất](year) kỳ [ba](semester)
-    - [Nửa năm](ysem) đại học thì học gì tiếp theo?
-    - Mình học được [2](year) năm rồi
-    - Hiện tại tôi đang chuẩn bị học kỳ [2](semester) năm [nhất](year) thì nên chuẩn bị học môn gì?
-    - Tôi đang học năm [ba](year) kỳ [3](semester) thì cần học gì?
-    - Kỳ [một](semester) năm [một](year) thì học gì?
-    - Kỳ [cuối](semester) của năm [2](year) nên đăng ký học những môn học gì?
-    - Năm [cuối](year) kỳ học [cuối](semester) thì nên học gì?
-    - Năm học thứ [3](year) thì lộ trình học là gì?
-    - Năm học thứ [nhất](year) kỳ học thứ [2](semester) thì học gì?
-    - Kỳ học [cuối](semester) của năm học [3](year) thì tôi nên học môn gì tiếp theo?
-    - Tôi đang chuẩn bị lên học kỳ [một](semester) năm [ba](year) hãy cho tôi xin lộ trình học
-    - Đã học được [một năm rưỡi](ysem) tiếp theo tôi nên học môn gì?
-    - Tôi đã học được [2 năm rưỡi](ysem) kỳ tới tôi nên đăng ký môn học gì?
-    - Tôi cần thông tin lộ trình cho năm [ba](year) kỳ [hai](semester)
-    - Em đã học [một năm rưỡi](ysem) rồi lộ trình học tiếp theo của em là gì?
-    - [Ba năm rưỡi](ysem) đã học thì tiếp theo nên học gì?
-    - Em đã học [2 năm rưỡi](ysem) đaị học thì lộ trình tiếp theo là gì?
-    - Em đã học được [nửa năm](ysem) đại học
-    - Tớ đang chuẩn bị lên năm [2](year) kỳ [2](semester) tớ muốn biết lộ trình học tiếp theo của tớ
-    - Tớ học kỳ [một](semester) năm [nhất](year) thì lộ trình kỳ này là gì?
+  - intent: need_offer_sub
+    examples: |
+      - Hoàn thành các môn học [Đồ họa](list), [An toàn thông tin](list), [An toàn mạng](list)
+      - [101 tín chỉ](credit) và qua các môn [Kiến trúc máy tính](list) và [Nguyên lý hệ điều hành](list)
+      - [Lập trình hướng đối tượng](list), [Hệ thống thông tin](list) và [110 tín chỉ](credit)
+      - Mình đã xong môn [Ngôn ngữ lập trình](list) và đang có [100 tín chỉ](credit)
+      - Mình qua môn [Số và cấu trúc đại số](list) mình nên học gì đây?
+      - Tôi đã học môn [Tiếng Ý 1](list)
+      - Tớ đã qua môn [Kỹ thuật số](list)
+      - Tôi đang có [120 tín chỉ](credit) và môn [Giải tích 1](list), [Tiếng Anh trung cấp 2](list)
+      - Tôi đã học [Mạng máy tính](list)
+      - Tôi học [110 tín chỉ](credit)
+      - Hoàn thành môn [Tiếng Anh trung cấp 2](list), [110 tín chỉ](credit) môn [Một số vấn đề hiện đại trong khoa học máy tính](list)
+      - Qua môn [Lập trình Python](list), [Lập trình ứng dụng di động](list)
+      - Hiện đang có [110 tín chỉ](credit) và qua các môn [Dữ liệu lớn](list), [Hệ quản trị cơ sở dữ liệu](list)
+      - Mình có thể học những môn gì khi đã qua các môn [Hệ thống thông tin](list), [Mạng máy tính](list), [Kiến trúc máy tính](list)
+      - Khi học xong các môn [Hệ thống thông tin nâng cao](list), [Phân tích và thiết kế thuật toán](list)
+      - Hoàn thành 1 số môn sau [Lý thuyết thông tin và mã hóa](list), [Dự án Công nghệ thông tin](list)
+      - Tôi đã học 2 môn sau [Giải tích 1](list) và [Giải tích 2](list)
+      - Mình học 3 môn [Tiếng Hàn 1](list), [Tiếng Pháp 1](list), [Tiếng Trung 1](list)
+      - Hoàn thành xong 1 số môn [Đường lối cách mạng của Đảng CS Việt Nam](list), [Công dân số](list)
+      - Tớ đã có môn [Logic, suy luận toán học và kỹ thuật đếm](list), [Tin đại cương](list), [Khoa học môi trường](list)
+      - Tôi đã học [Tiếng Anh sơ cấp 1](list), [Tiếng Anh sơ cấp 2](list)
+      - Đã học các môn [Tiếng Anh trung cấp 1](list), [Giáo dục thể chất](list), [Giáo dục quốc phòng](list)
+      - Mình có [100 tín chỉ](credit) và đã học [Cơ sở dữ liệu](list)
+      - Tôi có [110 tín chỉ](credit)
+      - Mĩnh đã qua được môn [Ngôn ngữ hình thức và Otomat](list)
+      - Tớ có [109 tín chỉ](credit) học [Học máy](list)
+      - Tớ đã học môn [Tiếng Anh sơ cấp 1](list), [Tiếng Nhật 1](list) có [100 tín chỉ](credit)
+      - Mình đã học môn [Giải tích 2](list), [Kiểm thử và đảm bảo chất lượng phần mềm](list)
+      - Mình đã hoàn thành môn [Tiếng Anh trung cấp 1](list), [Lập trình Java](list)
+      - Mình đã có [100 tín chỉ](credit) và hoàn thành các môn [Đại số tuyến tính](list), [Cấu trúc dữ liệu](list), [Toán rời rạc](list)
+      - Tớ đã học được [90 tín chỉ](credit) và có các môn [Hệ thống thông tin](list), [Phân tích và thiết kế hệ thống thông tin](list), [Khai phá dữ liệu](list)
+      - Với [100 tín chỉ](credit) và môn [Hệ điều hành Linux] mình có thể  học được những gì?
+      - Đã học các môn [Lập trình hệ thống](list), [Lập trình PHP](list) và [Công nghệ Web](list) với [100 tín chỉ](credit) thì tôi có thể học những môn gì?
+      - Mình đã học [Học máy](list)
+      - Tớ học môn [Học máy](list)
+      - Tôi đã hoàn thành môn học [Học máy](list) [110 tín](credit)
+      - Đã qua môn [Học máy](list) và [90 tín](credit)
+      - Đã hoàn thành [Học máy](list) [100 tín](credit)
+      - Mình đã học xong [110 tín](credit) và môn [Học máy](list)
+      - Tôi đã học [Tiếng Trung 1](list) và [Tiếng Ý 1](list), [110 tín](credit)
+      - Tôi có thể học được những gì khi đã học các môn [Tiếng Trung 1](list), [Tiếng Ý 1](list), [Tiếng Pháp 2](list)?
+      - Mình đã xong [Tiếng Pháp 1](list) và [100 tín](credit)
+      - Mình có thể học gì khi đã xong các môn [Tiếng Ý 1](list), và [90 tín](credit)
+      - Mình đã xong môn [Học máy](list) ở kỳ trước
+      - Tôi đã qua được [Học máy](list) ở kỳ trước và có thể học gì?
+      - [Tiếng anh trung cấp 3](list) và [90 tín chỉ] có thể đăng ký môn gì?
+      - [Tiếng Ý 2](list), [Tiếng Pháp 1](list), [Tiếng Trung 1](list) sẽ học được những môn gì?
+      - [Tiếng Pháp 2](list) và [Tiếng anh sơ cấp 1] mình có thể đăng ký những môn gì?
+      - Tớ có thể đăng ký học những môn gì khi đã học xong [Học máy](list), [Tiếng Pháp 1](list), [Tiếng anh sơ trung cấp 2](list) và [100 tín](credit)
+      - Mình đã học hết [Tiếng Anh sơ cấp 1](list), [90 tín chỉ](credit), [Tiếng Anh sơ cấp 2](list), [Tiếng Anh sơ cấp 3](list), [Tiếng Anh sơ trung cấp 1](list), [Tiếng Anh sơ trung cấp 2](list)
+      - Mình có [Tiếng Anh sơ trung cấp 3](list), [Tiếng Anh trung cấp 1](list), [Tiếng Anh trung cấp 2](list) [110 tín chỉ](credit)
+      - Đã có [100 tín](credit) qua môn [Tiếng Anh trung cấp 3](list), [Tiếng Pháp 1](list), [Tiếng Pháp 2](list), [Tiếng Nhật 1](list)
+      - Tớ đã xong [Tiếng Nhật 2](list), [Tiếng Trung 1](list), [Tiếng Trung 2](list), [Tiếng Ý 2](list) [90 tín chỉ](credit)
+      - Tôi hoàn thành [Tiếng Hàn 1](list), [Tiếng Hàn 2](list), [Giải tích 1](list), [Giải tích 2](list) [100 tín chỉ](credit)
+      - Tôi đã xong [học máy](list)
+      - Mình hoàn thành môn học [học máy](list)
+      - Đã hoàn thành môn [học máy](list)
+      - Mình đã học [học máy](list)
+      - Nếu hoàn thành xong [Lập trình ứng dụng di động](list) thì sẽ có thể học hay đăng ký môn học gì tiếp theo?
+      - Tôi đã học môn học [Đường lối cách mạng của Đảng CS Việt Nam](list)
+      - Mình đã học 1 số môn học sau [Kiểm thử và đảm bảo chất lượng phần mềm](list) [Quản lý dự án phần mềm](list) [Tiếng Anh sơ trung cấp 2](list) và [An toàn mạng](list) thì có thể học môn nào?
+      - Tớ có học 1 số môn [Tiếng Ý 1](list) [Project](list) và [Trí tuệ nhân tạo và công nghệ tri thức](list) có thể học gì?
+      - Đã hoàn thành 2 môn học [Lập trình .Net](list) và [Lập trình Java](list) thì có thể đăng ký môn học nào?
+      - Tôi đã học [Công nghệ Web](list) [Internet of thing](list) thì tôi có thể học cái gì?
+      - Nếu đã hoàn thành 1 vài môn như [Lập trình Python](list) [Lập trình hướng đối tượng](list) thì có thể học những môn nào?
+      - Giả sử đã xong các môn học như [Công nghệ phần mềm](list) và [Tiếng Anh trung cấp 1](list) thì học gì được?
+      - Mình có thể đăng ký môn học gì khi đã học [Phân tích và thiết kế thuận toán](list) có [100 tín chỉ](credit)?
+      - Mình đang học [Đồ họa](list) và môn [Giao diện người máy](list) thì có thể đăng ký môn học gì?
+      - Hoàn thành 1 số môn học như [Học máy](list) [Kiểm thử và đảm bảo chất lượng phần mềm](list) có thể học môn gì?
+      - [Tiếng Anh trung cấp 2](list) và [Tiếng Ý 2](list) học môn gì tiếp theo?
+      - [Tiếng Anh sơ trung cấp 3](list) và [100 tín chỉ](credit) có thể đăng ký môn học nào?
+      - Nếu đã hoàn thành 1 số môn học như [Tiếng Anh sơ cấp 1](list) và có [100 tín chỉ](credit) thì đăng ký được những môn học gì?
+      - Giả sử mình đã học [Lập trình hệ thống](list) [Khai phá dữ liệu](list) [Tiếng Pháp 1](list) và [110 tín chỉ](credit) những môn học nào được đăng ký?
+      - Mình đã qua 1 số môn học [Thiết kết và quản trị mạng](list), [Dự án công nghệ thông tin](list), [Lý thuyết thông tin và mã hóa](list), và [90 tín](credit) mình sẽ đăng ký được những môn gì?
+      - Tôi đã qua môn học như [Hệ điều hành Linux](list), [An toàn thông tin](list), [Lập trình hệ thống](list) thì học được gì?
+      - Đã qua 1 số môn như [Project](list), [Lập trình PHP](list) [Kỹ thuật số](list) [Xác xuất thống kê](list) thì đăng ký môn gì?
+      - Mình có [Xác xuất thống kê](list), [Toán rời rạc](list) [Kỹ thuật số](list), [Số và cấu trúc đại số](list) và [100 tín chỉ](credit) thì học môn gì tiếp theo?
+      - [Tiếng Hàn 1](list) [Tiếng Pháp 1](list) [Tiếng Trung 1](list) thì học được những môn tiếng gì?
+      - Đã học môn học [Triết học Mác-Lênin](list), [Kinh tế chính trị và CNXH khoa học](list) và [Tư tưởng Hồ Chí Minh](list) thì học cái gì tiếp theo?
+      - [Tin đại cương](list), [Khoa học môi trường](list) và [Kinh tế học đại cương](list) nên học môn học gì?
+      - Tôi đã học [Tiếng Việt thực hành](list), [Pháp luật đại cương](list), [Tiếng Anh trung cấp 3](list) và [100 tín](credit) nên học gì?
+      - Tớ có [Tiếng Hàn 1](list) [Tiếng Pháp 1](list), [Tiếng Ý 1](list) và [Tiếng Anh trung cấp 2](list) [110 tín chỉ](credit) có thể học môn học gì?
+      - Tôi học [học máy](list), [Tiếng Anh sơ cấp 1](list) và có [110 tín chỉ](credit) thì học gì?
+      - Mình đã học [học máy](list) và đã học thêm 1 số môn [Công dân số](list), [Tiếng Anh sơ trung cấp 1](list)
+      - Tớ đã học [học máy](list), học môn [Tiếng Anh sơ cấp 1](list) có thể đăng ký học thêm môn gì?
+      - Đã học xong [học máy](list), thì nên học gì?
+      - Với 1 số môn học [Lập trình Python](list), [Tiếng Anh sơ cấp 2], [học máy](list) những môn học này thì có thể học môn học nào?
+      - Với vài môn học như [Tiếng Trung 1](list), [Công dân số](list) và [100 tín](credit) những môn này học môn gì?
+      - 1 số môn học mình đã học như [Lập trình .Net](list), [Kỹ thuật số](list), [Project](list) có thể học môn học gì?
+      - Tớ đã học 1 số môn học [Lập trình ứng dụng di động](list), [Cấu trúc dữ liệu](list) và [100 tín chỉ](credit)
+      - Mình đã học [Lập trình hướng đối tượng](list)
+      - Môn học [Học máy](list) có phải điều kiện tiên quyết cho môn học nào không?
+      - [Tiếng Anh trung cấp 1](list) có thể học được gì?
+      
+  - intent: year_semester
+    examples: |
+      - Hiện tại tôi đang học năm [nhất](year) thì nên học gì?
+      - Tôi đang học năm [2](year) thì đăng ký gì?
+      - Tớ học năm [hai](year) nên đăng ký môn học gì?
+      - Năm [3](year) học gì?
+      - Kỳ [1](semester) năm [nhất](year) học môn gì?
+      - Kỳ [một](semester) năm [ba](year) học môn gì?
+      - Tôi sắp đăng ký học cho kỳ [3](semester) năm [1](year) tôi nên chọn môn gì?
+      - Năm [hai](year) kỳ [3](semester) nên học gì?
+      - Tôi học [2 năm rưỡi](ysem) nên học gì?
+      - Tôi đang chuẩn bị đăng ký học tôi nên học môn gì hiện tại tôi đã học được [ba năm rưỡi](ysem) rồi?
+      - Đang học năm [ba](year) kỳ [1](semester) tôi nên học môn gì trong kỳ này?
+      - Tôi chuẩn bị học năm [nhất](year) kỳ [3](semester) tôi nên học môn gì trong kỳ này?
+      - Tớ đang học [nửa năm 2](ysem) thì đăng ký môn gì?
+      - Tôi đang học [2 năm rưỡi](ysem) thì nên học gì trong năm nay?
+      - Tớ hiện tại đang là năm [3](year) và kỳ [2](semester) nên đăng ký gì?
+      - Mình học được [ba năm rưỡi](ysem) rồi mình nên đăng ký gì?
+      - Mình đã học [nửa năm hai](ysem) mình nên đăng ký môn gì kỳ tiếp theo?
+      - Kỳ này là kỳ [3](semester) năm [2](year) thì mình nên học gì đây?
+      - Năm [4](year) kỳ [1](semester) tôi nên đăng ký môn học gì?
+      - Năm [nhất](year) học kỳ [hai](semester) tôi nên học gì tiếp theo?
+      - Năm [2](year) thì tôi nên học môn học gì trong năm này?
+      - Tôi đã học được [nửa năm](ysem) tôi nên học gì trong kỳ này?
+      - Tôi hoàn thành xong kỳ [2](semester) năm [nhất](year) tôi nên học gì trong năm nay?
+      - Tớ chuẩn bị lên năm [2](semester) tớ nên học gì đây?
+      - Mình chuẩn bị đăng ký học cho kỳ [3](semester) năm [3](year) thì mình nên đăng ký những môn học gì?
+      - Em đang lên kế hoạch học tập cho năm [cuối](year) em nên học tập như thế nào ạ?
+      - Học gì trong kỳ [3](semester) năm [2](year)?
+      - Những môn tôi cần học ở năm học [cuối](year) là gì?
+      - Đã học được [2 năm rưỡi](ysem) tôi nên học gì tiếp theo?
+      - Tôi cần lời khuyên cho năm [3](year)
+      - Tôi cần lộ trình học tập cho năm [2](year) kỳ [1](semester)
+      - Tớ muốn biết mình nên học gì cho năm [cuối](year) ở trường?
+      - Tớ đã học được [nửa năm](ysem) tớ nên học gì đây?
+      - Em muốn biết lộ trình năm [ba](year) để lên kế hoạch học tập cho phù hợp
+      - Cho mình hỏi là hiện tại mình đang là năm [cuối](year) thì mình nên bắt đầu học những gì?
+      - Cho em hỏi năm [hai](year) kỳ [hai](semester) thì nên học gì ạ?
+      - Tôi học năm [nhất](year) đại học
+      - Tớ năm [hai](year) đại học
+      - Mình đang học năm [ba](year) đại học
+      - Tớ chuẩn bị học năm [1](year) đại học
+      - Năm [3](year) đại học kỳ [2](semester)
+      - Kỳ [2](semester) đại học năm [ba](year)
+      - Kỳ này là kỳ [1](semester) năm [hai](year) đại học
+      - Mình học [2 năm rưỡi](ysem) đại học
+      - Kỳ [3](semester) năm [2](year)
+      - Năm [nhất](year) kỳ [ba](semester)
+      - [Nửa năm](ysem) đại học thì học gì tiếp theo?
+      - Mình học được [2](year) năm rồi
+      - Hiện tại tôi đang chuẩn bị học kỳ [2](semester) năm [nhất](year) thì nên chuẩn bị học môn gì?
+      - Tôi đang học năm [ba](year) kỳ [3](semester) thì cần học gì?
+      - Kỳ [một](semester) năm [một](year) thì học gì?
+      - Kỳ [cuối](semester) của năm [2](year) nên đăng ký học những môn học gì?
+      - Năm [cuối](year) kỳ học [cuối](semester) thì nên học gì?
+      - Năm học thứ [3](year) thì lộ trình học là gì?
+      - Năm học thứ [nhất](year) kỳ học thứ [2](semester) thì học gì?
+      - Kỳ học [cuối](semester) của năm học [3](year) thì tôi nên học môn gì tiếp theo?
+      - Tôi đang chuẩn bị lên học kỳ [một](semester) năm [ba](year) hãy cho tôi xin lộ trình học
+      - Đã học được [một năm rưỡi](ysem) tiếp theo tôi nên học môn gì?
+      - Tôi đã học được [2 năm rưỡi](ysem) kỳ tới tôi nên đăng ký môn học gì?
+      - Tôi cần thông tin lộ trình cho năm [ba](year) kỳ [hai](semester)
+      - Em đã học [một năm rưỡi](ysem) rồi lộ trình học tiếp theo của em là gì?
+      - [Ba năm rưỡi](ysem) đã học thì tiếp theo nên học gì?
+      - Em đã học [2 năm rưỡi](ysem) đaị học thì lộ trình tiếp theo là gì?
+      - Em đã học được [nửa năm](ysem) đại học
+      - Tớ đang chuẩn bị lên năm [2](year) kỳ [2](semester) tớ muốn biết lộ trình học tiếp theo của tớ
+      - Tớ học kỳ [một](semester) năm [nhất](year) thì lộ trình kỳ này là gì?
+
+  - intent: thank_you
+    examples: |
+      - Cảm ơn
+      - Xin cảm ơn
+      - Cảm ơn bạn
+      - Cảm ơn vì đã giúp đỡ
+      - Rất cảm ơn bạn vì đã giúp mình
+      - Cảm ơn bạn rất nhiều
+      - Thank you
+      - Thanks
