@@ -408,7 +408,7 @@ class ResponseYearSemester(Action):
                         return []
             if year_semester:
                   year = {i for i in dys if set([year_semester.lower()]).issubset(set(dys[i]))}
-                  semester = 2
+                  semester = {2}
             
             if year == None and semester:
                   text += "Vui lòng cung cấp thêm năm học"
