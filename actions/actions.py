@@ -45,8 +45,8 @@ GI101 = "Tiếng Ý 1"
 GI102 = "Tiếng Ý 2"
 GK101 = "Tiếng Hàn 1"
 GK102 = "Tiếng Hàn 2"
-PG100 = "Giaó dục thể chất"
-PG121 = "Giaó dục quốc phòng"
+PG100 = "Giáo dục thể chất"
+PG121 = "Giáo dục quốc phòng"
 
 MA103 = "Số và cấu trúc đại số"
 MA110 = "Giải tích 1"
@@ -206,8 +206,9 @@ class ResponseInfoSub(Action):
                   dispatcher.utter_message(text = "Vui lòng kiểm tra lại tên môn học")
                   return []
             
-            print(sub)
-            print(type)
+            print("response_info_sub")
+            print("subject: %s" %sub)
+            print("type: %s" %type)
             
             if type:
                   text = ""
@@ -298,6 +299,11 @@ class ResponseOfferSub(Action):
       def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict) -> List[Dict[Text, Any]]:
             subs = tracker.get_slot("list")
             cres = tracker.get_slot("credit")
+            
+            print("response_offer_sub")
+            print("list: %s" %subs)
+            print("credit: %s" %cres)
+            
             check = False
             if subs:
                   for sub in subs:
@@ -322,7 +328,6 @@ class ResponseOfferSub(Action):
                                     case.append(110)
                                     case.append(100)
                                     check = True
-            print(case)
             text = ""
             if subs or cres:
                   index = 0
@@ -390,9 +395,10 @@ class ResponseYearSemester(Action):
             semester = tracker.get_slot("semester")
             year_semester = tracker.get_slot("ysem")
             
-            print(year)
-            print(semester)
-            print(year_semester)
+            print("response_year_semester")
+            print("year: %s" %year)
+            print("semester: %s" %semester)
+            print("ysem: %s" %year_semester)
             
             text = ""
             
@@ -420,7 +426,7 @@ class ResponseYearSemester(Action):
                         for key, value in CNTT[i].items():
                               if set(y).issubset(set([value[2]])) and set(s).issubset(set(value[3])):
                                     if index == 1:
-                                          text += "Năm %s Kỳ %s\n" %(y[0], s[0])
+                                          text += "Lộ trình Năm %s Kỳ %s:\n" %(y[0], s[0])
                                     text += "%d. %s\n" %(index, key)
                                     index += 1                       
             elif year:
@@ -430,8 +436,8 @@ class ResponseYearSemester(Action):
                         for key, value in CNTT[i].items():
                               if set(y).issubset(set([value[2]])):
                                     if index == 1:
-                                          text += "Năm %s\n" %(tracker.get_slot("year"))
-                                    text += "%d. Môn %s [Học kỳ %s]\n" %(index, key, value[3])
+                                          text += "Lộ trình Năm %s:\n" %(tracker.get_slot("year"))
+                                    text += "%d. %s [Kỳ %s]\n" %(index, key, value[3])
                                     index += 1
             dispatcher.utter_message(text = text)
             return []

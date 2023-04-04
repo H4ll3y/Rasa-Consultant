@@ -256,6 +256,15 @@ nlu:
       - Em đã học được [nửa năm](ysem) đại học
       - Tớ đang chuẩn bị lên năm [2](year) kỳ [2](semester) tớ muốn biết lộ trình học tiếp theo của tớ
       - Tớ học kỳ [một](semester) năm [nhất](year) thì lộ trình kỳ này là gì?
+      - Tớ học kỳ [1](semester) năm [2](year) lộ trình học cho tớ là gì?
+      - Tôi đã học kỳ [2](semester) năm [ba](year) lộ trình cho tôi học là gì?
+      - Tôi học [ba năm rưỡi](ysem) thì tôi có lộ trình gì?
+      - Mình đã học xong [nửa năm 2](ysem) thì mình sẽ học gì tiếp theo?
+      - Tớ học xong [nửa năm ba](ysem) tớ học gì tiếp?
+      - [Nửa năm nhất](ysem) đã học thì tiếp theo nên học gì?
+      - Học [nửa năm 3](ysem) thì tiếp theo nên học gì?
+      - Tôi đã học được [nửa năm](ysem) thì lộ trình là gì?
+      - Mình học kỳ [1](semester) năm [3](year) thì tiếp theo nên học gì?
 
   - intent: thank_you
     examples: |
