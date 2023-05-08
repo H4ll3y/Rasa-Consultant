@@ -96,6 +96,10 @@ nlu:
       - Danh sách 1 vài môn học thuộc [Học phần lựa chọn](type)
       - Các môn [lựa chọn](type) của ngành là gì?
       - Tôi muốn có danh sách các môn [Đại cương](type) của ngành
+      - Tôi muốn tìm hiểu thông tin về các môn học [bắt buộc](type) của trường.
+      - Có thể cho tôi biết những môn học [bắt buộc](type) không?
+      - Tôi quan tâm đến những môn học [bắt buộc](type) của khoa. Bạn có thể giúp tôi được không?
+      - Tôi đang tìm hiểu về các môn học [bắt buộc](type). Liệu bạn có thể cung cấp cho tôi thông tin chi tiết về chúng không?
 
   - intent: need_offer_sub
     examples: |
