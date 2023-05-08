@@ -82,7 +82,7 @@ slots:
 
 responses:
   utter_greet:
-  - text: "Xin chào tôi có thể giúp gì cho bạn?"
+  - text: "Xin chào, tôi có thể giúp gì cho bạn?"
 
   utter_ask_info:
   - text: "Bạn có thể cho tôi biết ngành học của bạn được không?"

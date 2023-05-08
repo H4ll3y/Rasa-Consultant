@@ -11,6 +11,11 @@ nlu:
     examples: |
       - Bạn có thể hỗ trợ tôi được không?
       - Tôi cần hỗ trợ
+      - Bạn có thể giúp tôi được không?
+      - Tôi có thể nhờ bạn giúp đỡ được không?
+      - Xin lỗi, bạn có thể giúp tôi với vấn đề này được không?
+      - Tôi có một vấn đề, liệu bạn có thể hỗ trợ tôi không?
+      - Cho tôi hỏi, bạn có thể giúp tôi với cái này được không?
 
   - intent: give_info
     examples: |
@@ -190,6 +195,22 @@ nlu:
       
   - intent: year_semester
     examples: |
+      - Với năm [2](year) kỳ [2](semester), tôi cần chọn những môn học nào?
+      - Cho tôi xin gợi ý về môn học phù hợp với năm [bốn](year) và kỳ [ba](semester) của tôi được không?
+      - Có những môn học nào thích hợp với năm thứ [hai](year) và kỳ học thứ [hai](semester) của tôi không?
+      - Năm thứ [hai](year) và kỳ [3](semester), tôi nên đăng ký những môn học nào để hoàn thành chương trình đào tạo?
+      - Tôi đang phân vân không biết nên học những môn gì trong năm [nhất](year) và kỳ [2](semester), bạn có thể giúp đỡ tôi được không?
+      - Năm [2](year) và học kỳ [2](semester) thì môn học nào nên đăng ký?
+      - Tôi đang học năm [2](year), học kỳ [2](semester), tôi nên đăng ký môn học nào?
+      - Cho em hỏi trong năm [2](year) học kỳ [2](semester) nên đăng ký môn học gì ạ?
+      - Nếu đang học năm [2](year) và học kỳ [2](semester), thì những môn học nào cần được đăng ký?
+      - Tôi muốn biết năm [2](year) học kỳ [2](semester) thì nên đăng ký môn học gì?
+      - Năm [1](year) học kỳ [1](semester), tôi nên đăng ký môn học gì?
+      - Tôi đang học năm [1](year) học kỳ [2](semester), có nên đăng ký thêm môn học nào nữa không?
+      - Học kỳ [2](semester) năm [2](year) sắp tới, liệu tôi nên đăng ký môn học gì để nâng cao kỹ năng của mình?
+      - Tôi đang chuẩn bị bước vào năm [3](year) và học kỳ [1](semester), có những môn học nào nên đăng ký để thúc đẩy sự nghiệp của tôi?
+      - Năm [2](year) của tôi sắp bắt đầu, tôi đang phân vân không biết nên đăng ký môn học gì để nâng cao khả năng của mình trong lĩnh vực học tập và nghề nghiệp.
+      - Học kỳ [1](semester) năm [4](year) đang đến gần, tôi đang muốn tìm hiểu và học tập những kỹ năng mới, có lời khuyên gì cho tôi không?
       - Hiện tại tôi đang học năm [nhất](year) thì nên học gì?
       - Tôi đang học năm [2](year) thì đăng ký gì?
       - Tớ học năm [hai](year) nên đăng ký môn học gì?
