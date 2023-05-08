@@ -301,3 +301,37 @@ nlu:
       - Cảm ơn bạn rất nhiều
       - Thank you
       - Thanks
+
+  - intent: ask_question
+    examples: |
+      - Một số học phần học có trong chương trình đào tạo (CTĐT) của khoa, ngành sinh viên đang theo học nhưng không thấy mở trong học kỳ hiện tại để sinh viên (SV) đăng ký học, tại sao?
+      - Tại sao không có một số học phần trong chương trình đào tạo (CTĐT) của khoa, ngành mà tôi muốn đăng ký học trong học kỳ hiện tại?
+      - Tại sao một số học phần trong chương trình đào tạo (CTĐT) của khoa, ngành không được mở ra đăng ký cho sinh viên học trong học kỳ này?
+      - Tại sao có những học phần có trong chương trình đào tạo (CTĐT) của khoa, ngành mà không thấy có trong danh sách đăng ký học của mình?
+      - Tôi đang tìm kiếm thông tin về lý do tại sao học phần này không được mở đăng ký, bạn có thể giải thích cho tôi được không?
+      - Tại sao môn học này lại được liệt kê trong chương trình nhưng không được mở trong kỳ học này?
+      - Tôi đang quan tâm đến môn học này nhưng không thấy nó được mở đăng ký, bạn có thể cho tôi biết lý do được không?
+      - Tại sao học phần này lại không được mở đăng ký cho học kỳ này? Liệu có kế hoạch mở đăng ký trong tương lai không?
+      - Tôi muốn đăng ký môn này nhưng không thấy nó có sẵn trong hệ thống, vậy tại sao nó không được mở đăng ký trong học kỳ này?
+      - Tại sao không có lịch học cho môn học này trong học kỳ này?
+      - Môn học này vẫn còn trong chương trình đào tạo của khóa, tại sao không áp dụng trong học kỳ này?
+      - Tại sao không mở đăng ký học cho môn học này trong học kỳ này?
+      - Môn học này có trong chương trình đào tạo, nhưng tại sao không mở lớp học trong học kỳ này?
+      - Vì sao sinh viên không thấy được thông tin đăng ký học của môn học này trong học kỳ này?
+      - Tại sao môn học này lại không được mở trong học kỳ này?
+      - Lý do gì khiến môn học này không được mở đăng ký cho sinh viên?
+      - Tại sao một số học phần trong chương trình đào tạo không được mở để sinh viên đăng ký học?
+      - Vì sao chương trình đào tạo có môn học này nhưng không mở đăng ký trong học kỳ hiện tại?
+      - Vì sao môn học này không được mở cho sinh viên đăng ký trong học kỳ này?
+
+  - intent: ask_question_2
+    exmaples: |
+      - Tại sao trong thời gian đăng ký học, sinh viên muốn đăng ký học (ĐKH) học phần [Đại số tuyến tính](name_subject) có trong thời khóa biểu (TKB) chung toàn trường nhưng không hiển thị trong danh sách các học phần có thể đăng ký học của mình?
+      - Tại sao học phần [Giải tích 1](name_subject) không mở trong học kỳ này?
+      - Lý do gì khiến học phần [Kỹ thuật số](name_subject) không có trong danh sách đăng ký học?
+      - Tại sao học phần [Tin đại cương](name_subject) không được mở đăng ký trong học kỳ hiện tại?
+      - Vì sao học phần [Mạng máy tính](name_subject) không có sẵn trong danh sách đăng ký của tôi?
+      - Tại sao không thể đăng ký học học phần [Tiếng Trung 1](name_subject)?
+      - Tại sao lại có học phần [Học máy](name_subject) trong chương trình nhưng lại không mở đăng ký cho các sinh viên?
+      - Tại sao môn học [Học máy](name_subject) lại không được tổ chức trong học kỳ này mặc dù nó đã có trong chương trình học?
+      - Tại sao một số học phần như [Khoa học môi trường](name_subject) lại không được mở đăng ký học cho sinh viên đăng ký, mặc dù chúng đã được liệt kê trong danh sách học phần?

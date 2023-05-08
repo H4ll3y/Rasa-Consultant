@@ -8,6 +8,8 @@ intents:
   - need_offer_sub
   - year_semester
   - thank_you
+  - ask_question
+  - ask_question2
 
 actions:
   - response_info_sub
@@ -23,6 +25,7 @@ entities:
   - semester
   - ysem
   - type
+  - name_subject
 
 slots:
   major:
@@ -31,6 +34,7 @@ slots:
     mappings:
     - type: from_entity
       entity: major
+  
   subject:
     type: text
     influence_conversation: true
@@ -39,6 +43,7 @@ slots:
       entity: subject
       intent: need_info_sub
       not_intent: need_offer_sub
+  
   credit:
     type: text
     influence_conversation: true
@@ -47,6 +52,7 @@ slots:
       entity: credit
       intent: need_offer_sub
       not_intent: need_info_sub
+  
   list:
     type: list
     influence_conversation: true
@@ -55,30 +61,41 @@ slots:
       entity: list
       intent: need_offer_sub
       not_intent: need_info_sub
+  
   year:
     type: text
     influence_conversation: true
     mappings:
     - type: from_entity
       entity: year
+  
   semester:
     type: text
     influence_conversation: true
     mappings:
     - type: from_entity
       entity: semester
+  
   ysem:
     type: text
     influence_conversation: true
     mappings:
     - type: from_entity
       entity: ysem
+  
   type:
     type: text
     influence_conversation: true
     mappings:
     - type: from_entity
       entity: type
+  
+  name_subject:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: name_subject
 
 responses:
   utter_greet:
@@ -92,6 +109,12 @@ responses:
 
   utter_thank_you:
   - text: "Không có gì rất vui vì giúp được bạn"
+
+  utter_ask_question:
+  - text: "Có thể xảy ra một trong các trường hợp sau:\n1. Học phần này thuộc khối kiến thức giáo dục đại cương nên chỉ mở cho SV khóa mới đăng ký học, SV tìm hiểu xem học phần này có mở TKB ở nhóm 3 hay không thì đăng ký học cùng nhóm 3.\n2. Học phần không mở thường xuyên, SV tìm hiểu kế hoạch mở học phần chuyên ngành hàng năm của khoa/bộ học phần xem thời gian mở học để đăng ký học cho kịp tiến độ."
+
+  utter_ask_question2:
+  - text: "Là do 1 trong 2 trường hợp sau: \n1. Chưa học học phần là điều kiện tiên quyết của học phần {name_subject}.\n2. Đã học học phần điều kiện tiên quyết nhưng phải học lại (HL) vì bị cấm thi do điểm danh (CT_ĐD) hoặc do điểm quá trình <4 (CT_ĐQT)."
 
 session_config:
   session_expiration_time: 60
