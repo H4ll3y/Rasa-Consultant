@@ -290,6 +290,10 @@ nlu:
       - Học [nửa năm 3](ysem) thì tiếp theo nên học gì?
       - Tôi đã học được [nửa năm](ysem) thì lộ trình là gì?
       - Mình học kỳ [1](semester) năm [3](year) thì tiếp theo nên học gì?
+      - Mục tiêu học tập của tôi trong học kỳ [2](semester) năm [1](year) là gì?
+      - Những môn học nào sẽ được tôi tập trung chú ý trong học kỳ [2](semester) năm [hai](year)?
+      - Tôi sẽ đăng ký những khóa học nào để phát triển kỹ năng trong học kỳ [3](semester) năm [2](year)?
+      - Lộ trình học tập năm [2](year) kỳ [2](semester) của tôi là gì?
 
   - intent: thank_you
     examples: |
@@ -325,7 +329,7 @@ nlu:
       - Vì sao môn học này không được mở cho sinh viên đăng ký trong học kỳ này?
 
   - intent: ask_question_2
-    exmaples: |
+    examples: |
       - Tại sao trong thời gian đăng ký học, sinh viên muốn đăng ký học (ĐKH) học phần [Đại số tuyến tính](name_subject) có trong thời khóa biểu (TKB) chung toàn trường nhưng không hiển thị trong danh sách các học phần có thể đăng ký học của mình?
       - Tại sao học phần [Giải tích 1](name_subject) không mở trong học kỳ này?
       - Lý do gì khiến học phần [Kỹ thuật số](name_subject) không có trong danh sách đăng ký học?

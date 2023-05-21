@@ -56,10 +56,8 @@ stories:
     steps:
       - intent: ask_question
       - action: utter_ask_question
-      - action: action_restart
   
   - story: story9
     steps:
       - intent: ask_question2
       - action: utter_ask_question2
-      - action: action_restart
