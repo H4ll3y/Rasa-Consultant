@@ -4,36 +4,72 @@ recipe: default.v1
 
 # Configuration for Rasa NLU.
 # https://rasa.com/docs/rasa/nlu/components/
-language: vi
+language: "vi"
 
 pipeline:
-# # No configuration for the NLU pipeline was provided. The following default pipeline was used to train your model.
-# # If you'd like to customize it, uncomment and adjust the pipeline.
-# # See https://rasa.com/docs/rasa/tuning-your-model for more information.
-  - name: WhitespaceTokenizer
-  - name: RegexFeaturizer
-  - name: LexicalSyntacticFeaturizer
-  - name: CountVectorsFeaturizer
-    analyzer: char_wb
-    min_ngram: 1
-    max_ngram: 4
-  - name: DIETClassifier
-    epochs: 190
-  - name: EntitySynonymMapper
-  - name: ResponseSelector
-    epochs: 190
-  - name: FallbackClassifier
-    threshold: 0.3
-    ambiguity_threshold: 0.1
+  - name: "WhitespaceTokenizer"
+  - name: "CountVectorsFeaturizer"
+  - name: "DIETClassifier"
+    epochs: 200
+    batch_size: 128
+    shuffle: true
+    validation_split: 0.2
+    random_seed: 42
+    model_confidence: "softmax"
 
-# Configuration for Rasa Core.
-# https://rasa.com/docs/rasa/core/policies/
+    intent_tokenization_flag: true
+    intent_split_symbol: "+"
+
+    model:
+      type: "tensorflow_embedding"
+      embedding_dim: 20
+      hidden_layers_sizes: [512, 128]
+      cnn:
+        convolution_layers:
+          - filters: 32
+            kernel_size: 3
+            activation: "relu"
+            dropout_rate: 0.2
+          - name: "BatchNormalization"
+          - filters: 64
+            kernel_size: 3
+            activation: "relu"
+            dropout_rate: 0.2
+          - name: "BatchNormalization"
+          - filters: 128
+            kernel_size: 3
+            activation: "relu"
+            dropout_rate: 0.2
+          - name: "BatchNormalization"
+        dense_layer_sizes: [512, 128]
+        optimizer:
+          type: "adam"
+          learning_rate: 0.01
+          decay: 0
+          beta_1: 0.9
+          beta_2: 0.999
+          epsilon: 1e-8
+        activation: "softmax"
+        callbacks:
+        - name: "ModelCheckpoint"
+          filepath: "./model-cnn.h5"
+          monitor: "val_loss"
+          save_best_only: true
+        - name: "EarlyStopping"
+          patience: 5
+          monitor: "val_loss"
+          restore_best_weights: true
+          verbose: 0
+
 policies:
-# # No configuration for policies was provided. The following default policies were used to train your model.
-# # If you'd like to customize them, uncomment and adjust the policies.
-# # See https://rasa.com/docs/rasa/policies for more information.
   - name: MemoizationPolicy
+  - name: RulePolicy
+  - name: UnexpecTEDIntentPolicy
+    max_history: 5
+    epochs: 100
   - name: TEDPolicy
     max_history: 5
-    epochs: 130
-  - name: RulePolicy
+    epochs: 100
+    constrain_similarities: true
+
+assistant_id: 20230524-144256-soluble-pine
