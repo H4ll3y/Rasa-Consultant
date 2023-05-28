@@ -84,7 +84,3 @@ VALUES
 	('IT', 'IT499', N'KLTN ngành CNTT', 6, NULL, 120, 5, 4, 0, N'Khoá luận'),
 	('IT', 'IS484', N'CĐTN: Cơ sở dữ liệu', 6, 'IS322', 110, 5, 4, 0, N'Chuyên đề'),
 	('IT', 'SE487', N'CĐTN: CĐTN: Phát triển phần mềm', 6, 'SE302', 110, 5, 4, 0, N'Chuyên đề');
-
-Use ChatBot_Rasa
-GO
-SELECT Name FROM Subject WHERE Subject.Id = 'CS100'

@@ -1,3 +1,9 @@
+USE master
+GO
+
+CREATE DATABASE ChatBot_Rasa
+GO
+
 USE ChatBot_Rasa
 GO
 
