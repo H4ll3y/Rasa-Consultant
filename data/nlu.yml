@@ -339,3 +339,85 @@ nlu:
       - Tại sao lại có học phần [Học máy](name_subject) trong chương trình nhưng lại không mở đăng ký cho các sinh viên?
       - Tại sao môn học [Học máy](name_subject) lại không được tổ chức trong học kỳ này mặc dù nó đã có trong chương trình học?
       - Tại sao một số học phần như [Khoa học môi trường](name_subject) lại không được mở đăng ký học cho sinh viên đăng ký, mặc dù chúng đã được liệt kê trong danh sách học phần?
+      - Vì sao học phần [Giải tích 2](name_subject) không mở đăng ký học cho sinh viên?
+      - Tại sao sinh viên không thể đăng ký học [Mạng máy tính](name_subject) mặc dù nó đã được liệt kê trong danh sách?
+      - Tại sao [Kỹ thuật số](name_subject) không có khả năng đăng ký học dành cho sinh viên?
+      - Lý do tại sao [Khoa học môi trường](name_subject) không cho phép sinh viên đăng ký học?
+      - Tại sao [Số và cấu trúc đại số](name_subject) không có tùy chọn đăng ký học cho sinh viên?
+      - Vì sao sinh viên không thể đăng ký học [Học máy](name_subject) dù nó đã được liệt kê?
+      - Vì sao [Học máy](name_subject) không cho phép sinh viên đăng ký học khi nó đã được liệt kê?
+      - Lý do tại sao [Học máy](name_subject) không cho phép sinh viên đăng ký học?
+      - Tại sao học phần [Lập trình hướng đối tượng](name_subject) không mở cửa đăng ký học cho sinh viên?
+      - Vì sao sinh viên không thể đăng ký học [Lập trình Python](name_subject) dù nó đã được liệt kê?
+
+  - intent: ask_question_3
+    examples: |
+      - Tại sao sinh viên đăng ký học (ĐKH) thành công học phần A và tên học phần đã hiển thị trong TKB tại thời điểm đăng ký, nhưng khi đi học thì không thấy học phần học này có trong TKB cá nhân?
+      - Tại sao sinh viên đăng ký học (ĐKH) thành công học phần A và thấy nó trong TKB đăng ký, nhưng không tìm thấy nó trong TKB cá nhân khi đến lớp học?
+      - Vì sao học phần A không xuất hiện trong thời khoá biểu (TKB) cá nhân của sinh viên dù đã được đăng ký thành công?
+      - Tại sao sinh viên đăng ký thành công học phần A nhưng lại không thấy nó được hiển thị trong TKB cá nhân?
+      - Vì sao học phần A đã được đăng ký thành công nhưng không được hiển thị trong lịch học cá nhân của sinh viên?
+      - Tại sao sinh viên không thấy học phần A trong TKB cá nhân mặc dù đã đăng ký thành công?
+      - Vì sao học phần A không xuất hiện trong TKB cá nhân sau khi sinh viên đăng ký thành công?
+      - Tại sao học phần A không được hiển thị trong TKB cá nhân dù sinh viên đã hoàn thành quá trình đăng ký?
+      - Vì sao sinh viên không thể tìm thấy học phần A trong TKB cá nhân dù đã đăng ký thành công?
+      - Tại sao học phần A không được ghi nhận trong TKB cá nhân sau khi sinh viên hoàn tất đăng ký?
+      - Vì sao sinh viên không thể thấy học phần A trong TKB cá nhân dù đã hoàn thành quá trình đăng ký thành công?
+      - Tại sao sau khi đăng ký thành công học phần A, sinh viên không thấy nó được cập nhật trong TKB cá nhân của mình?
+      - Vì sao học phần A không được đồng bộ hóa trong lịch học cá nhân của sinh viên sau khi đăng ký thành công?
+      - Tại sao sinh viên không thấy học phần A được hiển thị trong TKB cá nhân dù đã hoàn tất quá trình đăng ký?
+      - Vì sao sau khi đăng ký thành công, sinh viên không thể xem học phần A trong lịch học cá nhân của mình?
+      - Tại sao học phần A không được ghi nhận trong TKB cá nhân sau khi sinh viên hoàn thành quá trình đăng ký?
+      - Vì sao sinh viên không thể tìm thấy học phần A trong TKB cá nhân dù đã hoàn tất đăng ký thành công?
+      - Tại sao sau khi đăng ký thành công, học phần A không được cập nhật trong lịch học cá nhân của sinh viên?
+      - Vì sao sinh viên không thấy học phần A xuất hiện trong TKB cá nhân mặc dù đã đăng ký thành công?
+      - Tại sao học phần A không được hiển thị trong TKB cá nhân của sinh viên sau khi đăng ký thành công?
+      - Vì sao sinh viên không thể xem học phần A trong lịch học cá nhân dù đã đăng ký thành công?
+
+  - intent: ask_question_4
+    examples: |
+      - Sinh viên nhóm 1, 2 xin đăng ký học cùng nhóm 3 nhưng trong thời khóa biểu của nhóm 1, 2 đã mở học phần này thì có được đăng ký học không?
+      - Sinh viên nhóm 1 và nhóm 2 có thể đăng ký học cùng nhóm 3 trong trường hợp học phần này đã được mở trong thời khóa biểu của nhóm 1 và 2 không?
+      - Nếu học phần này đã được mở trong thời khóa biểu của nhóm 1 và 2, sinh viên thuộc nhóm 1 và nhóm 2 có được phép đăng ký học cùng nhóm 3 không?
+      - Sinh viên thuộc nhóm 1, 2 có được phép đăng ký học cùng nhóm 3 nếu học phần này đã được mở trong thời khóa biểu của nhóm 1 và 2?
+      - Tại sao sinh viên nhóm 1 và 2 không được đăng ký học cùng nhóm 3 dù học phần này đã mở trong thời khóa biểu của nhóm 1 và 2?
+      - Nếu học phần này đã mở trong thời khóa biểu của nhóm 1 và 2, sinh viên nhóm 1 và nhóm 2 có được phép đăng ký học cùng nhóm 3 không?
+      - Tại sao sinh viên nhóm 1 và 2 không thể đăng ký học cùng nhóm 3 khi học phần này đã mở trong thời khóa biểu của nhóm 1 và 2?
+      - Sinh viên nhóm 1 và nhóm 2 có thể đăng ký học cùng nhóm 3 nếu học phần này đã được mở trong thời khóa biểu của nhóm 1 và 2 không?
+      - Vì sao sinh viên nhóm 1 và 2 không được phép đăng ký học cùng nhóm 3 dù học phần này đã mở trong thời khóa biểu của nhóm 1 và 2?
+      - Nếu học phần này đã được mở trong thời khóa biểu của nhóm 1 và 2, sinh viên thuộc nhóm 1 và nhóm 2 có thể đăng ký học cùng nhóm 3 không?
+      - Tại sao sinh viên nhóm 1 và 2 không thể đăng ký học cùng nhóm 3 khi học phần này đã mở trong thời khóa biểu của nhóm 1 và 2?
+      - Sinh viên nhóm 1, 2 có được phép đăng ký học cùng nhóm 3 nếu học phần này đã được mở trong thời khóa biểu của nhóm 1, 2 không?
+      - Vì sao sinh viên nhóm 1, 2 không được phép đăng ký học cùng nhóm 3 dù học phần này đã mở trong thời khóa biểu của nhóm 1, 2?
+      - Nếu học phần này đã mở trong thời khóa biểu của nhóm 1, 2, sinh viên thuộc nhóm 1 và nhóm 2 có thể đăng ký học cùng nhóm 3 không?
+      - Tại sao sinh viên nhóm 1, 2 không thể đăng ký học cùng nhóm 3 khi học phần này đã mở trong thời khóa biểu của nhóm 1, 2?
+      - Sinh viên nhóm 1 và nhóm 2 có thể đăng ký học cùng nhóm 3 nếu học phần này đã được mở trong thời khóa biểu của nhóm 1, 2 không?
+      - Vì sao sinh viên nhóm 1 và 2 không được phép đăng ký học cùng nhóm 3 dù học phần này đã mở trong thời khóa biểu của nhóm 1, 2?
+      - Nếu học phần này đã mở trong thời khóa biểu của nhóm 1, 2, sinh viên nhóm 1 và nhóm 2 có thể đăng ký học cùng nhóm 3 không?
+      - Tại sao sinh viên nhóm 1 và 2 không thể đăng ký học cùng nhóm 3 khi học phần này đã mở trong thời khóa biểu của nhóm 1, 2?
+      - Sinh viên nhóm 1, 2 có được phép đăng ký học cùng nhóm 3 nếu học phần này đã được mở trong thời khóa biểu của nhóm 1, 2 không?
+      - Vì sao sinh viên nhóm 1, 2 không được phép đăng ký học cùng nhóm 3 dù học phần này đã mở trong thời khóa biểu của nhóm 1, 2?
+
+  - intent: ask_queston_5
+    examples: |
+      - Sinh viên để lộ mật khẩu và bị người khác đăng ký các học phần không thuộc chương trình học (CTH) của mình, trong trường hợp thời hạn ĐKH đã kết thúc thì SV có được xin hủy các học phần này không (hoặc đã hiển thị điểm trong bảng điểm của SV)?
+      - Nếu sinh viên để lộ mật khẩu và bị người khác đăng ký các học phần không thuộc chương trình học của mình sau khi thời hạn ĐKH đã kết thúc, liệu sinh viên có thể yêu cầu hủy các học phần này không (hoặc đã có điểm hiển thị trong bảng điểm của sinh viên)?
+      - Trường hợp sinh viên để lộ mật khẩu và bị người khác đăng ký các học phần không thuộc chương trình học của mình sau khi thời hạn ĐKH đã kết thúc, sinh viên có quyền yêu cầu hủy các học phần này không (hoặc đã xuất hiện điểm trong bảng điểm của sinh viên)?
+      - Nếu sau khi thời hạn ĐKH đã kết thúc, sinh viên để lộ mật khẩu và bị người khác đăng ký các học phần không thuộc chương trình học của mình, sinh viên có khả năng xin hủy các học phần này không (hoặc đã hiển thị điểm trong bảng điểm của sinh viên)?
+      - Trong trường hợp sinh viên để lộ mật khẩu và bị người khác đăng ký các học phần không thuộc chương trình học sau khi thời hạn ĐKH đã kết thúc, sinh viên có được phép yêu cầu hủy các học phần này không (hoặc đã có điểm xuất hiện trong bảng điểm của sinh viên)?
+      - Nếu sinh viên để lộ mật khẩu và bị người khác đăng ký các học phần không thuộc chương trình học của mình sau khi thời hạn ĐKH đã kết thúc, liệu sinh viên có quyền xin hủy các học phần này không (hoặc đã hiển thị điểm trong bảng điểm của sinh viên)?
+      - Trường hợp sinh viên để lộ mật khẩu và bị người khác đăng ký các học phần không thuộc chương trình học sau khi thời hạn ĐKH đã kết thúc, sinh viên có khả năng yêu cầu hủy các học phần này không (hoặc đã xuất hiện điểm trong bảng điểm của sinh viên)?
+      - Nếu sau khi thời hạn ĐKH đã kết thúc, sinh viên để lộ mật khẩu và bị người khác đăng ký các học phần không thuộc chương trình học của mình, sinh viên có thể xin hủy các học phần này không (hoặc đã hiển thị điểm trong bảng điểm của sinh viên)?
+      - Trong trường hợp sinh viên để lộ mật khẩu và bị người khác đăng ký các học phần không thuộc chương trình học sau khi thời hạn ĐKH đã kết thúc, sinh viên có được phép yêu cầu hủy các học phần này không (hoặc đã có điểm xuất hiện trong bảng điểm của sinh viên)?
+      - Nếu sinh viên để lộ mật khẩu và bị người khác đăng ký các học phần không thuộc chương trình học của mình sau khi thời hạn ĐKH đã kết thúc, liệu sinh viên có quyền xin hủy các học phần này không (hoặc đã hiển thị điểm trong bảng điểm của sinh viên)?
+      - Trong trường hợp sinh viên để lộ mật khẩu và bị người khác đăng ký các học phần không thuộc chương trình học sau khi thời hạn ĐKH đã kết thúc, sinh viên có khả năng yêu cầu hủy các học phần này không (hoặc đã xuất hiện điểm trong bảng điểm của sinh viên)?
+      - Nếu sau khi thời hạn ĐKH đã kết thúc, sinh viên để lộ mật khẩu và bị người khác đăng ký các học phần không thuộc chương trình học của mình, sinh viên có thể xin hủy các học phần này không (hoặc đã hiển thị điểm trong bảng điểm của sinh viên)?
+      - Trong trường hợp sinh viên để lộ mật khẩu và bị người khác đăng ký các học phần không thuộc chương trình học sau khi thời hạn ĐKH đã kết thúc, sinh viên có được phép yêu cầu hủy các học phần này không (hoặc đã có điểm xuất hiện trong bảng điểm của sinh viên)?
+      - Nếu sinh viên để lộ mật khẩu và bị người khác đăng ký các học phần không thuộc chương trình học của mình sau khi thời hạn ĐKH đã kết thúc, liệu sinh viên có quyền xin hủy các học phần này không (hoặc đã hiển thị điểm trong bảng điểm của sinh viên)?
+      - Trong trường hợp sinh viên để lộ mật khẩu và bị người khác đăng ký các học phần không thuộc chương trình học sau khi thời hạn ĐKH đã kết thúc, sinh viên có khả năng yêu cầu hủy các học phần này không (hoặc đã xuất hiện điểm trong bảng điểm của sinh viên)?
+      - Nếu sau khi thời hạn ĐKH đã kết thúc, sinh viên để lộ mật khẩu và bị người khác đăng ký các học phần không thuộc chương trình học của mình, sinh viên có thể xin hủy các học phần này không (hoặc đã hiển thị điểm trong bảng điểm của sinh viên)?
+      - Trong trường hợp sinh viên để lộ mật khẩu và bị người khác đăng ký các học phần không thuộc chương trình học sau khi thời hạn ĐKH đã kết thúc, sinh viên có được phép yêu cầu hủy các học phần này không (hoặc đã có điểm xuất hiện trong bảng điểm của sinh viên)?
+      - Nếu sinh viên để lộ mật khẩu và bị người khác đăng ký các học phần không thuộc chương trình học của mình sau khi thời hạn ĐKH đã kết thúc, liệu sinh viên có quyền xin hủy các học phần này không (hoặc đã hiển thị điểm trong bảng điểm của sinh viên)?
+      - Trong trường hợp sinh viên để lộ mật khẩu và bị người khác đăng ký các học phần không thuộc chương trình học sau khi thời hạn ĐKH đã kết thúc, sinh viên có khả năng yêu cầu hủy các học phần này không (hoặc đã xuất hiện điểm trong bảng điểm của sinh viên)?
+      - Nếu sau khi thời hạn ĐKH đã kết thúc, sinh viên để lộ mật khẩu và bị người khác đăng ký các học phần không thuộc chương trình học của mình, sinh viên có thể xin hủy các học phần này không (hoặc đã hiển thị điểm trong bảng điểm của sinh viên)?
+      - Trong trường hợp sinh viên để lộ mật khẩu và bị người khác đăng ký các học phần không thuộc chương trình học sau khi thời hạn ĐKH đã kết thúc, sinh viên có được phép yêu cầu hủy các học phần này không (hoặc đã có điểm xuất hiện trong bảng điểm của sinh viên)?

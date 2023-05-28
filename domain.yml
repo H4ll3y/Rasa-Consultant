@@ -10,6 +10,9 @@ intents:
   - thank_you
   - ask_question
   - ask_question2
+  - ask_question3
+  - ask_question4
+  - ask_question5
 
 actions:
   - response_info_sub
@@ -111,10 +114,19 @@ responses:
   - text: "Không có gì rất vui vì giúp được bạn"
 
   utter_ask_question:
-  - text: "Có thể xảy ra một trong các trường hợp sau:\n1. Học phần này thuộc khối kiến thức giáo dục đại cương nên chỉ mở cho SV khóa mới đăng ký học, SV tìm hiểu xem học phần này có mở TKB ở nhóm 3 hay không thì đăng ký học cùng nhóm 3.\n2. Học phần không mở thường xuyên, SV tìm hiểu kế hoạch mở học phần chuyên ngành hàng năm của khoa/bộ học phần xem thời gian mở học để đăng ký học cho kịp tiến độ."
+  - text: "Có thể xảy ra một trong các trường hợp sau:\n1. Học phần này thuộc khối kiến thức giáo dục đại cương nên chỉ mở cho SV khóa mới đăng ký học, SV tìm hiểu xem học phần này có mở TKB ở nhóm 3 hay không thì đăng ký học cùng nhóm 3.\n2. Học phần không mở thường xuyên, SV tìm hiểu kế hoạch mở học phần chuyên ngành hàng năm của khoa/bộ học phần xem thời gian mở học để đăng ký học cho kịp tiến độ"
 
   utter_ask_question2:
   - text: "Là do 1 trong 2 trường hợp sau: \n1. Chưa học học phần là điều kiện tiên quyết của học phần {name_subject}.\n2. Đã học học phần điều kiện tiên quyết nhưng phải học lại (HL) vì bị cấm thi do điểm danh (CT_ĐD) hoặc do điểm quá trình <4 (CT_ĐQT)."
+
+  utter_ask_question3:
+  - text: "Có thể xảy ra các trường hợp sau:\n1.  Do trục trặc kỹ thuật, SV vừa đăng ký xong nhưng máy chủ bị out nên dữ liệu đăng ký học phần đó của SV không được cập nhật.\n2. SV đã để lộ mật khẩu nên đã bị người khác đăng nhập vào tài khoản và hủy ĐKH của học phần đó vì mục đích cá nhân (Theo Điều 7 trang 9 Quy định đào tạo hệ đại học chính quy theo hệ thống tín chỉ năm học 2019-2020).\n3. Lớp bị hủy do số lượng SV đăng ký học nhỏ hơn 20 người. SV cần thường xuyên theo dõi Thông báo “Hủy lớp, ghép lớp, gộp lớp - tách đôi, tách ba, lớp lùi” của phòng Đào tạo đăng trên website trường http://thanglong.edu.vn để ĐKH bổ sung lớp khác hoặc học phần khác nếu còn chỗ."
+
+  utter_ask_question4:
+  - text: "SV không được đăng ký học vì SV học ở nhóm nào đóng học phí và thi ở nhóm đó (Theo Điều 10 trang 10 Quy định đào tạo hệ đại học chính quy theo hệ thống tín chỉ năm học 2019-2020)"
+
+  utter_ask_question5:
+  - text: "SV học, thi và sử dụng học phần đó làm học phần lựa chọn tự do. Nếu có lý do đặc biệt hướng dẫn SV đến phòng Đào tạo để xem xét"
 
 session_config:
   session_expiration_time: 60
