@@ -64,3 +64,23 @@ rules:
     steps:
       - intent: ask_question5
       - action: utter_ask_question5
+
+  - rule: rule13
+    steps:
+      - intent: ask_question6
+      - action: utter_ask_question6
+
+  - rule: rule14
+    steps:
+      - intent: ask_question9
+      - action: utter_ask_question9
+
+  - rule: rule15
+    steps:
+      - intent: ask_question10
+      - action: utter_ask_question10
+
+  - rule: rule16
+    steps:
+      - intent: ask_question11
+      - action: utter_ask_question11

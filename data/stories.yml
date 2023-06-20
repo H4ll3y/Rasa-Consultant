@@ -76,3 +76,23 @@ stories:
     steps:
       - intent: ask_question5
       - action: utter_ask_question5
+
+  - story: story13
+    steps:
+      - intent: ask_question6
+      - action: utter_ask_question6
+
+  - story: story14
+    steps:
+      - intent: ask_question9
+      - action: utter_ask_question9
+
+  - story: story15
+    steps:
+      - intent: ask_question10
+      - action: utter_ask_question10
+
+  - story: story16
+    steps:
+      - intent: ask_question11
+      - action: utter_ask_question11

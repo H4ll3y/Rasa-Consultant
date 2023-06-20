@@ -13,6 +13,10 @@ intents:
   - ask_question3
   - ask_question4
   - ask_question5
+  - ask_question6
+  - ask_question9
+  - ask_question10
+  - ask_question11
 
 actions:
   - response_info_sub
@@ -127,6 +131,18 @@ responses:
 
   utter_ask_question5:
   - text: "SV học, thi và sử dụng học phần đó làm học phần lựa chọn tự do. Nếu có lý do đặc biệt hướng dẫn SV đến phòng Đào tạo để xem xét"
+
+  utter_ask_question6:
+  - text: "SV nhóm 1, 2 đăng ký học, thi cùng nhóm 3 thì sẽ đóng học phí, lệ phí thi lại cùng nhóm 3. Trường hợp chỉ đăng ký thi lại, nâng điểm cùng nhóm 3 sẽ đóng lệ phí thi lại, nâng điểm vào học kỳ ĐKH gần nhất của nhóm mình hoặc vào thời điểm thu hồ sơ tốt nghiệp"
+
+  utter_ask_question9:
+  - text: "SV không được quy đổi điểm đối với các học phần tiếng Anh đã đăng ký học bất kể SV đã tích lũy hoặc thi lại/học lại học phần này, mà chỉ được quy đổi điểm đối với những học phần tiếng Anh chưa ĐKH và thi"
+
+  utter_ask_question10:
+  - text: "SV có điểm tổng kết học phần Tiếng Anh cơ sở 1 (GE171) bằng điểm tổng kết học phần Tiếng Anh cơ sở 2 (GE172) nếu ≥ 5, nếu < 5 SV đăng ký học học phần Tiếng Anh cơ sở 1 (GE171) (theo Bảng Quy đổi điểm thi tuyển sinh đầu vào và chứng chỉ quốc tế học phần ngoại ngữ cho sinh viên ban hành kèm theo Quyết định số 19091006/QĐ-ĐHTL ngày 10/9/2019 về việc Quy đổi điểm thi tuyển sinh đầu vào hoặc chứng chỉ quốc tế học phần ngoại ngữ cho sinh viên trường Đại học Thăng Long)"
+
+  utter_ask_question11:
+  - text: "SV không được hủy học phần A là điều kiện tiên quyết của học phần B, sau khi ĐKH và thi đạt tích lũy học phần B mới nên hủy học phần A"
 
 session_config:
   session_expiration_time: 60

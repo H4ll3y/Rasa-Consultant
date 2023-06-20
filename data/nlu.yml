@@ -421,3 +421,69 @@ nlu:
       - Trong trường hợp sinh viên để lộ mật khẩu và bị người khác đăng ký các học phần không thuộc chương trình học sau khi thời hạn ĐKH đã kết thúc, sinh viên có khả năng yêu cầu hủy các học phần này không (hoặc đã xuất hiện điểm trong bảng điểm của sinh viên)?
       - Nếu sau khi thời hạn ĐKH đã kết thúc, sinh viên để lộ mật khẩu và bị người khác đăng ký các học phần không thuộc chương trình học của mình, sinh viên có thể xin hủy các học phần này không (hoặc đã hiển thị điểm trong bảng điểm của sinh viên)?
       - Trong trường hợp sinh viên để lộ mật khẩu và bị người khác đăng ký các học phần không thuộc chương trình học sau khi thời hạn ĐKH đã kết thúc, sinh viên có được phép yêu cầu hủy các học phần này không (hoặc đã có điểm xuất hiện trong bảng điểm của sinh viên)?
+
+  - intent: ask_question6
+    examples: |
+      - Sinh viên nhóm 1, 2 học hoặc thi lại cùng nhóm 3 thì sẽ đóng học phí, lệ phí thi lại các học phần này vào thời gian nào?
+      - Khi sinh viên nhóm 1, 2 học hoặc thi lại cùng nhóm 3, thì việc đóng học phí và lệ phí thi lại các học phần này được thực hiện trong giai đoạn nộp học phí và lệ phí thi lại hàng kỳ học.
+      - Thời điểm đóng học phí và lệ phí thi lại các học phần của sinh viên nhóm 1, 2 khi học hoặc thi lại cùng nhóm 3 sẽ được thông báo trong lịch học tập và quy định của trường.
+      - Sinh viên nhóm 1, 2 khi học hoặc thi lại cùng nhóm 3 sẽ phải đóng học phí và lệ phí thi lại các học phần này trước khi kỳ học hoặc kỳ thi bắt đầu.
+      - Để đảm bảo quyền lợi của sinh viên, việc đóng học phí và lệ phí thi lại các học phần của sinh viên nhóm 1, 2 khi học hoặc thi lại cùng nhóm 3 sẽ được thông báo đầy đủ và kịp thời.
+      - Thông tin về thời gian đóng học phí và lệ phí thi lại các học phần của sinh viên nhóm 1, 2 khi học hoặc thi lại cùng nhóm 3 có thể được tìm thấy trong các thông báo, quy định và hướng dẫn của phòng đào tạo.
+      - Sinh viên nhóm 1, 2 khi học hoặc thi lại cùng nhóm 3 sẽ được thông báo về thời gian đóng học phí và lệ phí thi lại các học phần này qua hệ thống thông báo của trường hoặc thông qua email cá nhân.
+      - Thông tin về thời gian đóng học phí và lệ phí thi lại các học phần của sinh viên nhóm 1, 2 khi học hoặc thi lại cùng nhóm 3 cũng có thể được cung cấp qua trang web của trường hoặc thông qua bảng thông báo trên trường.
+      - Sinh viên nhóm 1, 2 khi học hoặc thi lại cùng nhóm 3 nên theo dõi các thông báo và thông tin từ phòng đào tạo để biết chính xác thời gian đóng học phí và lệ phí thi lại các học phần.
+      - Thông tin về thời gian đóng học phí và lệ phí thi lại các học phần của sinh viên nhóm 1, 2 khi học hoặc thi lại cùng nhóm 3 có thể được cung cấp qua các buổi họp thông báo của khoa hoặc lớp.
+      - Để tránh việc trễ hạn và sắp xếp tài chính, sinh viên nhóm 1, 2 khi học hoặc thi lại cùng nhóm 3 nên thực hiện đóng học phí và lệ phí thi lại các học phần theo quy định của trường.
+
+  - intent: ask_question9
+    examples: |
+      - Sinh viên có điểm tổng kết học phần Tiếng Anh sơ cấp 2 (GE102) < 4, nhưng sau đó đã học, thi và được cấp chứng chỉ tiếng Anh quốc tế thì có được quy đổi điểm học phần tiếng Anh sơ cấp 1, 2 không?
+      - Nếu sinh viên có điểm tổng kết học phần Tiếng Anh sơ cấp 2 (GE102) dưới 4, nhưng sau đó đã học, thi và nhận được chứng chỉ tiếng Anh quốc tế, liệu có thể quy đổi điểm học phần Tiếng Anh sơ cấp 1, 2 không?
+      - Trường hợp sinh viên đạt điểm tổng kết học phần Tiếng Anh sơ cấp 2 (GE102) dưới 4 nhưng sau đó đạt chứng chỉ tiếng Anh quốc tế, có được tính điểm lại cho học phần Tiếng Anh sơ cấp 1, 2 không?
+      - Đối với sinh viên có điểm tổng kết học phần Tiếng Anh sơ cấp 2 (GE102) dưới 4, nhưng sau đó đã hoàn thành chứng chỉ tiếng Anh quốc tế, liệu có thể yêu cầu quy đổi điểm cho học phần Tiếng Anh sơ cấp 1, 2 không?
+      - Sinh viên khi đạt được chứng chỉ tiếng Anh quốc tế sau khi có điểm tổng kết học phần Tiếng Anh sơ cấp 2 (GE102) dưới 4, có thể được quy đổi điểm học phần Tiếng Anh sơ cấp 1, 2 không?
+      - Trong trường hợp sinh viên học phần Tiếng Anh sơ cấp 2 (GE102) với điểm tổng kết dưới 4 nhưng sau đó đạt chứng chỉ tiếng Anh quốc tế, liệu có thể áp dụng quy đổi điểm cho học phần Tiếng Anh sơ cấp 1, 2 không?
+      - Có quy định nào cho phép sinh viên có điểm tổng kết học phần Tiếng Anh sơ cấp 2 (GE102) dưới 4, nhưng sau đó đạt chứng chỉ tiếng Anh quốc tế, có được quy đổi điểm cho học phần Tiếng Anh sơ cấp 1, 2 không?
+      - Sinh viên sau khi đạt chứng chỉ tiếng Anh quốc tế có thể yêu cầu quy đổi điểm học phần Tiếng Anh sơ cấp 1, 2 nếu điểm tổng kết học phần Tiếng Anh sơ cấp 2 (GE102) dưới 4?
+      - Trong trường hợp sinh viên đã hoàn thành chứng chỉ tiếng Anh quốc tế sau khi có điểm tổng kết học phần Tiếng Anh sơ cấp 2 (GE102) dưới 4, liệu có thể xem xét quy đổi điểm cho học phần Tiếng Anh sơ cấp 1, 2 không?
+      - Sinh viên khi đạt chứng chỉ tiếng Anh quốc tế sau khi có điểm tổng kết học phần Tiếng Anh sơ cấp 2 (GE102) dưới 4, có thể được cân nhắc quy đổi điểm cho học phần Tiếng Anh sơ cấp 1, 2 không?
+      - Có chính sách nào cho phép sinh viên có điểm tổng kết học phần Tiếng Anh sơ cấp 2 (GE102) dưới 4, nhưng sau đó đạt chứng chỉ tiếng Anh quốc tế, có thể yêu cầu quy đổi điểm cho học phần Tiếng Anh sơ cấp 1, 2 không?
+  
+  - intent: ask_question10
+    examples: |
+      - Sinh viên có điểm thi tuyển sinh đầu vào học phần tiếng Anh ≥ 7, sẽ được miễn học và thi học phần Tiếng Anh cơ sở 1 (GE171), được xếp lớp học phần Tiếng Anh cơ sở 2 (GE172). Điểm tổng kết học phần tiếng Anh cơ sở 1 (GE171) được tính như thế nào?
+      - Sinh viên nếu có điểm thi tuyển sinh đầu vào học phần tiếng Anh ≥ 7 sẽ được miễn học và thi học phần Tiếng Anh cơ sở 1 (GE171) và được xếp lớp học phần Tiếng Anh cơ sở 2 (GE172). Vậy điểm tổng kết học phần Tiếng Anh cơ sở 1 (GE171) sẽ được tính như thế nào?
+      - Khi sinh viên có điểm thi tuyển sinh đầu vào học phần tiếng Anh ≥ 7, trường sẽ miễn học và thi học phần Tiếng Anh cơ sở 1 (GE171) và sinh viên sẽ được tham gia lớp học phần Tiếng Anh cơ sở 2 (GE172). Tuy nhiên, điểm tổng kết học phần Tiếng Anh cơ sở 1 (GE171) sẽ được tính như thế nào?
+      - Sinh viên đạt điểm thi tuyển sinh đầu vào học phần tiếng Anh ≥ 7 sẽ được miễn học và thi học phần Tiếng Anh cơ sở 1 (GE171) và chuyển sang lớp học phần Tiếng Anh cơ sở 2 (GE172). Điểm tổng kết học phần Tiếng Anh cơ sở 1 (GE171) sẽ được tính ra sao?
+      - Nếu sinh viên đạt điểm thi tuyển sinh đầu vào học phần tiếng Anh ≥ 7, trường sẽ cho phép miễn học và thi học phần Tiếng Anh cơ sở 1 (GE171), và sinh viên sẽ được tham gia lớp học phần Tiếng Anh cơ sở 2 (GE172). Tuy nhiên, phương pháp tính điểm tổng kết học phần Tiếng Anh cơ sở 1 (GE171) là gì?
+      - Khi sinh viên đạt điểm thi tuyển sinh đầu vào học phần tiếng Anh ≥ 7, trường sẽ miễn học và thi học phần Tiếng Anh cơ sở 1 (GE171), và sinh viên sẽ được xếp lớp học phần Tiếng Anh cơ sở 2 (GE172). Tuy nhiên, cách tính điểm tổng kết học phần Tiếng Anh cơ sở 1 (GE171) là gì?
+      - Sinh viên nếu có điểm thi tuyển sinh đầu vào học phần tiếng Anh ≥ 7 sẽ được miễn học và thi học phần Tiếng Anh cơ sở 1 (GE171), và được xếp lớp học phần Tiếng Anh cơ sở 2 (GE172). Điểm tổng kết học phần Tiếng Anh cơ sở 1 (GE171) được tính như thế nào?
+      - Khi sinh viên đạt điểm thi tuyển sinh đầu vào học phần tiếng Anh ≥ 7, trường sẽ cho phép miễn học và thi học phần Tiếng Anh cơ sở 1 (GE171), và sinh viên sẽ được tham gia lớp học phần Tiếng Anh cơ sở 2 (GE172). Tuy nhiên, cách tính điểm tổng kết học phần Tiếng Anh cơ sở 1 (GE171) là gì?
+      - Nếu sinh viên đạt điểm thi tuyển sinh đầu vào học phần tiếng Anh ≥ 7, trường sẽ miễn học và thi học phần Tiếng Anh cơ sở 1 (GE171), và sinh viên sẽ được xếp lớp học phần Tiếng Anh cơ sở 2 (GE172). Vậy, phương pháp tính điểm tổng kết học phần Tiếng Anh cơ sở 1 (GE171) sẽ như thế nào?
+      - Sinh viên có điểm thi tuyển sinh đầu vào học phần tiếng Anh ≥ 7 sẽ được miễn học và thi học phần Tiếng Anh cơ sở 1 (GE171), và được xếp lớp học phần Tiếng Anh cơ sở 2 (GE172). Tuy nhiên, phương thức tính điểm tổng kết học phần Tiếng Anh cơ sở 1 (GE171) là gì?
+      - Khi sinh viên đạt điểm thi tuyển sinh đầu vào học phần tiếng Anh ≥ 7, trường sẽ cho phép miễn học và thi học phần Tiếng Anh cơ sở 1 (GE171) và sinh viên sẽ được tham gia lớp học phần Tiếng Anh cơ sở 2 (GE172). Tuy nhiên, cách tính điểm tổng kết học phần Tiếng Anh cơ sở 1 (GE171) là gì?
+
+  - intent: ask_quetion11
+    examples: |
+      - Học phần A là điều kiện tiên quyết của học phần B, SV muốn hủy điểm tổng kết của học phần A để học lại thì có được không?
+      - Nếu học phần A là điều kiện tiên quyết của học phần B, sinh viên có thể hủy điểm tổng kết của học phần A để học lại không?
+      - Trong trường hợp học phần A là điều kiện tiên quyết của học phần B, sinh viên có thể yêu cầu hủy điểm tổng kết của học phần A để có thể học lại không?
+      - Sinh viên muốn hủy điểm tổng kết của học phần A để có thể học lại khi học phần A là điều kiện tiên quyết của học phần B, có được phép không?
+      - Khi học phần A là điều kiện tiên quyết của học phần B, sinh viên có thể xin hủy điểm tổng kết của học phần A để học lại không?
+      - Trong trường hợp học phần A là điều kiện tiên quyết của học phần B, sinh viên có quyền yêu cầu hủy điểm tổng kết của học phần A để có thể học lại không?
+      - Sinh viên có thể yêu cầu hủy điểm tổng kết của học phần A để có thể học lại khi học phần A là điều kiện tiên quyết của học phần B không?
+      - Nếu học phần A là điều kiện tiên quyết của học phần B, sinh viên có được phép hủy điểm tổng kết của học phần A để học lại không?
+      - Trong trường hợp học phần A là điều kiện tiên quyết của học phần B, sinh viên có thể yêu cầu hủy điểm tổng kết của học phần A để có thể học lại không?
+      - Sinh viên muốn hủy điểm tổng kết của học phần A để có thể học lại khi học phần A là điều kiện tiên quyết của học phần B, có được phép không?
+      - Khi học phần A là điều kiện tiên quyết của học phần B, sinh viên có thể xin hủy điểm tổng kết của học phần A để học lại không?
+      - Trong trường hợp học phần A là điều kiện tiên quyết của học phần B, sinh viên có quyền yêu cầu hủy điểm tổng kết của học phần A để có thể học lại không?
+      - Sinh viên có thể yêu cầu hủy điểm tổng kết của học phần A để có thể học lại khi học phần A là điều kiện tiên quyết của học phần B không?
+      - Nếu học phần A là điều kiện tiên quyết của học phần B, sinh viên có được phép hủy điểm tổng kết của học phần A để học lại không?
+      - Trong trường hợp học phần A là điều kiện tiên quyết của học phần B, sinh viên có thể yêu cầu hủy điểm tổng kết của học phần A để có thể học lại không?
+      - Sinh viên muốn hủy điểm tổng kết của học phần A để có thể học lại khi học phần A là điều kiện tiên quyết của học phần B, có được phép không?
+      - Khi học phần A là điều kiện tiên quyết của học phần B, sinh viên có thể xin hủy điểm tổng kết của học phần A để học lại không?
+      - Trong trường hợp học phần A là điều kiện tiên quyết của học phần B, sinh viên có quyền yêu cầu hủy điểm tổng kết của học phần A để có thể học lại không?
+      - Sinh viên có thể yêu cầu hủy điểm tổng kết của học phần A để có thể học lại khi học phần A là điều kiện tiên quyết của học phần B không?
+      - Nếu học phần A là điều kiện tiên quyết của học phần B, sinh viên có được phép hủy điểm tổng kết của học phần A để học lại không?
+      - Trong trường hợp học phần A là điều kiện tiên quyết của học phần B, sinh viên có thể yêu cầu hủy điểm tổng kết của học phần A để có thể học lại không?
