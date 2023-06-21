@@ -487,3 +487,74 @@ nlu:
       - Sinh viên có thể yêu cầu hủy điểm tổng kết của học phần A để có thể học lại khi học phần A là điều kiện tiên quyết của học phần B không?
       - Nếu học phần A là điều kiện tiên quyết của học phần B, sinh viên có được phép hủy điểm tổng kết của học phần A để học lại không?
       - Trong trường hợp học phần A là điều kiện tiên quyết của học phần B, sinh viên có thể yêu cầu hủy điểm tổng kết của học phần A để có thể học lại không?
+  
+  - intent: ask_question_12
+    examples: |
+      - Những lý do nào khiến sinh viên phải bỏ học do thành tích học tập không tốt?
+      - Trường hợp nào dẫn đến việc sinh viên bị ép nghỉ học do học đạt kém?
+      - Những nguyên nhân gây ra việc buộc thôi học sinh viên do kết quả học tập không đạt yêu cầu?
+      - Sinh viên bị đuổi học trong trường hợp nào vì kém thành tích học tập?
+      - Khi nào sinh viên phải nghỉ học vì không đủ tiêu chuẩn học tập?
+      - Các tình huống nào dẫn đến việc buộc sinh viên rời bỏ học vì học kém?
+      - Những trường hợp nào khiến sinh viên bị buộc thôi học do không đạt được kết quả học tập?
+      - Khi nào sinh viên sẽ bị đình chỉ học vì thành tích học tập không đáng mong đợi?
+      - Những lí do nào khiến sinh viên bị loại khỏi trường vì không đủ năng lực học tập?
+      - Trường hợp nào khiến sinh viên bị cấm học do không đạt yêu cầu học tập?
+      - Khi nào sinh viên sẽ bị đuổi học vì học kém?
+      - Những lý do nào khiến sinh viên bị buộc thôi học do không đủ khả năng học tập?
+      - Trường hợp nào dẫn đến việc sinh viên bị đình chỉ học do kết quả học tập không đạt yêu cầu?
+      - Khi nào sinh viên phải rời bỏ học vì không hoàn thành tiêu chuẩn học tập?
+      - Các tình huống nào dẫn đến việc buộc sinh viên nghỉ học vì học kém?
+      - Những trường hợp nào khiến sinh viên bị buộc thôi học do không đủ tiêu chuẩn học tập?
+      - Khi nào sinh viên sẽ bị loại khỏi trường vì thành tích học tập không đáng mong đợi?
+      - Những lí do nào khiến sinh viên bị cấm học do không đạt yêu cầu học tập?
+      - Trường hợp nào khiến sinh viên bị đuổi học vì không đủ năng lực học tập?
+      - Khi nào sinh viên sẽ bị buộc thôi học do học kém?
+
+  - intent: ask_question_15
+    examples: |
+      - Sinh viên được hỗ trợ đăng ký học trong những trường hợp nào?
+      - Sinh viên được hỗ trợ đăng ký học khi gặp khó khăn về việc lựa chọn các môn học?
+      - Trường hợp nào sinh viên được hỗ trợ đăng ký học để cải thiện kỹ năng học tập?
+      - Khi nào sinh viên được hỗ trợ đăng ký học để tham gia các khóa học đặc biệt?
+      - Trường hợp nào sinh viên nhận được sự hỗ trợ đăng ký học để tham gia các khóa học ngoại ngữ?
+      - Sinh viên được hỗ trợ đăng ký học khi gặp khó khăn với việc xác nhận môn học đã hoàn thành?
+      - Khi nào sinh viên được hỗ trợ đăng ký học để điều chỉnh chương trình học theo mục tiêu cá nhân?
+      - Trường hợp nào sinh viên nhận được hỗ trợ đăng ký học để đăng ký môn học thay thế?
+      - Khi nào sinh viên được hỗ trợ đăng ký học để giải quyết các vấn đề liên quan đến quy định học phần?
+      - Trường hợp nào sinh viên nhận được sự hỗ trợ đăng ký học khi gặp vấn đề với quy trình đăng ký học tập trực tuyến?
+      - Khi nào sinh viên được hỗ trợ đăng ký học để xử lý các thủ tục học tập đặc biệt?
+      - Trường hợp nào sinh viên được hỗ trợ đăng ký học để tham gia các khóa học tùy chọn?
+      - Khi nào sinh viên được hỗ trợ đăng ký học để xác minh môn học đã đăng ký?
+      - Trường hợp nào sinh viên nhận được sự hỗ trợ đăng ký học khi gặp vấn đề với các quy định về đăng ký học tập?
+      - Khi nào sinh viên được hỗ trợ đăng ký học để tham gia các khóa học liên ngành?
+      - Trường hợp nào sinh viên nhận được sự hỗ trợ đăng ký học khi cần điều chỉnh số lượng tín chỉ học?
+      - Khi nào sinh viên được hỗ trợ đăng ký học để tìm hiểu về các môn học chuyên ngành?
+      - Trường hợp nào sinh viên được hỗ trợ đăng ký học để đảm bảo không trùng lịch với các môn học khác?
+      - Khi nào sinh viên được hỗ trợ đăng ký học để tìm hiểu về các yêu cầu đặc biệt của chương trình học?
+      - Trường hợp nào sinh viên nhận được sự hỗ trợ đăng ký học để đăng ký môn học trong khung giờ linh hoạt?
+      - Khi nào sinh viên được hỗ trợ đăng ký học để tham gia các hoạt động ngoại khóa liên quan đến học tập?
+
+  - intent: ask_question_16
+    examples: |
+      - Sinh viên có mã nợ học phí (NHP) do quên không đóng học phí trong thời hạn quy định. Vậy trong kỳ thi có được đóng học phí không?
+      - Sinh viên có mã nợ học phí có được tham gia kỳ thi không?
+      - Trong trường hợp sinh viên quên đóng học phí, có được phép nộp để tham gia kỳ thi không?
+      - Sinh viên có mã nợ học phí có quyền đăng ký và tham dự kỳ thi không?
+      - Trong trường hợp sinh viên chưa thanh toán học phí, có thể tham gia kỳ thi không?
+      - Sinh viên quên đóng học phí có được phép tham gia kỳ thi không tính phạt?
+      - Trong trường hợp sinh viên không đóng học phí đúng hạn, có được phép tham dự kỳ thi không bị hạn chế?
+      - Sinh viên có nợ học phí có thể đăng ký và tham gia kỳ thi không bị loại?
+      - Trong trường hợp sinh viên chưa đóng đủ học phí, có được phép tham dự kỳ thi không bị hạn chế?
+      - Sinh viên có mã nợ học phí có quyền đăng ký và tham gia kỳ thi không cần lo lắng về việc bị từ chối?
+      - Trong trường hợp sinh viên quên đóng học phí, có được phép nộp sau để tham gia kỳ thi không?
+      - Sinh viên có nợ học phí có quyền đăng ký và tham dự kỳ thi không bị xử phạt?
+      - Trong trường hợp sinh viên không đóng học phí đúng hạn, có được phép tham gia kỳ thi không tính trừ?
+      - Sinh viên có mã nợ học phí có được phép đóng học phí sau khi tham gia kỳ thi không?
+      - Trong trường hợp sinh viên chưa thanh toán học phí, có thể tham gia kỳ thi không bị từ chối?
+      - Sinh viên quên đóng học phí có được phép tham gia kỳ thi không bị cấm?
+      - Trong trường hợp sinh viên không đóng đủ học phí, có được phép tham dự kỳ thi không bị loại?
+      - Sinh viên có mã nợ học phí có quyền đăng ký và tham gia kỳ thi không bị hạn chế?
+      - Trong trường hợp sinh viên chưa đóng học phí, có được phép tham gia kỳ thi không bị xử phạt?
+      - Sinh viên có nợ học phí có được phép đăng ký và tham gia kỳ thi không tính trừ?
+      - Trong trường hợp sinh viên quên đóng học phí, có được phép nộp sau để tham gia kỳ thi không bị cấm?

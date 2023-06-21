@@ -84,3 +84,18 @@ rules:
     steps:
       - intent: ask_question_11
       - action: utter_ask_question11
+  
+  - rule: rule17
+    steps:
+      - intent: ask_question_12
+      - action: utter_ask_question12
+
+  - rule: rule18
+    steps:
+      - intent: ask_question_15
+      - action: utter_ask_question15
+  
+  - rule: rule19
+    steps:
+      - intent: ask_question_16
+      - action: utter_ask_question16

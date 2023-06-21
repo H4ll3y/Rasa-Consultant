@@ -96,3 +96,18 @@ stories:
     steps:
       - intent: ask_question_11
       - action: utter_ask_question11
+
+  - story: story17
+    steps:
+      - intent: ask_question_12
+      - action: utter_ask_question12
+  
+  - story: story18
+    steps:
+      - intent: ask_question_15
+      - action: utter_ask_question15
+
+  - story: story19
+    steps:
+      - intent: ask_question_16
+      - action: utter_ask_question16

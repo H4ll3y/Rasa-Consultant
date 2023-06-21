@@ -17,6 +17,9 @@ intents:
   - ask_question_9
   - ask_question_10
   - ask_question_11
+  - ask_question_12
+  - ask_question_15
+  - ask_question_16
 
 actions:
   - response_info_sub
@@ -124,7 +127,7 @@ responses:
   - text: "Là do 1 trong 2 trường hợp sau: \n1. Chưa học học phần là điều kiện tiên quyết của học phần {name_subject}.\n2. Đã học học phần điều kiện tiên quyết nhưng phải học lại (HL) vì bị cấm thi do điểm danh (CT_ĐD) hoặc do điểm quá trình <4 (CT_ĐQT)."
 
   utter_ask_question3:
-  - text: "Có thể xảy ra các trường hợp sau:\n1.  Do trục trặc kỹ thuật, SV vừa đăng ký xong nhưng máy chủ bị out nên dữ liệu đăng ký học phần đó của SV không được cập nhật.\n2. SV đã để lộ mật khẩu nên đã bị người khác đăng nhập vào tài khoản và hủy ĐKH của học phần đó vì mục đích cá nhân (Theo Điều 7 trang 9 Quy định đào tạo hệ đại học chính quy theo hệ thống tín chỉ năm học 2019-2020).\n3. Lớp bị hủy do số lượng SV đăng ký học nhỏ hơn 20 người. SV cần thường xuyên theo dõi Thông báo “Hủy lớp, ghép lớp, gộp lớp - tách đôi, tách ba, lớp lùi” của phòng Đào tạo đăng trên website trường http://thanglong.edu.vn để ĐKH bổ sung lớp khác hoặc học phần khác nếu còn chỗ."
+  - text: "Có thể xảy ra các trường hợp sau:\n1. Do trục trặc kỹ thuật, SV vừa đăng ký xong nhưng máy chủ bị out nên dữ liệu đăng ký học phần đó của SV không được cập nhật.\n2. SV đã để lộ mật khẩu nên đã bị người khác đăng nhập vào tài khoản và hủy ĐKH của học phần đó vì mục đích cá nhân (Theo Điều 7 trang 9 Quy định đào tạo hệ đại học chính quy theo hệ thống tín chỉ năm học 2019-2020).\n3. Lớp bị hủy do số lượng SV đăng ký học nhỏ hơn 20 người. SV cần thường xuyên theo dõi Thông báo “Hủy lớp, ghép lớp, gộp lớp - tách đôi, tách ba, lớp lùi” của phòng Đào tạo đăng trên website trường http://thanglong.edu.vn để ĐKH bổ sung lớp khác hoặc học phần khác nếu còn chỗ."
 
   utter_ask_question4:
   - text: "SV không được đăng ký học vì SV học ở nhóm nào đóng học phí và thi ở nhóm đó (Theo Điều 10 trang 10 Quy định đào tạo hệ đại học chính quy theo hệ thống tín chỉ năm học 2019-2020)"
@@ -143,6 +146,15 @@ responses:
 
   utter_ask_question11:
   - text: "SV không được hủy học phần A là điều kiện tiên quyết của học phần B, sau khi ĐKH và thi đạt tích lũy học phần B mới nên hủy học phần A"
+
+  utter_ask_question12:
+  - text: "Theo Khoản 1, Điều 27, trang 19 Quy định đào tạo hệ đại học chính quy theo hệ thống tín chỉ năm học 2019-2020"
+
+  utter_ask_question15:
+  - text: "SV được hỗ trợ ĐKH trong các trường hợp lớp bị hủy do không đủ số lượng SV; học phần chuyên ngành không mở thường xuyên. Tuy nhiên, chỉ hỗ trợ cho những SV có tham gia họp Cố vấn học tập trong học kỳ đó"
+
+  utter_ask_question16:
+  - text: "SV không được đóng học phí trong kỳ thi vì dữ liệu thi đã được fix cứng, có thể hỗ trợ giữ lại điểm tiểu luận, thực tập để nhập vào học kỳ sau trong trường hợp SV có đăng ký thi lại vào học kỳ đó"
 
 session_config:
   session_expiration_time: 60
