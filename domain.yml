@@ -2,21 +2,21 @@ version: "3.1"
 
 intents:
   - greet
-  - give_offer
-  - give_info
+  # - give_offer
+  # - give_info
   - need_info_sub
   - need_offer_sub
   - year_semester
   - thank_you
   - ask_question
-  - ask_question2
-  - ask_question3
-  - ask_question4
-  - ask_question5
-  - ask_question6
-  - ask_question9
-  - ask_question10
-  - ask_question11
+  - ask_question_2
+  - ask_question_3
+  - ask_question_4
+  - ask_question_5
+  - ask_question_6
+  - ask_question_9
+  - ask_question_10
+  - ask_question_11
 
 actions:
   - response_info_sub
@@ -108,8 +108,8 @@ responses:
   utter_greet:
   - text: "Xin chào, tôi có thể giúp gì cho bạn?"
 
-  utter_ask_info:
-  - text: "Bạn có thể cho tôi biết ngành học của bạn được không?"
+  # utter_ask_info:
+  # - text: "Bạn có thể cho tôi biết ngành học của bạn được không?"
 
   utter_response_info:
   - text: "Bạn học ngành {major}"

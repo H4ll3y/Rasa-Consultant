@@ -6,17 +6,17 @@ stories:
       - intent: greet
       - action: utter_greet
 
-  - story: story2
-    steps:
-      - intent: give_offer
-      - action: utter_ask_info
+  # - story: story2
+  #   steps:
+  #     - intent: give_offer
+  #     - action: utter_ask_info
 
-  - story: story3
-    steps:
-      - intent: give_info
-        entities:
-          - major
-      - action: utter_response_info
+  # - story: story3
+  #   steps:
+  #     - intent: give_info
+  #       entities:
+  #         - major
+  #     - action: utter_response_info
 
   - story: story4
     steps:
@@ -59,40 +59,40 @@ stories:
   
   - story: story9
     steps:
-      - intent: ask_question2
+      - intent: ask_question_2
       - action: utter_ask_question2
   
   - story: story10
     steps:
-      - intent: ask_question3
+      - intent: ask_question_3
       - action: utter_ask_question3
 
   - story: story11
     steps:
-      - intent: ask_question4
+      - intent: ask_question_4
       - action: utter_ask_question4
 
   - story: story12
     steps:
-      - intent: ask_question5
+      - intent: ask_question_5
       - action: utter_ask_question5
 
   - story: story13
     steps:
-      - intent: ask_question6
+      - intent: ask_question_6
       - action: utter_ask_question6
 
   - story: story14
     steps:
-      - intent: ask_question9
+      - intent: ask_question_9
       - action: utter_ask_question9
 
   - story: story15
     steps:
-      - intent: ask_question10
+      - intent: ask_question_10
       - action: utter_ask_question10
 
   - story: story16
     steps:
-      - intent: ask_question11
+      - intent: ask_question_11
       - action: utter_ask_question11

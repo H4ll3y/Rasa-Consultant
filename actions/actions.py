@@ -54,14 +54,16 @@ case = []
 def textSearchTerm(type, DC, CSKN, HPBB, TTKLCD):
       text = ""
       dtype = {
-            1: ["đại cương", "học phần đại cương"],
-            2: ["cơ sở khối ngành", "khối ngành", "học phần khối ngành"],
-            3: ["học phần bắt buộc", "bắt buộc"],
-            4: ["học phần lựa chọn", "lựa chọn"],
+            1: ["đại cương"],
+            2: ["khối ngành"],
+            3: ["bắt buộc"],
+            4: ["lựa chọn"],
             5: ["khoá luận, chuyên đề"]
       }  
-      t = {i for i in dtype if set([type]).issubset(set(dtype[i]))}
+      
+      t = {i for i in dtype if dtype[i][0] in type}
       t = list(t)
+
       index = 1
       if t[0] == 1:
             text += "Những môn thuộc đại cương:\n"
@@ -184,11 +186,9 @@ class ResponseInfoSub(Action):
             case.clear()
             return []
 
-def textSearchConditionSubject(term, case, subs, cres):
-      text = ""
+def textSearchConditionSubject(list, check, term, case, subs, cres):
       if subs or cres:
             index = 0
-            check = False
             for i in range (0, len(term[0])):
                   temp = []
                   if term[0][i][4]:
@@ -202,19 +202,12 @@ def textSearchConditionSubject(term, case, subs, cres):
                               for k in range(0, len(l[0][0])):
                                     temp.append(l[0][0][k].lower())
                         if set(temp).issubset(set(case)):
-                              check = True
-                              if index == 0:
-                                    text += "Trường hợp của bạn có thể học được những môn học sau:\n"
-                              index += 1
-                              text += "%d. %s\n" %(index, term[0][i][2])
+                              check.append(True)
+                              list.append(term[0][i][2])
+                        else:
+                              check.append(False)
                         temp.clear()
-            if index == 0 and check:
-                  text += "Những môn học này hiện tại không phải điều kiện tiên quyết của môn học nào"
-            elif check == False:
-                  text += "Vui lòng kiểm tra lại thông tin bạn cung cấp"
-      else:
-            text += "Vui lòng kiểm tra thông tin cho yêu cầu của bạn!"
-      return text, check
+      return list, check
 
 class ResponseOfferSub(Action):
       def name(self) -> Text:
@@ -249,11 +242,23 @@ class ResponseOfferSub(Action):
                                     case.append(110)
                                     case.append(100)
             
+            list = []
+            check = []
             for i in range(0, 5):
-                  text, check = textSearchConditionSubject(CNTT[i], case, subs, cres)
-                  if check:
-                        break
+                  list, check = textSearchConditionSubject(list, check, CNTT[i], case, subs, cres)
 
+            if True not in check:
+                  text = "Vui lòng kiểm tra lại thông tin bạn cung cấp"
+            elif True in check and len(list):
+                  text = "Những môn học này hiện tại không phải điều kiện tiên quyết của môn học nào"
+            else:
+                  text = ""
+                  index = 0
+                  for i in list:
+                        if index == 0:
+                              text += "Trường hợp của bạn có thể học được những môn học sau:\n"
+                        index += 1
+                        text += "%d. %s\n" %(index, i)
             dispatcher.utter_message(text = text)
             case.clear()
             return []
@@ -268,14 +273,14 @@ def texrtSearchYearSubject(term, year, semester):
             index = 1
             for j in range (0, 5):
                   for i in range (0, len(term[j][0])):
-                        if set(y).issubset(set([term[j][0][i][7]])):
+                        if set(y).issubset(set([term[j][0][i][8]])):
                               temp = []
-                              if term[j][0][i][8] == 0:
+                              if term[j][0][i][7] == 0:
                                     temp.append(1)
                                     temp.append(2)
                                     temp.append(3)
                               else:
-                                    temp.append(term[j][0][i][8])
+                                    temp.append(term[j][0][i][7])
 
                               if set(s).issubset(set(temp)):
                                     if index == 1:
@@ -287,14 +292,14 @@ def texrtSearchYearSubject(term, year, semester):
             index = 1
             for j in range (0, 5):
                   for i in range (0, len(term[j][0])):
-                        if set(y).issubset(set([term[j][0][i][7]])):
+                        if set(y).issubset(set([term[j][0][i][8]])):
                               if index == 1:
                                     text += "Lộ trình Năm %s:\n" % y[0]
-                              text += "%d. %s Kỳ " %(index, term[j][0][i][2])
-                              if term[j][0][i][8] == 0:
+                              text += "%d. %s Kỳ" %(index, term[j][0][i][2])
+                              if term[j][0][i][7] == 0:
                                     text += " 1, 2 và 3\n"
                               else:
-                                    text += str(term[j][0][i][8]) + "\n"
+                                    text += str(term[j][0][i][7]) + "\n"
                               index += 1
       return text
 
