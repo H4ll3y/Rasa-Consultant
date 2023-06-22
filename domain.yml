@@ -20,6 +20,24 @@ intents:
   - ask_question_12
   - ask_question_15
   - ask_question_16
+  - ask_question_17
+  - ask_question_18
+  - ask_question_22
+  - ask_question_23
+  - ask_question_24
+  - ask_question_25
+  - ask_question_26
+  - ask_question_27
+  - ask_question_29
+  - ask_question_33
+  - ask_question_34
+  - ask_question_35
+  - ask_question_36
+  - ask_question_37
+  - ask_question_38
+  - ask_question_40
+  - ask_question_41
+  - ask_question_42
 
 actions:
   - response_info_sub
@@ -158,6 +176,60 @@ responses:
 
   utter_nlu_fallback:
   - text: "Vui lòng chỉ hỏi những câu hỏi liên quan đến vấn đề học tập, đăng ký học. Chi tiết xin liên hệ với cố vấn học tập"
+  
+  utter_ask_question17:
+  - text: "SV chỉ được nghỉ học tạm thời và bảo lưu kết quả học tập từ 1 học kỳ đến 1 năm. SV nộp đơn xin bảo lưu theo đúng nhóm học và vào tuần thứ 4 của học kỳ tại phòng Tiếp sinh viên (bàn 3). (Mục b, Khoản 1, Điều 14, trang 13 Quy định đào tạo hệ đại học chính quy theo hệ thống tín chỉ năm học 2019-2020)"
+
+  utter_ask_question18:
+  - text: "SV được bảo lưu toàn bộ kết quả học tập các học phần đã học nếu nghỉ học tạm thời một học kỳ. Trong trường hợp nghỉ học tạm thời từ hai học kỳ đến một năm chỉ được bảo lưu kết quả học tập của những học phần có điểm tổng kết ≥ 4. (Mục c, Khoản 1, Điều 14, trang 13 Quy định đào tạo hệ đại học chính quy theo hệ thống tín chỉ năm học 2019-2020)"
+
+  utter_ask_question22:
+  - text: "Theo Khoản 2, Điều 13 và Mục 3, Phụ lục, trang 22 Quy định Đào tạo hệ Đại học chính quy theo hệ thống tín chỉ năm học 2019-2020"
+
+  utter_ask_question23:
+  - text: "Theo Khoản 3, Điều 18, trang 16 Quy định Đào tạo hệ Đại học chính quy theo hệ thống tín chỉ năm học 2019 - 2020.\nSV phải TN ngành 1 trước ngành 2 và các học phần chuyên ngành bắt buộc của ngành/chuyên ngành 2 sẽ sử dụng làm học phần lựa chọn bắt buộc hoặc lựa chọn tự do của ngành 1 ngược lại khi xét TN ngành 2 có thể dùng tất cả các học phần lựa chọn bắt buộc của ngành 1 làm học phần lựa chọn bắt buộc hoặc lựa chọn tự do của ngành 2. Tuy nhiên, các học phần có cùng nội dung đang giảng dạy (tham khảo ở Bộ môn) không được dùng làm học phần lựa chọn tự do"
+
+  utter_ask_question24:
+  - text: "SV chỉ được xét tốt nghiệp ngành thứ hai, nếu có đủ điều kiện tốt nghiệp ở ngành thứ nhất (Khoản 2, Điều 13, trang 12 Quy định Đào tạo hệ Đại học chính quy theo hệ thống tín chỉ năm học 2019-2020)"
+
+  utter_ask_question25:
+  - text: "SV được phép đề nghị khoa/bộ môn (thông qua cố vấn học tập) mở học phần thi lại trước tuần thứ 4 của học kỳ nếu có lý do chính đáng (còn 1-2 học phần để tốt nghiệp; là điều kiện tiên quyết của học phần cần ĐKH; là học phần không mở thường xuyên (Khoản 2, Điều 12, trang 12; Khoản 6, điều 15, trang 15 Quy định Đào tạo hệ Đại học chính quy theo hệ thống tín chỉ năm học 2019-2020)"
+
+  utter_ask_question26:
+  - text: "SV cần đăng ký học phần thi lại với phòng Đào tạo vào thời điểm trước tuần 4 của mỗi học kỳ (Khoản 2, Điều 12, trang 12 và Khoản 6, Điều 15, trang 15 Quy định Đào tạo hệ Đại học chính quy theo hệ thống tín chỉ năm học 2019-2020)"
+
+  utter_ask_question27:
+  - text: "SV cần cân nhắc kỹ trước khi đăng ký thi lại (TL), nâng điểm (NĐ). Nhà trường không hủy kết quả đăng ký thi lại của SV vì nếu SV không dự thi thì vẫn không ảnh hưởng đến điểm tổng kết. Trường hợp đặc biệt có lý do chính đáng, SV đăng ký thi nâng điểm muốn hủy có thể trực tiếp đề xuất với phòng Đào tạo để giải quyết"
+
+  utter_ask_question29:
+  - text: "Có thể xảy ra một trong những lỗi sau:\n1. Do mất mạng đột xuất nên học phần vừa đăng ký bị out khỏi danh sách đăng ký thi lại, nâng điểm. SV cần viết đơn trình bày xin hỗ trợ đăng ký gửi phòng Đào tạo để được kiểm tra dữ liệu gốc; nếu có, sẽ khôi phục lại kết quả đăng ký cho SV\n2. SV đã đăng ký thi lại, nâng điểm sai quy định do một trong các nguyên nhân sau: Đăng ký thi nâng điểm các học phần Giáo dục quốc phòng và Giáo dục thể chất; đăng ký thi nâng điểm tiếng Anh trước học phần đang học từ 2 mức trở lên; đăng ký thi nâng điểm các học phần đã tích lũy do thi lại; đăng ký thi lại, nâng điểm cùng nhóm 3 các học phần đã mở trong nhóm của mình hoặc để lộ mật khẩu dẫn đến bị người khác đăng nhập vào hủy học phần đăng ký thi\n3. SV đã đăng ký thi lại, nâng điểm các học phần của hệ vừa làm vừa học có hiển thị trên lịch thi chung của toàn trường"
+
+  utter_ask_question33:
+  - text: "Chỉ những SV có lý do chính đáng xin đăng ký cấp GCNTNTT với điều kiện phải nộp hồ sơ tốt nghiệp (HSTN) và đăng ký sau khi kết thúc đợt thu HSTN 1 tháng với thời hạn đăng ký trong 1 tuần vì phòng Đào tạo phải kiểm tra bảng điểm của SV xem có đủ điều kiện TN hay không. Trường hợp này, SV không được hoãn tốt nghiệp và không được đăng ký thi lại, nâng điểm"
+
+  utter_ask_question34:
+  - text: "Một năm có 04 đợt xét TN và chỉ thu HSTN vào thời điểm có điểm tổng kết của nhóm 2 trong các học kỳ (Điều 21, trang 17 Quy định Đào tạo hệ Đại học chính quy theo hệ thống tín chỉ năm học 2019-2020)"
+
+  utter_ask_question35:
+  - text: "SV được xét vớt tốt nghiệp theo từng khóa: khoá ≤ 12 được vớt 6 học phần, khoá 13 - 19 được vớt 4 học phần, khoá ≥ 20 được vớt 2 học phần"
+
+  utter_ask_question36:
+  - text: "Căn cứ vào khóa học, số học phần được vớt, điểm tổng kết thì điều kiện xét vớt học phần được quy định như sau:\n1. SV chỉ được xét vớt học phần có điểm có tổng kết từ 4 đến ≤ 4,54 điểm: được tính như vớt 1 học phần\n2. SV chỉ được xét vớt học phần có điểm có tổng kết từ 3 đến ≤ 3,94 điểm: được tính như vớt 2 học phần\n3. SV chỉ được xét vớt học phần có điểm có tổng kết từ 2 đến ≤ 2,94 điểm: được tính như vớt 3 học phần\n(Theo quy định mềm phòng Đào tạo đã phổ biến trong cuộc họp với CVHT toàn trường)"
+
+  utter_ask_question37:
+  - text: "Có hai trường hợp SV sẽ bị hạ hạng tốt nghiệp:\n1. SV bị hạ hạng tốt nghiệp Giỏi và Xuất sắc khi xét vớt học phần hoặc vi phạm quy chế thi, bị đình chỉ học tập từ 1 học kỳ trở lên hoặc có thời gian học ≥ 8 năm (Điều 22, trang 17 Quy định Đào tạo hệ Đại học chính quy theo hệ thống tín chỉ năm học 2019 -2020)\n2. SV không thỏa mãn yêu cầu về chuẩn đầu ra tiếng Anh tối thiểu theo trình độ và chuẩn công nhận tốt nghiệp theo Quy định đã ban hành. (Điều 2, Quy định chuẩn đầu ra tiếng Anh áp dựng đối với sinh viên đại học hệ chính quy khóa ≥ 26 ban hành kèm theo Quyết định số 17081612/QĐ-ĐHTL ngày 16/08/2017 của Hiệu trưởng Trường Đại học Thăng Long)"
+
+  utter_ask_question38:
+  - text: "SV được xét vớt TN nếu thỏa mãn quy định về xét vớt của các khóa"
+
+  utter_ask_question40:
+  - text: "1. Họp lớp cố vấn học tập: Trước khi đăng ký học (Lịch họp cố vấn học tập, đăng ký học, đăng ký thi và xét tốt nghiệp hàng năm)\n2. Đăng ký học: 2 tuần trước khi kỳ học bắt đầu (Điều 10, trang 10 Quy định Đào tạo hệ Đại học chính quy theo hệ thống tín chỉ năm học 2019-2020)\n3. Đăng ký Nghỉ học tạm thời và bảo lưu kết quả học tập: tuần 4 của học kỳ (Sau khi nhà trường công bố điểm tổng kết của kỳ trước đó)\n4. Đăng ký chuyển khoa, chuyển ngành, học ngành hai: Tuần 5 của học kỳ (Khoản 3, điều 13, trang 12 Quy định Đào tạo hệ Đại học chính quy theo hệ thống tín chỉ năm học 2019-2020)\n5. Đăng ký hủy điểm tổng kết học phần: Tuần 6 của học kỳ\n6. Đăng ký thi lại, nâng điểm: Từ tuần 5 đến tuần 7 của học kỳ (Khoản 2, điều 12, trang 12 Quy định Đào tạo hệ Đại học chính quy theo hệ thống tín chỉ năm học 2019-2020)\n7. Nộp học phí và lệ phí thi lại, nâng điểm (nếu có): từ tuần 4 đến hết tuần 9 của mỗi học kỳ (Khoản 2, điều 29, trang 20 Quy định Đào tạo hệ Đại học chính quy theo hệ thống tín chỉ năm học 2019-2020)"
+
+  utter_ask_question41:
+  - text: "Không được vì học phần GDTC không được tính vào điểm trung bình chung tích lũy của SV và chỉ là điều kiện cần để có thể xét tốt nghiệp và chỉ được tính “Đạt” trong bảng điểm tổng kết của SV"
+
+  utter_ask_question42:
+  - text: "Tất cả các học phần có điểm phù hợp với điều kiện vớt học phần tốt nghiệp của từng khóa (kể cả học lại và thi lại) đều được xét vớt tốt nghiệp"
   
 session_config:
   session_expiration_time: 60

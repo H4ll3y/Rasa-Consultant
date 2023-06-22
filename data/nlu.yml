@@ -558,3 +558,435 @@ nlu:
       - Trong trường hợp sinh viên chưa đóng học phí, có được phép tham gia kỳ thi không bị xử phạt?
       - Sinh viên có nợ học phí có được phép đăng ký và tham gia kỳ thi không tính trừ?
       - Trong trường hợp sinh viên quên đóng học phí, có được phép nộp sau để tham gia kỳ thi không bị cấm?
+
+  - intent: ask_question_17
+    examples: |
+      - Sinh viên được nghỉ học tạm thời và bảo lưu kết quả học tập tối đa trong thời gian bao lâu và làm thủ tục bảo lưu vào thời điểm nào?
+      - Sinh viên có thể nghỉ học tạm thời và bảo lưu kết quả học tập trong thời gian tối đa là bao lâu?
+      - Trong bao lâu, sinh viên được nghỉ học tạm thời và bảo lưu kết quả học tập?
+      - Bảo lưu kết quả học tập được áp dụng trong thời gian bao lâu cho sinh viên nghỉ học tạm thời?
+      - Sinh viên có thể bảo lưu kết quả học tập trong thời gian nghỉ học tạm thời tối đa là bao nhiêu?
+      - Làm thủ tục bảo lưu kết quả học tập vào thời điểm nào khi sinh viên nghỉ học tạm thời?
+      - Khi nghỉ học tạm thời, sinh viên cần thực hiện thủ tục bảo lưu kết quả học tập vào thời điểm nào?
+      - Đến khi nào sinh viên nghỉ học tạm thời mới có thể làm thủ tục bảo lưu kết quả học tập?
+      - Thời điểm làm thủ tục bảo lưu kết quả học tập dành cho sinh viên nghỉ học tạm thời là khi nào?
+      - Bao lâu sau khi nghỉ học tạm thời, sinh viên có thể làm thủ tục bảo lưu kết quả học tập?
+      - Khi sinh viên nghỉ học tạm thời, cần làm thủ tục bảo lưu kết quả học tập vào thời điểm nào?
+      - Sinh viên được nghỉ học tạm thời, thì bảo lưu kết quả học tập có hiệu lực trong thời gian bao lâu?
+      - Làm thủ tục bảo lưu kết quả học tập khi nghỉ học tạm thời cần thực hiện vào thời điểm nào?
+      - Trong khoảng thời gian bao lâu, sinh viên nghỉ học tạm thời có thể bảo lưu kết quả học tập?
+      - Kết quả học tập của sinh viên được bảo lưu trong thời gian nghỉ học tạm thời tối đa là bao lâu?
+      - Bảo lưu kết quả học tập của sinh viên được áp dụng trong khoảng thời gian bao lâu khi nghỉ học tạm thời?
+      - Sinh viên có thể làm thủ tục bảo lưu kết quả học tập khi nghỉ học tạm thời vào thời điểm nào?
+      - Làm thủ tục bảo lưu kết quả học tập của sinh viên khi nghỉ học tạm thời cần thực hiện trước ngày nào?
+      - Sinh viên được nghỉ học tạm thời, vậy thời gian bảo lưu kết quả học tập kéo dài trong bao lâu?
+      - Trước khi nghỉ học tạm thời, sinh viên cần thực hiện thủ tục bảo lưu kết quả học tập vào thời điểm nào?
+      - Bảo lưu kết quả học tập của sinh viên có hiệu lực trong thời gian bao lâu sau khi nghỉ học tạm thời?
+
+  - intent: ask_question_18
+    examples: |
+      - Sinh viên phải bảo lưu kết quả học tập. Trường hợp này các học phần có điểm tổng kết < 4 có được bảo lưu không?
+      - Tại sao trường hợp sinh viên phải bảo lưu kết quả học tập?
+      - Các học phần có điểm tổng kết dưới 4 có được bảo lưu trong trường hợp này?
+      - Quy định bảo lưu kết quả học tập áp dụng cho các học phần có điểm tổng kết như thế nào?
+      - Có tồn tại ngưỡng điểm nhất định để học phần được bảo lưu trong trường hợp này không?
+      - Bảo lưu kết quả học tập có áp dụng cho tất cả các học phần không quan trọng điểm số?
+      - Làm thế nào để biết xem các học phần có điểm tổng kết dưới 4 có được bảo lưu hay không?
+      - Quy định về bảo lưu kết quả học tập trong trường hợp các học phần có điểm tổng kết dưới 4 được thể hiện như thế nào?
+      - Có các điều kiện bổ sung nào khác cần tuân thủ để các học phần có điểm tổng kết dưới 4 được bảo lưu?
+      - Các học phần có điểm tổng kết dưới 4 có ảnh hưởng đến quyền lợi học tập của sinh viên không?
+      - Bảo lưu kết quả học tập trong trường hợp này có yêu cầu thêm thủ tục hay giấy tờ nào không?
+      - Có hạn chế về số lượng học phần có điểm tổng kết dưới 4 được bảo lưu không?
+      - Có sự khác biệt về quy định bảo lưu kết quả học tập giữa các ngành học không?
+      - Bảo lưu kết quả học tập có liên quan đến việc cải thiện điểm số của sinh viên không?
+      - Trường hợp sinh viên phải bảo lưu kết quả học tập, các học phần có điểm tổng kết dưới 4 có được tính vào GPA không?
+      - Có giới hạn thời gian nào để làm thủ tục bảo lưu kết quả học tập cho các học phần có điểm tổng kết dưới 4?
+      - Bảo lưu kết quả học tập trong trường hợp này có ảnh hưởng đến việc xét tốt nghiệp hay không?
+      - Làm thế nào để biết được danh sách các học phần có điểm tổng kết dưới 4 mà được bảo lưu?
+      - Trường hợp sinh viên phải bảo lưu kết quả học tập, có các chính sách khác áp dụng cho các học phần có điểm tổng kết dưới 4 không?
+      - Bảo lưu kết quả học tập trong trường hợp này có ảnh hưởng đến việc xét học bổng hay không?
+      - Làm thế nào để giải quyết vấn đề khi có học phần có điểm tổng kết dưới 4 nhưng không được bảo lưu?
+  
+  - intent: ask_question_22
+    examples: |
+      - SV học một chuyên ngành trong chương trình đào tạo của nhà trường, muốn học thêm một ngành học thứ hai có được không?
+      - Sinh viên học một chuyên ngành trong chương trình đào tạo của nhà trường, có thể đăng ký học thêm một ngành học thứ hai không?
+      - Nhà trường có quy định cho phép sinh viên học thêm ngành học thứ hai trong trường hợp này không?
+      - Quy trình và tiêu chí nào cần tuân thủ để đăng ký học thêm ngành học thứ hai?
+      - Sinh viên cần thực hiện những bước nào để đăng ký và chuyển sang học ngành học thứ hai?
+      - Có giới hạn về số lượng sinh viên được phép học thêm ngành học thứ hai không?
+      - Điều kiện và yêu cầu nào cần đáp ứng để được chấp nhận học thêm ngành học thứ hai?
+      - Có yêu cầu về điểm số hoặc thành tích học tập để được học thêm ngành học thứ hai không?
+      - Quy định về thời gian và tài chính liên quan đến việc học thêm ngành học thứ hai là gì?
+      - Có sự khác biệt về quy trình và yêu cầu học thêm ngành học thứ hai giữa các chương trình đào tạo không?
+      - Học thêm ngành học thứ hai có ảnh hưởng đến thời gian hoàn thành chương trình đào tạo ban đầu không?
+      - Có sự hỗ trợ về lịch học và chương trình học cho sinh viên học thêm ngành học thứ hai không?
+      - Học thêm ngành học thứ hai có ảnh hưởng đến quyền lợi học tập và các chính sách học phí không?
+      - Có giới hạn về mức độ trùng lặp nội dung học giữa hai ngành học trong trường hợp này không?
+      - Học thêm ngành học thứ hai có ảnh hưởng đến việc tham gia các hoạt động ngoại khóa, thực tập hay nghiên cứu khoa học không?
+      - Sinh viên có thể chuyển từ chuyên ngành ban đầu sang học thứ hai hoặc phải duy trì cả hai ngành học cùng một lúc?
+      - Học thêm ngành học thứ hai có được ghi nhận trên bằng cấp hay văn bằng không?
+      - Có giới hạn về việc học thêm ngành học thứ hai đối với các chương trình đào tạo đặc biệt hay nghiên cứu cao học không?
+      - Học thêm ngành học thứ hai có yêu cầu đăng ký và được phê duyệt từ phía khoa hay viện chuyên môn không?
+      - Có quy định về việc học thêm ngành học thứ hai trong thời gian học tập ban đầu hay sau khi tốt nghiệp không?
+      - Học thêm ngành học thứ hai có ảnh hưởng đến khả năng xin việc và phát triển sự nghiệp sau này không?
+  
+  - intent: ask_question_23
+    examples: |
+      - Sinh viên học hai ngành khi xét tốt nghiệp (TN) thì dựa vào những căn cứ nào để cập nhật các học phần lựa chọn tự do, lựa chọn bắt buộc vào bảng điểm tốt nghiệp trong mỗi ngành của SV?
+      - Sinh viên học hai ngành khi xét tốt nghiệp, dựa vào những nguyên tắc nào để cập nhật các học phần lựa chọn tự do và bắt buộc trong bảng điểm tốt nghiệp của từng ngành?
+      - Quy định và tiêu chí nào được áp dụng để xác định các học phần lựa chọn tự do và bắt buộc trong bảng điểm tốt nghiệp của sinh viên học hai ngành?
+      - Các học phần lựa chọn tự do và bắt buộc trong bảng điểm tốt nghiệp của mỗi ngành được xác định dựa trên những tiêu chuẩn nào?
+      - Quy trình nào được thực hiện để cập nhật danh sách các học phần lựa chọn tự do và bắt buộc trong bảng điểm tốt nghiệp của sinh viên học hai ngành?
+      - Có sự khác biệt về cách cập nhật học phần lựa chọn tự do và bắt buộc trong bảng điểm tốt nghiệp giữa các ngành không?
+      - Làm thế nào để sinh viên biết được danh sách các học phần lựa chọn tự do và bắt buộc trong bảng điểm tốt nghiệp của từng ngành?
+      - Có yêu cầu đặc biệt nào về số lượng học phần lựa chọn tự do và bắt buộc trong bảng điểm tốt nghiệp khi sinh viên học hai ngành không?
+      - Có quy định về tỷ lệ học phần lựa chọn tự do và bắt buộc trong bảng điểm tốt nghiệp dành cho sinh viên học hai ngành không?
+      - Bảng điểm tốt nghiệp của sinh viên học hai ngành có được tính trên cơ sở các học phần lựa chọn tự do và bắt buộc của từng ngành riêng biệt không?
+      - Có sự thay đổi về các học phần lựa chọn tự do và bắt buộc trong bảng điểm tốt nghiệp dành cho sinh viên học hai ngành so với sinh viên học một ngành không?
+      - Có giới hạn về việc lựa chọn học phần trong bảng điểm tốt nghiệp của sinh viên học hai ngành không?
+      - Quy định về học phần lựa chọn tự do và bắt buộc trong bảng điểm tốt nghiệp có thể thay đổi theo thời gian và chương trình đào tạo không?
+      - Có yêu cầu đặc biệt về các học phần bắt buộc khi sinh viên học hai ngành không?
+      - Sinh viên có thể chọn các học phần lựa chọn tự do từ cả hai ngành học hay chỉ từ một ngành trong bảng điểm tốt nghiệp không?
+      - Lựa chọn học phần tự do và bắt buộc trong bảng điểm tốt nghiệp của sinh viên học hai ngành có ảnh hưởng đến việc xét tốt nghiệp và nhận bằng không?
+      - Có quy định về mức độ trùng lặp học phần lựa chọn tự do và bắt buộc giữa hai ngành trong bảng điểm tốt nghiệp của sinh viên học hai ngành không?
+      - Có sự điều chỉnh về các học phần lựa chọn tự do và bắt buộc trong bảng điểm tốt nghiệp khi sinh viên chuyển từ một ngành sang học hai ngành không?
+      - Có yêu cầu đặc biệt nào về điểm số hoặc thành tích học tập để được lựa chọn học phần trong bảng điểm tốt nghiệp của sinh viên học hai ngành không?
+      - Có quy định về thứ tự và sự ưu tiên trong việc lựa chọn học phần tự do và bắt buộc trong bảng điểm tốt nghiệp của sinh viên học hai ngành không?
+      - Có giới hạn về thời gian hoàn thành và cập nhật các học phần lựa chọn tự do và bắt buộc trong bảng điểm tốt nghiệp của sinh viên học hai ngành không?
+
+  - intent: ask_question_24
+    examples: |
+      - Sinh viên học hai ngành khi xét TN ngành hai cần có điều kiện gì?
+      - Các yếu tố cần thiết để sinh viên học hai ngành khi xét tuyển ngành hai là gì?
+      - Điều kiện nào được yêu cầu cho sinh viên học hai ngành khi xét TN ngành hai?
+      - Người học hai ngành cần thỏa mãn những tiêu chuẩn nào khi xét tuyển ngành hai?
+      - Những điều kiện cần có để đăng ký học hai ngành khi xét tuyển ngành hai là gì?
+      - Quy định gì được áp dụng cho sinh viên muốn học hai ngành khi xét TN ngành hai?
+      - Ngành hai yêu cầu những điều kiện gì đối với sinh viên học hai ngành?
+      - Cần có những điều kiện gì để đủ tiêu chuẩn học hai ngành khi xét tuyển ngành hai?
+      - Sinh viên quan tâm đến học hai ngành cần tuân thủ những quy định nào khi xét TN ngành hai?
+      - Ngành hai đặt ra những yêu cầu gì cho sinh viên học hai ngành khi xét tuyển ngành hai?
+      - Những tiêu chí nào được áp dụng để sinh viên có thể học hai ngành khi xét TN ngành hai?
+      - Điều kiện nào là cần thiết để sinh viên đăng ký học hai ngành khi xét tuyển ngành hai?
+      - Sinh viên quyết định học hai ngành cần thoả mãn những điều kiện gì khi xét TN ngành hai?
+      - Quyền lợi và trách nhiệm nào được áp dụng cho sinh viên học hai ngành khi xét tuyển ngành hai?
+      - Yêu cầu gì được đặt ra để sinh viên có thể học hai ngành khi xét TN ngành hai?
+      - Các tiêu chí nào được sử dụng để đánh giá sinh viên muốn học hai ngành khi xét tuyển ngành hai?
+      - Ngành hai yêu cầu những điều kiện gì đối với sinh viên quan tâm học hai ngành khi xét tuyển ngành hai?
+      - Những yêu cầu nào được đặt ra để sinh viên có thể đăng ký học hai ngành khi xét TN ngành hai?
+      - Quy định gì áp dụng cho sinh viên quyết định học hai ngành khi xét tuyển ngành hai?
+      - Ngành hai đòi hỏi những điều kiện nào đối với sinh viên học hai ngành khi xét TN ngành hai?
+      - Tiêu chí nào được áp dụng để sinh viên đủ điều kiện học hai ngành khi xét tuyển ngành hai?
+  
+  - intent: ask_question_25
+    examples: |
+      - Trong trường hợp nào sinh viên được đề nghị bộ môn mở thi lại các học phần không có trong thời khóa biểu?
+      - Dưới điều kiện nào, sinh viên được đề xuất bộ môn tổ chức thi lại các học phần không có trong thời khóa biểu?
+      - Trong trường hợp nào, sinh viên có thể yêu cầu bộ môn mở thi lại những học phần không có lịch học trong thời khóa biểu?
+      - Khi nào, sinh viên được phép đề nghị bộ môn tổ chức thi lại các học phần không được xếp vào thời khóa biểu?
+      - Trong trường hợp nào, bộ môn có thể xem xét mở thi lại những học phần không có trong thời khóa biểu theo yêu cầu của sinh viên?
+      - Điều kiện gì cần được đáp ứng để sinh viên được đề nghị bộ môn mở thi lại các học phần không được lên thời khóa biểu?
+      - Khi nào, sinh viên có thể yêu cầu bộ môn tổ chức thi lại những học phần không được đặt trong thời khóa biểu?
+      - Trong trường hợp nào, sinh viên có thể gửi đề nghị để bộ môn mở thi lại các học phần không có lịch học trong thời khóa biểu?
+      - Điều kiện nào sinh viên cần tuân thủ để được đề nghị bộ môn mở thi lại các học phần không có trong thời khóa biểu?
+      - Trong trường hợp nào, sinh viên được phép yêu cầu bộ môn tổ chức thi lại những học phần không có trong thời khóa biểu?
+      - Khi nào, sinh viên có thể đề nghị bộ môn mở thi lại những học phần không có lịch học trong thời khóa biểu?
+      - Điều kiện gì được áp dụng để sinh viên có thể yêu cầu bộ môn mở thi lại các học phần không có trong thời khóa biểu?
+      - Trong trường hợp nào, bộ môn có thể xem xét mở thi lại những học phần không được xếp vào thời khóa biểu theo yêu cầu của sinh viên?
+      - Khi nào, sinh viên có thể đề nghị bộ môn mở thi lại các học phần không được đặt trong thời khóa biểu?
+      - Điều kiện nào cần được thỏa mãn để sinh viên được đề nghị bộ môn mở thi lại các học phần không được lên thời khóa biểu?
+      - Trong trường hợp nào, sinh viên có quyền yêu cầu bộ môn tổ chức thi lại những học phần không có trong thời khóa biểu?
+      - Khi nào, sinh viên được phép gửi đề nghị để bộ môn mở thi lại các học phần không có lịch học trong thời khóa biểu?
+      - Điều kiện gì sinh viên cần tuân thủ để được yêu cầu bộ môn mở thi lại các học phần không có trong thời khóa biểu?
+      - Trong trường hợp nào, bộ môn có thể xem xét mở thi lại những học phần không được đặt trong thời khóa biểu theo yêu cầu của sinh viên?
+      - Khi nào, sinh viên được phép đề nghị bộ môn mở thi lại các học phần không có trong thời khóa biểu?
+      - Điều kiện gì được áp dụng để sinh viên có thể yêu cầu bộ môn mở thi lại các học phần không có lịch học trong thời khóa biểu?
+
+  - intent: ask_question_26
+    examples: |
+      - Đối với những học phần có số tín chỉ thay đổi và các học phần không có trong thời khóa biểu mà sinh viên muốn thi lại, nâng điểm thì có được không?
+      - Sinh viên có thể thi lại và nâng điểm cho những học phần có số tín chỉ thay đổi và các học phần không có trong thời khóa biểu?
+      - Có chính sách cho phép sinh viên thi lại và nâng điểm cho những học phần có số tín chỉ thay đổi và các học phần không có trong thời khóa biểu không?
+      - Những học phần có số tín chỉ thay đổi và các học phần không có trong thời khóa biểu có được cho phép thi lại và nâng điểm không?
+      - Sinh viên có quyền yêu cầu thi lại và nâng điểm cho những học phần có số tín chỉ thay đổi và các học phần không có trong thời khóa biểu không?
+      - Có chính sách đặc biệt cho phép sinh viên thi lại và nâng điểm cho những học phần có số tín chỉ thay đổi và các học phần không có trong thời khóa biểu không có?
+      - Trong trường hợp sinh viên muốn thi lại và nâng điểm cho những học phần có số tín chỉ thay đổi và các học phần không có trong thời khóa biểu, liệu điều đó có được cho phép không?
+      - Có quy định nào liên quan đến việc thi lại và nâng điểm cho những học phần có số tín chỉ thay đổi và các học phần không có trong thời khóa biểu không?
+      - Trong trường hợp học phần có số tín chỉ thay đổi và các học phần không có trong thời khóa biểu, sinh viên có thể yêu cầu thi lại và nâng điểm được không?
+      - Có chính sách riêng cho phép sinh viên thi lại và nâng điểm cho những học phần có số tín chỉ thay đổi và các học phần không có trong thời khóa biểu không có?
+      - Sinh viên có quyền yêu cầu thi lại và nâng điểm cho những học phần có số tín chỉ thay đổi và các học phần không có trong thời khóa biểu không có?
+      - Có chính sách cho phép sinh viên thi lại và nâng điểm cho những học phần có số tín chỉ thay đổi và các học phần không có trong thời khóa biểu không có?
+      - Trong trường hợp học phần có số tín chỉ thay đổi và các học phần không có trong thời khóa biểu, sinh viên có thể đề nghị thi lại và nâng điểm không?
+      - Có quy định nào về việc thi lại và nâng điểm cho những học phần có số tín chỉ thay đổi và các học phần không có trong thời khóa biểu không?
+      - Có chính sách đặc biệt cho phép sinh viên thi lại và nâng điểm cho những học phần có số tín chỉ thay đổi và các học phần không có trong thời khóa biểu không có?
+      - Sinh viên có được phép thi lại và nâng điểm cho những học phần có số tín chỉ thay đổi và các học phần không có trong thời khóa biểu không?
+      - Trong trường hợp sinh viên muốn thi lại và nâng điểm cho những học phần có số tín chỉ thay đổi và các học phần không có trong thời khóa biểu, liệu điều đó có được cho phép không?
+      - Có quy định nào liên quan đến việc thi lại và nâng điểm cho những học phần có số tín chỉ thay đổi và các học phần không có trong thời khóa biểu không?
+      - Trong trường hợp học phần có số tín chỉ thay đổi và các học phần không có trong thời khóa biểu, sinh viên có thể yêu cầu thi lại và nâng điểm được không?
+      - Có chính sách riêng cho phép sinh viên thi lại và nâng điểm cho những học phần có số tín chỉ thay đổi và các học phần không có trong thời khóa biểu không có?
+      - Sinh viên có quyền yêu cầu thi lại và nâng điểm cho những học phần có số tín chỉ thay đổi và các học phần không có trong thời khóa biểu không?
+
+  - intent: ask_question_27
+    examples: |
+      - Hết thời hạn đăng ký thi lại, nâng điểm trên mạng, sinh viên có được xin hủy học phần đã đăng ký thi lại, nâng điểm không?
+      - Sau khi hết thời hạn đăng ký thi lại, nâng điểm trên mạng, sinh viên có quyền xin hủy học phần đã đăng ký thi lại, nâng điểm không?
+      - Sinh viên có thể yêu cầu hủy học phần đã đăng ký thi lại, nâng điểm sau khi kết thúc thời hạn đăng ký trên mạng không?
+      - Có chính sách cho phép sinh viên hủy học phần đã đăng ký thi lại, nâng điểm sau khi hết thời hạn đăng ký trên mạng không?
+      - Trong trường hợp sinh viên đã đăng ký thi lại, nâng điểm và đã hết thời hạn đăng ký trên mạng, liệu có quyền xin hủy học phần đó không?
+      - Sau khi kết thúc thời hạn đăng ký thi lại, nâng điểm trên mạng, sinh viên có thể đề nghị hủy học phần đã đăng ký thi lại, nâng điểm không?
+      - Có quy định nào về việc sinh viên có thể xin hủy học phần đã đăng ký thi lại, nâng điểm sau khi hết thời hạn đăng ký trên mạng không?
+      - Sinh viên có quyền gửi yêu cầu hủy học phần đã đăng ký thi lại, nâng điểm sau khi hết thời hạn đăng ký trên mạng không?
+      - Trong trường hợp sinh viên muốn hủy học phần đã đăng ký thi lại, nâng điểm và đã qua thời hạn đăng ký trên mạng, liệu điều đó có được chấp thuận không?
+      - Có quy định đặc biệt cho phép sinh viên hủy học phần đã đăng ký thi lại, nâng điểm sau khi kết thúc thời hạn đăng ký trên mạng không?
+      - Sinh viên có thể yêu cầu hủy bỏ học phần đã đăng ký thi lại, nâng điểm sau khi đã hết thời hạn đăng ký trên mạng không?
+      - Có chính sách nào cho phép sinh viên xin hủy học phần đã đăng ký thi lại, nâng điểm sau khi qua thời hạn đăng ký trên mạng không?
+      - Trong trường hợp sinh viên đã đăng ký thi lại, nâng điểm và đã vượt qua thời hạn đăng ký trên mạng, liệu có quyền xin hủy bỏ học phần đó không?
+      - Sau khi hết thời hạn đăng ký thi lại, nâng điểm trên mạng, sinh viên có thể yêu cầu hủy bỏ học phần đã đăng ký thi lại, nâng điểm không?
+      - Có quy định nào liên quan đến việc sinh viên xin hủy bỏ học phần đã đăng ký thi lại, nâng điểm sau khi hết thời hạn đăng ký trên mạng không?
+      - Trong trường hợp sinh viên muốn hủy bỏ học phần đã đăng ký thi lại, nâng điểm và đã hết thời hạn đăng ký trên mạng, liệu điều đó có được chấp thuận không?
+      - Có quy định đặc biệt cho phép sinh viên xin hủy bỏ học phần đã đăng ký thi lại, nâng điểm sau khi kết thúc thời hạn đăng ký trên mạng không?
+      - Sinh viên có quyền gửi yêu cầu hủy bỏ học phần đã đăng ký thi lại, nâng điểm sau khi hết thời hạn đăng ký trên mạng không?
+      - Trong trường hợp sinh viên muốn hủy bỏ học phần đã đăng ký thi lại, nâng điểm và đã qua thời hạn đăng ký trên mạng, liệu điều đó có được chấp thuận không?
+      - Có quy định đặc biệt cho phép sinh viên hủy bỏ học phần đã đăng ký thi lại, nâng điểm sau khi qua thời hạn đăng ký trên mạng không?
+      - Sinh viên có thể yêu cầu hủy học phần đã đăng ký thi lại, nâng điểm sau khi đã hết thời hạn đăng ký trên mạng không?
+  
+  - intent: ask_question_29
+    examples: |
+      - Tại sao sinh viên đã đăng ký thi lại, nâng điểm thành công nhưng trên phiếu dự thi chính thức lại không có học phần đã đăng ký?
+      - Tại sao trên phiếu dự thi chính thức không có học phần mà sinh viên đã đăng ký thi lại, nâng điểm thành công?
+      - Nguyên nhân gây ra việc học phần đã đăng ký thi lại, nâng điểm không xuất hiện trên phiếu dự thi chính thức là gì?
+      - Có những lí do gì có thể làm cho học phần đã đăng ký thi lại, nâng điểm không được in trên phiếu dự thi chính thức?
+      - Tại sao dù sinh viên đã hoàn thành đăng ký thi lại, nâng điểm nhưng học phần đó không xuất hiện trên phiếu dự thi chính thức?
+      - Có những lỗi hoặc sự cố nào có thể xảy ra khiến học phần đã đăng ký thi lại, nâng điểm không được hiển thị trên phiếu dự thi chính thức?
+      - Nguyên nhân nào có thể dẫn đến việc học phần đã đăng ký thi lại, nâng điểm không được ghi nhận trên phiếu dự thi chính thức?
+      - Có chính sách hoặc quy trình nào mà sinh viên đã thực hiện sai dẫn đến việc học phần đăng ký thi lại, nâng điểm không được liệt kê trên phiếu dự thi chính thức?
+      - Tại sao dù đã hoàn tất đăng ký thi lại, nâng điểm nhưng học phần đó vẫn bị bỏ sót và không được ghi nhận trên phiếu dự thi chính thức?
+      - Có những vấn đề kỹ thuật hoặc quản lý nào có thể dẫn đến việc học phần đã đăng ký thi lại, nâng điểm không xuất hiện trên phiếu dự thi chính thức?
+      - Tại sao học phần đã đăng ký thi lại, nâng điểm không được hiển thị đúng trên phiếu dự thi chính thức?
+      - Có những sai sót hoặc lỗi quản lý nào có thể làm cho học phần đã đăng ký thi lại, nâng điểm không được ghi nhận trên phiếu dự thi chính thức?
+      - Tại sao học phần đã được đăng ký thi lại, nâng điểm không được ghi nhận và hiển thị đúng trên phiếu dự thi chính thức?
+      - Có chính sách hoặc quy trình đăng ký thi lại, nâng điểm nào đã bị vi phạm dẫn đến việc học phần không được in trên phiếu dự thi chính thức?
+      - Tại sao học phần đã đăng ký thi lại, nâng điểm không xuất hiện trên phiếu dự thi chính thức mặc dù sinh viên đã hoàn thành đăng ký theo quy định?
+      - Có những vấn đề kỹ thuật hoặc hành chính nào đã gây ra việc học phần đã đăng ký thi lại, nâng điểm không được liệt kê trên phiếu dự thi chính thức?
+      - Tại sao học phần đã đăng ký thi lại, nâng điểm không xuất hiện trên phiếu dự thi chính thức mặc dù sinh viên đã tuân thủ quy trình đăng ký?
+      - Có những sai sót trong quá trình xử lý hồ sơ hay hệ thống nào đã dẫn đến việc học phần không được ghi nhận trên phiếu dự thi chính thức?
+      - Tại sao học phần đã đăng ký thi lại, nâng điểm không được liệt kê trên phiếu dự thi chính thức mặc dù sinh viên đã hoàn tất quá trình đăng ký?
+      - Có những lỗi hoặc hạn chế trong quá trình quản lý hồ sơ hay công nghệ nào đã gây ra việc học phần không được in trên phiếu dự thi chính thức?
+      - Tại sao học phần đã đăng ký thi lại, nâng điểm không được ghi nhận và không hiển thị trên phiếu dự thi chính thức?
+
+  - intent: ask_question_33
+    examples: |
+      - Điều kiện và thời hạn để xin được cấp giấy chứng nhận tốt nghiệp tạm thời (GCNTNTT) như thế nào?
+      - Quy định điều kiện và thời hạn để xin cấp giấy chứng nhận tốt nghiệp tạm thời (GCNTNTT) là gì?
+      - Điều kiện cần thiết để xin GCNTNTT là gì?
+      - Sinh viên cần hoàn thành những yêu cầu nào để đủ điều kiện xin GCNTNTT tạm thời?
+      - Thời hạn nộp hồ sơ xin GCNTNTT tạm thời là bao lâu?
+      - Sinh viên phải hoàn thành bao nhiêu tín chỉ để đủ điều kiện xin GCNTNTT tạm thời?
+      - Có quy định về điểm trung bình cần đạt để xin GCNTNTT tạm thời không?
+      - Điều kiện xin GCNTNTT tạm thời có thay đổi đối với từng ngành học không?
+      - Sinh viên cần hoàn thành thực tập hay dự án tốt nghiệp trước khi được xin GCNTNTT tạm thời không?
+      - Quy định về hồ sơ xin GCNTNTT tạm thời gồm những giấy tờ và biểu mẫu nào?
+      - Có yêu cầu khác nào sinh viên cần tuân thủ khi xin GCNTNTT tạm thời không?
+      - Thời hạn nộp hồ sơ xin GCNTNTT tạm thời có thể được gia hạn không?
+      - Sinh viên có thể nộp hồ sơ xin GCNTNTT tạm thời trễ hơn thời hạn quy định được không?
+      - Có quy trình xét duyệt hồ sơ xin GCNTNTT tạm thời hay không?
+      - Thời gian xử lý hồ sơ xin GCNTNTT tạm thời là bao lâu?
+      - Sinh viên cần tham gia các buổi họp, hướng dẫn nào trước khi xin GCNTNTT tạm thời?
+      - Có yêu cầu về việc thanh toán các khoản phí trước khi xin GCNTNTT tạm thời không?
+      - Quy định về GCNTNTT tạm thời có khác nhau giữa các trường đại học hay không?
+      - Thông tin về điều kiện và thời hạn để xin GCNTNTT tạm thời có được công bố rõ ràng cho sinh viên không?
+      - Sinh viên có thể xin GCNTNTT tạm thời sau khi đã tốt nghiệp và ra trường không?
+      - Có quy định về việc xin cấp lại GCNTNTT tạm thời nếu bị mất hay hỏng không?
+
+  - intent: ask_question_34
+    examples: |
+      - Mỗi năm nhà trường tổ chức bao nhiêu đợt thu hồ sơ xét tốt nghiệp? Sinh viên vừa thi xong học kỳ chưa có điểm tổng kết thì có được nộp hồ sơ xét tốt nghiệp không ?
+      - Trường của bạn tổ chức bao nhiêu đợt thu hồ sơ xét tốt nghiệp trong một năm học?
+      - Thường có bao nhiêu lần cấp hồ sơ xét tốt nghiệp trong một năm học?
+      - Trường có quy định rõ ràng về số lần thu hồ sơ xét tốt nghiệp trong một năm không?
+      - Sinh viên có thể nộp hồ sơ xét tốt nghiệp sau khi kết thúc mỗi học kỳ không?
+      - Sinh viên vừa thi xong học kỳ nhưng chưa có điểm tổng kết, có được nộp hồ sơ xét tốt nghiệp không?
+      - Có quy định cụ thể về việc nộp hồ sơ xét tốt nghiệp khi chưa có điểm tổng kết không?
+      - Trường có đặt ra điều kiện gì đối với sinh viên khi nộp hồ sơ xét tốt nghiệp khi chưa có điểm tổng kết?
+      - Thời điểm nào sinh viên có thể nộp hồ sơ xét tốt nghiệp sau khi kết thúc học kỳ?
+      - Có quy định về thời hạn nộp hồ sơ xét tốt nghiệp sau khi kết thúc học kỳ không?
+      - Sinh viên cần chờ đến khi nào để nộp hồ sơ xét tốt nghiệp sau khi kết thúc học kỳ?
+      - Quy định về việc nộp hồ sơ xét tốt nghiệp có khác nhau giữa các khoa/ngành không?
+      - Sinh viên có thể nộp hồ sơ xét tốt nghiệp trước khi có kết quả các môn học trong học kỳ không?
+      - Trường có cung cấp hướng dẫn cụ thể cho sinh viên về việc nộp hồ sơ xét tốt nghiệp khi chưa có điểm tổng kết?
+      - Sinh viên cần tuân thủ thời gian nộp hồ sơ xét tốt nghiệp sau khi kết thúc học kỳ như thế nào?
+      - Trường có quy định về việc nộp hồ sơ xét tốt nghiệp trễ sau khi kết thúc học kỳ không?
+      - Sinh viên cần có điểm tổng kết để được nộp hồ sơ xét tốt nghiệp hay chỉ cần kết quả tạm thời của các môn học?
+      - Có những yêu cầu đặc biệt nào đối với sinh viên khi nộp hồ sơ xét tốt nghiệp khi chưa có điểm tổng kết?
+      - Có thông báo trước về thời gian nộp hồ sơ xét tốt nghiệp khi chưa có điểm tổng kết không?
+      - Sinh viên cần thực hiện các thủ tục gì khác ngoài việc nộp hồ sơ khi xét tốt nghiệp khi chưa có điểm tổng kết?
+      - Sinh viên có thể tham khảo thông tin về việc nộp hồ sơ xét tốt nghiệp khi chưa có điểm tổng kết ở đâu?
+
+  - intent: ask_question_35
+    examples: |
+      - Sinh viên được phép vớt bao nhiêu học phần khi xét tốt nghiệp?
+      - Sinh viên được phép vớt bao nhiêu học phần để đủ điều kiện xét tốt nghiệp?
+      - Quy định về số lượng học phần sinh viên có thể vớt khi xét tốt nghiệp là gì?
+      - Có giới hạn về số học phần mà sinh viên có thể vớt khi xét tốt nghiệp không?
+      - Sinh viên có thể vớt những học phần nào khi xét tốt nghiệp?
+      - Quy định về việc vớt học phần khi xét tốt nghiệp có khác nhau giữa các khoa/ngành không?
+      - Sinh viên cần thực hiện các thủ tục gì khi muốn vớt học phần khi xét tốt nghiệp?
+      - Trường có quy định về điểm số tối thiểu mà sinh viên cần đạt khi vớt học phần để xét tốt nghiệp không?
+      - Sinh viên phải có lý do đặc biệt để được vớt học phần khi xét tốt nghiệp không?
+      - Có yêu cầu về số tín chỉ tối thiểu hoặc tối đa mà sinh viên cần hoàn thành khi vớt học phần để xét tốt nghiệp không?
+      - Sinh viên cần hoàn thành các học phần vớt trước khi nộp hồ sơ xét tốt nghiệp hay có thể hoàn thành sau?
+      - Quy định về việc vớt học phần khi xét tốt nghiệp có được công bố rõ ràng cho sinh viên không?
+      - Sinh viên cần tuân thủ thời gian nộp hồ sơ vớt học phần khi xét tốt nghiệp như thế nào?
+      - Có quy định về việc nộp hồ sơ vớt học phần khi xét tốt nghiệp trễ không?
+      - Trường có cung cấp hướng dẫn cụ thể cho sinh viên về việc vớt học phần khi xét tốt nghiệp không?
+      - Sinh viên cần thực hiện các bước nào để đăng ký vớt học phần khi xét tốt nghiệp?
+      - Có hạn chế về số lần sinh viên được phép vớt học phần khi xét tốt nghiệp không?
+      - Quy định về việc vớt học phần khi xét tốt nghiệp có áp dụng cho cả học phần bắt buộc và học phần tự chọn không?
+      - Sinh viên cần thỏa mãn điều kiện gì để được phép vớt học phần khi xét tốt nghiệp?
+      - Có quy định về mức điểm tối thiểu mà sinh viên cần đạt khi vớt học phần để xét tốt nghiệp không?
+      - Thông tin về việc vớt học phần khi xét tốt nghiệp có được công bố rõ ràng và tiếp cận dễ dàng cho sinh viên không?
+
+  - intent: ask_question_36
+    examples: |
+      - Các điều kiện xét vớt học phần được quy định như thế nào?
+      - Quy định cụ thể về số lượng học phần mà sinh viên có thể vớt khi xét tốt nghiệp là gì?
+      - Trường có quy định về tổng số tín chỉ tối đa mà sinh viên có thể vớt khi xét tốt nghiệp không?
+      - Có yêu cầu về số lần đã thi không đạt trong học phần để được xét vớt hay không?
+      - Sinh viên cần đạt điểm số tối thiểu trong các học phần đã thi không đạt để được xét vớt không?
+      - Quy định về việc vớt học phần có áp dụng cho cả học phần bắt buộc và học phần tự chọn không?
+      - Trường có quy định cụ thể về các học phần được vớt trong cùng một học kỳ hay không?
+      - Sinh viên cần hoàn thành các học phần khác trước khi được phép vớt học phần khi xét tốt nghiệp không?
+      - Có yêu cầu về tỷ lệ tín chỉ hoàn thành trong chương trình đào tạo để được xét vớt học phần không?
+      - Trường có quy định về số tín chỉ tối thiểu mà sinh viên phải hoàn thành trước khi có thể vớt học phần không?
+      - Có quy định về thời gian tối đa mà sinh viên được phép vớt học phần trước khi xét tốt nghiệp không?
+      - Sinh viên cần có lý do đặc biệt để được phép vớt học phần khi xét tốt nghiệp hay không?
+      - Quy định về việc vớt học phần khi xét tốt nghiệp có được công bố rõ ràng và tiếp cận dễ dàng cho sinh viên không?
+      - Trường có yêu cầu về việc xác nhận từ các bộ môn/khoa trước khi sinh viên được phép vớt học phần khi xét tốt nghiệp không?
+      - Sinh viên cần tuân thủ thời gian và quy trình nộp đơn xin vớt học phần khi xét tốt nghiệp như thế nào?
+      - Có quy định về việc nộp các bằng chứng hoặc tài liệu liên quan để chứng minh việc vớt học phần khi xét tốt nghiệp không?
+      - Trường có yêu cầu về việc hướng dẫn và tư vấn cho sinh viên về việc vớt học phần khi xét tốt nghiệp không?
+      - Có quy định về việc xem xét đơn xin vớt học phần khi xét tốt nghiệp trong một đợt cụ thể hay không?
+      - Sinh viên cần tuân thủ quy định về số lượng học phần đã thi không đạt được phép vớt khi xét tốt nghiệp hay không?
+      - Trường có quy định về việc xác định và công bố kết quả của quá trình xét vớt học phần khi xét tốt nghiệp không?
+      - Sinh viên cần thực hiện bất kỳ thủ tục nào khác để được xét vớt học phần khi xét tốt nghiệp?
+
+  - intent: ask_question_37
+    examples: |
+      - Sinh viên bị hạ hạng tốt nghiệp trong những trường hợp nào?
+      - Khi sinh viên không hoàn thành đủ số tín chỉ yêu cầu để tốt nghiệp, liệu có thể xem xét lại để cấp bằng tốt nghiệp không?
+      - Trường hợp sinh viên không đạt điểm trung bình chung (GPA) yêu cầu để tốt nghiệp, có thể có cơ hội để cải thiện và đạt được bằng tốt nghiệp không?
+      - Khi sinh viên không hoàn thành các học phần bắt buộc trong chương trình, liệu có thể có cơ hội để hoàn thành sau và đạt được tốt nghiệp?
+      - Nếu sinh viên không đạt yêu cầu về điểm số trong một số học phần cụ thể, liệu có thể có cơ hội thi lại để cải thiện kết quả và đạt được tốt nghiệp không?
+      - Trong trường hợp sinh viên không hoàn thành các yêu cầu thực tập, đồ án hoặc khóa luận, có cách nào để đảm bảo cơ hội để hoàn thành và đạt tốt nghiệp sau đó không?
+      - Nếu sinh viên vi phạm quy định đạo đức, liệu có cơ hội để khắc phục lỗi lầm và có được bằng tốt nghiệp không?
+      - Khi sinh viên không đáp ứng yêu cầu về số lượng tín chỉ tự chọn, liệu có thể có cơ hội để hoàn thành những tín chỉ còn thiếu và đạt tốt nghiệp?
+      - Trường có chính sách cho phép sinh viên hạ hạng tốt nghiệp khi không hoàn thành chương trình trong thời gian quy định không?
+      - Nếu sinh viên không hoàn thành các học phần chuyên ngành theo yêu cầu, liệu có thể có cơ hội để hoàn thành sau và đạt tốt nghiệp không?
+      - Trong trường hợp sinh viên vi phạm quy định về đăng ký học phần hoặc nợ học phần, liệu có cách nào để khắc phục và đạt tốt nghiệp sau đó không?
+      - Nếu sinh viên không đáp ứng các yêu cầu tiên quyết hoặc trình độ tiếng Anh, có cách nào để đáp ứng yêu cầu này và có được tốt nghiệp không?
+      - Trường có chính sách cho phép sinh viên làm đơn xin xem xét lại sau khi bị hạ hạng tốt nghiệp không?
+      - Khi sinh viên không tuân thủ quy định về thời gian hoàn thành chương trình, liệu có cách nào để xem xét lại và đạt được tốt nghiệp không?
+      - Trường có cung cấp chương trình học thêm để sinh viên cải thiện kết quả và đạt được tốt nghiệp không?
+      - Nếu sinh viên không đáp ứng yêu cầu về chất lượng đề án hoặc dự án cuối khóa, có cơ hội để làm lại và đạt tốt nghiệp không?
+      - Khi sinh viên không đạt kết quả tốt nghiệp do không hoàn thành các yêu cầu của một học phần cụ thể, có thể có cơ hội làm lại và đạt được tốt nghiệp không?
+      - Trường có chính sách cho phép sinh viên xin xem xét lại sau khi bị hạ hạng tốt nghiệp do vi phạm quy chế nội bộ không?
+      - Nếu sinh viên không đáp ứng yêu cầu về kỷ luật, có cách nào để xin xem xét lại và có cơ hội tốt nghiệp không?
+      - Trong trường hợp sinh viên không hoàn thành yêu cầu về khóa học và chương trình học, có cơ hội để làm lại và đạt tốt nghiệp không?
+      - Nếu sinh viên không đáp ứng các yêu cầu khác được quy định bởi trường hoặc chương trình, có cách nào để xem xét lại và có cơ hội tốt nghiệp không?
+
+  - intent: ask_question_38
+    examples: |
+      - Sinh viên có điểm tổng kết ≤ 4 điểm nhưng không muốn học lại có được xét vớt tốt nghiệp?
+      - Có chính sách nào cho phép sinh viên xét vớt tốt nghiệp nếu điểm tổng kết ≤ 4 điểm?
+      - Trường có quy định về việc xem xét vớt tốt nghiệp cho sinh viên có điểm tổng kết thấp nhưng không muốn học lại không?
+      - Sinh viên có cơ hội xin xem xét vớt tốt nghiệp nếu điểm tổng kết của họ thấp hơn ngưỡng cho phép không?
+      - Nếu sinh viên có điểm tổng kết ≤ 4 điểm, liệu có quy định cho phép xem xét vớt tốt nghiệp dựa trên các yếu tố khác?
+      - Trường có chính sách đặc biệt nào cho phép xét vớt tốt nghiệp cho sinh viên có điểm tổng kết thấp mà không muốn học lại?
+      - Nếu sinh viên không muốn học lại môn nào đó để cải thiện điểm tổng kết, có cách nào khác để xét vớt tốt nghiệp không?
+      - Sinh viên có thể đề xuất lý do đặc biệt để xét vớt tốt nghiệp nếu điểm tổng kết của họ thấp hơn ngưỡng yêu cầu không?
+      - Trường có chương trình nâng điểm tổng kết dành cho sinh viên có điểm thấp và muốn xét vớt tốt nghiệp không?
+      - Nếu sinh viên có điểm tổng kết ≤ 4 điểm, liệu có quy định cho phép xem xét vớt tốt nghiệp dựa trên quá trình học tập và tiến bộ của sinh viên?
+      - Sinh viên có cơ hội xin xét vớt tốt nghiệp nếu có lý do đặc biệt ảnh hưởng đến kết quả học tập của họ và điểm tổng kết thấp không?
+      - Trường có chương trình hỗ trợ và tư vấn cho sinh viên có điểm tổng kết thấp muốn xét vớt tốt nghiệp không?
+      - Nếu sinh viên không muốn học lại môn nào đó để cải thiện điểm tổng kết, liệu có cách nào khác để đạt được yêu cầu tốt nghiệp?
+      - Trường có quy định rõ ràng về việc xét vớt tốt nghiệp cho sinh viên có điểm tổng kết thấp và không muốn học lại không?
+      - Sinh viên có thể xin xét vớt tốt nghiệp nếu có đủ số tín chỉ và yêu cầu khác, mặc dù điểm tổng kết của họ thấp không?
+      - Nếu sinh viên có lý do đặc biệt không muốn học lại để cải thiện điểm tổng kết, có cách nào để xét vớt tốt nghiệp không?
+      - Trường có quy định về việc xem xét vớt tốt nghiệp dựa trên quá trình học tập và đánh giá toàn diện của sinh viên không?
+      - Nếu sinh viên có điểm tổng kết ≤ 4 điểm, liệu có quy định cho phép xem xét vớt tốt nghiệp dựa trên kết quả thi cuối kỳ của các học phần khác không?
+      - Sinh viên có cơ hội xin xét vớt tốt nghiệp nếu có thành tích đặc biệt hoặc đóng góp đáng kể cho trường và cộng đồng, mặc dù điểm tổng kết thấp không?
+      - Trường có chính sách cho phép sinh viên xin xét vớt tốt nghiệp nếu có đủ tiêu chí khác, mặc dù điểm tổng kết của họ thấp không?
+      - Nếu sinh viên có điểm tổng kết ≤ 4 điểm, liệu có quy định cho phép xem xét vớt tốt nghiệp dựa trên khả năng và kỹ năng thực tế của sinh viên không?
+
+  - intent: ask_question_40
+    examples: |
+      - Các mốc thời gian hỗ trợ sinh viên diễn ra như thế nào?
+      - Trường có quy định về mốc thời gian hỗ trợ sinh viên trong quá trình học tập không?
+      - Khi nào là mốc thời gian đầu tiên mà sinh viên có thể nhận được hỗ trợ từ trường trong quá trình học tập?
+      - Trường có đề ra các mốc thời gian cụ thể để sinh viên có thể yêu cầu hỗ trợ và tư vấn trong suốt quá trình học không?
+      - Khi nào là mốc thời gian cuối cùng mà sinh viên có thể nhận được hỗ trợ từ trường trước khi tốt nghiệp?
+      - Trường có hạn chế thời gian để sinh viên có thể nhận được hỗ trợ và giải đáp các vấn đề liên quan đến học tập không?
+      - Khi nào là mốc thời gian để sinh viên có thể nhận được hỗ trợ về lựa chọn học phần, đăng ký môn học và lập kế hoạch học tập?
+      - Trường có cung cấp hỗ trợ cho sinh viên trong thời gian nghỉ hè hoặc kỳ nghỉ lễ không?
+      - Khi nào là mốc thời gian để sinh viên có thể nhận được hỗ trợ về tìm kiếm thông tin về học bổng và hỗ trợ tài chính?
+      - Trường có xác định mốc thời gian để sinh viên được hỗ trợ về việc chuẩn bị hồ sơ xét tốt nghiệp và các thủ tục liên quan không?
+      - Khi nào là mốc thời gian để sinh viên có thể nhận được hỗ trợ về việc tìm kiếm công việc hoặc thực tập sau tốt nghiệp?
+      - Trường có cung cấp hỗ trợ cho sinh viên trong quá trình thực hiện luận văn, đồ án hoặc dự án cuối khóa không?
+      - Khi nào là mốc thời gian để sinh viên có thể nhận được hỗ trợ về việc chuẩn bị và tham gia các khóa học bổ trợ, buổi tư vấn nghề nghiệp và sự kiện liên quan đến tương lai sau tốt nghiệp?
+      - Trường có xác định mốc thời gian để sinh viên được hỗ trợ trong việc xin xét tốt nghiệp hoặc xét vớt học phần không đạt không?
+      - Khi nào là mốc thời gian để sinh viên có thể nhận được hỗ trợ về việc tham gia các khóa đào tạo kỹ năng mềm và phát triển cá nhân?
+      - Trường có cung cấp hỗ trợ cho sinh viên trong quá trình tìm kiếm nguồn tài chính để hỗ trợ học phí và sinh hoạt phí không?
+      - Khi nào là mốc thời gian để sinh viên có thể nhận được hỗ trợ về việc chuẩn bị và tham gia kỳ thực tập nghề nghiệp hoặc chương trình trao đổi sinh viên?
+      - Trường có xác định mốc thời gian để sinh viên được hỗ trợ trong việc làm hồ sơ xin việc, chuẩn bị phỏng vấn và rèn kỹ năng tìm việc làm không?
+      - Khi nào là mốc thời gian để sinh viên có thể nhận được hỗ trợ về việc chuẩn bị cho các kỳ thi chứng chỉ hoặc kiểm tra năng lực sau tốt nghiệp?
+      - Trường có cung cấp hỗ trợ cho sinh viên trong quá trình tham gia các hoạt động xã hội, tình nguyện và hội thảo chuyên ngành không?
+      - Khi nào là mốc thời gian để sinh viên có thể nhận được hỗ trợ về việc đăng ký và tham gia các khóa học hè hoặc khóa học trực tuyến?
+
+  - intent: ask_question_41
+    examples: |
+      - Sinh viên học thừa các học phần Giáo dục thể chất (GDTC) thì có được lấy làm học phần lựa chọn tự do khi xét tốt nghiệp không?
+      - Trường có chính sách cho phép sinh viên sử dụng các học phần GDTC dư thừa làm học phần lựa chọn tự do trong quá trình xét tốt nghiệp không?
+      - Nếu sinh viên đã hoàn thành đủ số lượng học phần GDTC theo quy định của trường, liệu họ có thể sử dụng những học phần dư thừa làm học phần lựa chọn tự do khi xét tốt nghiệp không?
+      - Trường có quy định cụ thể về việc sử dụng các học phần GDTC dư thừa làm học phần lựa chọn tự do trong quá trình xét tốt nghiệp không?
+      - Sinh viên có thể xem xét sử dụng các học phần GDTC dư thừa làm học phần lựa chọn tự do khi họ đã hoàn thành đủ tín chỉ GDTC theo yêu cầu không?
+      - Trường có yêu cầu cụ thể về số lượng học phần GDTC dư thừa mà sinh viên có thể sử dụng làm học phần lựa chọn tự do khi xét tốt nghiệp không?
+      - Nếu sinh viên đã đăng ký và hoàn thành các học phần GDTC ngoài yêu cầu, liệu chúng có thể được tính vào danh sách học phần lựa chọn tự do khi xét tốt nghiệp không?
+      - Trường có chính sách cho phép sinh viên chuyển đổi các tín chỉ GDTC dư thừa thành tín chỉ cho các học phần lựa chọn tự do khi xét tốt nghiệp không?
+      - Sinh viên có thể chọn sử dụng các học phần GDTC dư thừa làm học phần lựa chọn tự do dựa trên sở thích và quan tâm cá nhân khi xét tốt nghiệp không?
+      - Trường có quy định về mức độ ưu tiên sử dụng các học phần GDTC dư thừa làm học phần lựa chọn tự do khi xét tốt nghiệp không?
+      - Nếu sinh viên đã hoàn thành các học phần GDTC trước thời gian quy định, liệu chúng có thể được sử dụng làm học phần lựa chọn tự do trong quá trình xét tốt nghiệp không?
+      - Trường có quy định về việc cân nhắc và xem xét sử dụng các học phần GDTC dư thừa như một phần của học phần lựa chọn tự do khi xét tốt nghiệp không?
+      - Sinh viên có thể đề xuất sử dụng các học phần GDTC dư thừa làm học phần lựa chọn tự do khi xét tốt nghiệp và được trường xem xét không?
+      - Trường có yêu cầu về mức độ liên quan của các học phần GDTC dư thừa với ngành học của sinh viên khi chúng được sử dụng làm học phần lựa chọn tự do khi xét tốt nghiệp không?
+      - Sinh viên có thể sử dụng các học phần GDTC dư thừa làm học phần lựa chọn tự do để tăng cường kiến thức và kỹ năng trong lĩnh vực mà họ quan tâm khi xét tốt nghiệp không?
+      - Trường có quy định về mức độ tương đương của các học phần GDTC dư thừa với các học phần lựa chọn tự do khác khi xét tốt nghiệp không?
+      - Sinh viên có thể sử dụng các học phần GDTC dư thừa làm học phần lựa chọn tự do để nâng cao đánh giá và điểm tổng kết của mình khi xét tốt nghiệp không?
+      - Trường có quy định về việc đánh giá và xác nhận việc sử dụng các học phần GDTC dư thừa làm học phần lựa chọn tự do khi xét tốt nghiệp không?
+      - Sinh viên có thể chọn sử dụng các học phần GDTC dư thừa làm học phần lựa chọn tự do dựa trên lợi ích và mục tiêu cá nhân khi xét tốt nghiệp không?
+      - Trường có quy định về việc hướng dẫn và tư vấn sinh viên về cách sử dụng các học phần GDTC dư thừa làm học phần lựa chọn tự do khi xét tốt nghiệp không?
+      - Sinh viên có thể sử dụng các học phần GDTC dư thừa làm học phần lựa chọn tự do để đa dạng hóa chương trình học và khám phá các lĩnh vực mới khi xét tốt nghiệp không?
+
+  - intent: ask_question_42
+    examples: |
+      - SV có điểm tổng kết học phần <5, đã thi lại 2 lần nhưng không tích lũy phải học lại (tình trạng HL) có được vớt học phần khi xét tốt nghiệp không?
+      - Trường có chính sách cho phép sinh viên vớt học phần khi xét tốt nghiệp trong trường hợp điểm tổng kết học phần dưới 5 nhưng đã thi lại đủ số lần không?
+      - Sinh viên đã thi lại 2 lần nhưng điểm tổng kết học phần vẫn dưới 5 và không đạt yêu cầu tích lũy để phải học lại, liệu họ có được xem xét vớt học phần khi xét tốt nghiệp không?
+      - Trường có quy định cụ thể về việc vớt học phần khi sinh viên có tình trạng học lực yếu (HL) và không tích lũy đủ điều kiện để phải học lại không?
+      - Sinh viên có thể đề nghị vớt học phần khi điểm tổng kết học phần dưới 5 và đã thi lại đủ số lần nhưng không tích lũy phải học lại, và trường có xem xét yêu cầu này không?
+      - Trường có quy định về số lần sinh viên được thi lại khi điểm tổng kết học phần dưới ngưỡng 5 và không tích lũy phải học lại không?
+      - Nếu sinh viên đã thi lại đủ số lần nhưng điểm tổng kết học phần vẫn không đạt yêu cầu, liệu họ có thể đề nghị vớt học phần để xét tốt nghiệp không?
+      - Sinh viên có thể đăng ký và thi lại học phần mà điểm tổng kết dưới 5 để cố gắng cải thiện điểm và đạt yêu cầu vớt học phần khi xét tốt nghiệp không?
+      - Trường có quy định cụ thể về quyền của sinh viên xét vớt học phần khi điểm tổng kết học phần dưới 5 nhưng không tích lũy phải học lại không?
+      - Sinh viên có thể đề nghị vớt học phần khi đã thi lại đủ số lần nhưng điểm tổng kết học phần vẫn không đạt yêu cầu và không tích lũy phải học lại, và trường có xem xét yêu cầu này không?
+      - Trường có chính sách đặc biệt cho sinh viên có tình trạng học lực yếu (HL) và không tích lũy đủ điều kiện để phải học lại để xét vớt học phần khi xét tốt nghiệp không?
+      - Sinh viên có thể đăng ký học phần mà điểm tổng kết dưới 5 và đã thi lại đủ số lần nhưng không tích lũy phải học lại, với mong muốn được vớt học phần khi xét tốt nghiệp không?
+      - Trường có quy định về số lần thi lại học phần cho sinh viên có điểm tổng kết dưới 5 và không tích lũy phải học lại không?
+      - Nếu sinh viên đã thi lại đủ số lần nhưng điểm tổng kết học phần vẫn không đạt yêu cầu, liệu họ có thể đề nghị vớt học phần để xét tốt nghiệp không?
+      - Sinh viên có thể xin phúc khảo điểm học phần dưới 5 để cố gắng cải thiện và đạt yêu cầu vớt học phần khi xét tốt nghiệp không?
+      - Trường có quy định về quyền của sinh viên xét vớt học phần khi điểm tổng kết học phần dưới ngưỡng 5 và không tích lũy phải học lại không?
+      - Sinh viên có thể đăng ký học phần mà điểm tổng kết dưới 5 và đã thi lại đủ số lần nhưng không tích lũy phải học lại, với mong muốn được vớt học phần khi xét tốt nghiệp không?
+      - Trường có quy định cụ thể về việc xem xét và đồng ý vớt học phần cho sinh viên có điểm tổng kết dưới 5 nhưng không tích lũy phải học lại không?
+      - Sinh viên có thể đề nghị vớt học phần khi đã thi lại đủ số lần nhưng điểm tổng kết học phần vẫn không đạt yêu cầu và không tích lũy phải học lại, và trường có xem xét yêu cầu này không?
+      - Trường có chính sách đặc biệt cho sinh viên có tình trạng học lực yếu (HL) và không tích lũy đủ điều kiện để phải học lại để xét vớt học phần khi xét tốt nghiệp không?
+      - Sinh viên có thể xin phúc khảo điểm học phần dưới 5 để cố gắng cải thiện và đạt yêu cầu vớt học phần khi xét tốt nghiệp không?

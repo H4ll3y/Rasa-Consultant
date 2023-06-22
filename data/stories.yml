@@ -116,3 +116,93 @@ stories:
     steps:
       - intent: nlu_fallback
       - action: utter_nlu_fallback
+  
+  - story: story21
+    steps:
+      - intent: ask_question_17
+      - action: utter_ask_question17
+  
+  - story: story22
+    steps:
+      - intent: ask_question_18
+      - action: utter_ask_question18
+  
+  - story: story23
+    steps:
+      - intent: ask_question_22
+      - action: utter_ask_question22
+
+  - story: story24
+    steps:
+      - intent: ask_question_23
+      - action: utter_ask_question23
+
+  - story: story25
+    steps:
+      - intent: ask_question_24
+      - action: utter_ask_question24
+
+  - story: story26
+    steps:
+      - intent: ask_question_25
+      - action: utter_ask_question25
+  
+  - story: story27
+    steps:
+      - intent: ask_question_26
+      - action: utter_ask_question26
+  
+  - story: story28
+    steps:
+      - intent: ask_question_27
+      - action: utter_ask_question27
+
+  - story: story29
+    steps:
+      - intent: ask_question_29
+      - action: utter_ask_question29
+
+  - story: story30
+    steps:
+      - intent: ask_question_33
+      - action: utter_ask_question33
+
+  - story: story31
+    steps:
+      - intent: ask_question_34
+      - action: utter_ask_question34
+
+  - story: story32
+    steps:
+      - intent: ask_question_35
+      - action: utter_ask_question35
+
+  - story: story33
+    steps:
+      - intent: ask_question_36
+      - action: utter_ask_question36
+
+  - story: story34
+    steps:
+      - intent: ask_question_37
+      - action: utter_ask_question37
+
+  - story: story35
+    steps:
+      - intent: ask_question_38
+      - action: utter_ask_question38
+
+  - story: story36
+    steps:
+      - intent: ask_question_40
+      - action: utter_ask_question40
+
+  - story: story37
+    steps:
+      - intent: ask_question_41
+      - action: utter_ask_question41
+
+  - story: story38
+    steps:
+      - intent: ask_question_42
+      - action: utter_ask_question42
