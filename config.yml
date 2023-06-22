@@ -57,7 +57,7 @@ pipeline:
         restore_best_weights: true
         verbose: 0
   - name: FallbackClassifier
-    threshold: 0.3
+    threshold: 0.35
     ambiguity_threshold: 0.1
 
 policies:
@@ -65,5 +65,4 @@ policies:
   - name: TEDPolicy
     max_history: 5
     epochs: 130
-    constrain_similarities: true
   - name: RulePolicy

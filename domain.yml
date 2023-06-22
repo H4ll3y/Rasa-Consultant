@@ -156,6 +156,9 @@ responses:
   utter_ask_question16:
   - text: "SV không được đóng học phí trong kỳ thi vì dữ liệu thi đã được fix cứng, có thể hỗ trợ giữ lại điểm tiểu luận, thực tập để nhập vào học kỳ sau trong trường hợp SV có đăng ký thi lại vào học kỳ đó"
 
+  utter_nlu_fallback:
+  - text: "Vui lòng chỉ hỏi những câu hỏi liên quan đến vấn đề học tập, đăng ký học. Chi tiết xin liên hệ với cố vấn học tập"
+  
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
