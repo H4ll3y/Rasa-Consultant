@@ -100,6 +100,37 @@ nlu:
       - Có thể cho tôi biết những môn học [bắt buộc](type) không?
       - Tôi quan tâm đến những môn học [bắt buộc](type) của khoa. Bạn có thể giúp tôi được không?
       - Tôi đang tìm hiểu về các môn học [bắt buộc](type). Liệu bạn có thể cung cấp cho tôi thông tin chi tiết về chúng không?
+      - Điều kiện để học môn [giải tích 1](subject) là gì?
+      - Điều kiện tiên quyết của môn [Ngôn ngữ lập trình](subject) là gì?
+      - Điều kiện môn [Học máy](subject)
+      - Điều kiện để được học môn [project](subject) là gì?
+      - Tôi cần những gì để học môn [Giải tích 2](subject)
+      - Mình muốn học môn [công dân số](subject)
+      - Mình cần học những gì để được học môn [Tiếng trung 1](subject)
+      - Mình phải học qua những môn học nào để được học môn [học máy](subject)
+      - Tớ muốn được học môn [lập trình hướng đối tượng](subject)
+      - Tớ phải qua những môn học gì để được đăng ký học [học máy](subject)
+      - Để được học môn [Kiến trúc máy tính](subject) cần những điều kiện gì?
+      - Để được tham gia khóa học [học máy](subject) cần những điều kiện gì?
+      - Những yêu cầu gì để theo học chương trình đào tạo [nguyên lý hệ điều hành](subject)?
+      - Điều kiện cần có để tham gia lớp học [lập trình python](subject) là gì?
+      - Có những yêu cầu nào để tham gia khóa học [Lập trình Java](subject)?
+      - Để đăng ký môn học [tiếng pháp 2](subject) cần chuẩn bị những điều gì?
+      - Làm thế nào để đủ điều kiện tham gia môn học [Ngôn ngữ lập trình](subject)?
+      - Cần có những kiến thức nào trước khi học [tiếng trung 2](subject)?
+      - Để đăng ký môn [lập trình hướng đối tượng](subject) cần đáp ứng các tiêu chuẩn nào?
+      - Những yêu cầu nào để tham gia khóa học [công nghệ phần mềm](subject)?
+      - Điều kiện cần có để tham gia lớp học [toán rời rạc](subject) là gì?
+      - Cần chuẩn bị những kiến thức gì trước khi học [đồ họa](subject)?
+      - Để được tham gia khóa học [Kinh tế học](subject) cần đáp ứng những điều kiện gì?
+      - Những yêu cầu nào để đăng ký môn học [Lập trình php](subject)?
+      - Cần có kiến thức gì để tham gia khóa học [kiến trúc máy tính](subject)?
+      - Để học môn [Tiếng Anh sơ trung cấp 1](subject) cần chuẩn bị những điều gì?
+      - Làm thế nào để đáp ứng các tiêu chuẩn tham gia khóa học [tiếng Nhật 1](subject)?
+      - Cần chuẩn bị những kiến thức gì trước khi học [tiếng nhật 2](subject)?
+      - Để được tham gia lớp học [tư tưởng Hồ Chí Minh](subject) cần đáp ứng những điều kiện gì?
+      - Những yêu cầu nào để đăng ký môn [trí truệ nhân tạo và công nghệ tri thức](subject)?
+      - Để học [tiếng Việt thực hành](subject) cần có kiến thức gì?
 
   - intent: need_offer_sub
     examples: |
@@ -109,6 +140,13 @@ nlu:
       - Mình đã xong môn [Ngôn ngữ lập trình](list) và đang có [100 tín chỉ](credit)
       - Mình qua môn [Số và cấu trúc đại số](list) mình nên học gì đây?
       - Tôi đã học môn [Tiếng Ý 1](list)
+      - Tôi đã học [ngôn ngữ lập trình](list)
+      - Mình đã học xong [ngôn ngữ lập trình](list)
+      - Đã qua môn học [ngôn ngữ lập trình](list)
+      - Hoàn thành môn [ngôn ngữ lập trình](list)
+      - Đã qua môn [ngôn ngữ lập trình](list)
+      - Mình đã học môn [ngôn ngữ lập trình](list)
+      - Tôi đã qua [ngôn ngữ lập trình](list)
       - Tớ đã qua môn [Kỹ thuật số](list)
       - Tôi đang có [120 tín chỉ](credit) và môn [Giải tích 1](list), [Tiếng Anh trung cấp 2](list)
       - Tôi đã học [Mạng máy tính](list)
@@ -398,7 +436,7 @@ nlu:
       - Sinh viên nhóm 1, 2 có được phép đăng ký học cùng nhóm 3 nếu học phần này đã được mở trong thời khóa biểu của nhóm 1, 2 không?
       - Vì sao sinh viên nhóm 1, 2 không được phép đăng ký học cùng nhóm 3 dù học phần này đã mở trong thời khóa biểu của nhóm 1, 2?
 
-  - intent: ask_queston_5
+  - intent: ask_question_5
     examples: |
       - Sinh viên để lộ mật khẩu và bị người khác đăng ký các học phần không thuộc chương trình học (CTH) của mình, trong trường hợp thời hạn ĐKH đã kết thúc thì SV có được xin hủy các học phần này không (hoặc đã hiển thị điểm trong bảng điểm của SV)?
       - Nếu sinh viên để lộ mật khẩu và bị người khác đăng ký các học phần không thuộc chương trình học của mình sau khi thời hạn ĐKH đã kết thúc, liệu sinh viên có thể yêu cầu hủy các học phần này không (hoặc đã có điểm hiển thị trong bảng điểm của sinh viên)?
@@ -464,7 +502,7 @@ nlu:
       - Sinh viên có điểm thi tuyển sinh đầu vào học phần tiếng Anh ≥ 7 sẽ được miễn học và thi học phần Tiếng Anh cơ sở 1 (GE171), và được xếp lớp học phần Tiếng Anh cơ sở 2 (GE172). Tuy nhiên, phương thức tính điểm tổng kết học phần Tiếng Anh cơ sở 1 (GE171) là gì?
       - Khi sinh viên đạt điểm thi tuyển sinh đầu vào học phần tiếng Anh ≥ 7, trường sẽ cho phép miễn học và thi học phần Tiếng Anh cơ sở 1 (GE171) và sinh viên sẽ được tham gia lớp học phần Tiếng Anh cơ sở 2 (GE172). Tuy nhiên, cách tính điểm tổng kết học phần Tiếng Anh cơ sở 1 (GE171) là gì?
 
-  - intent: ask_quetion_11
+  - intent: ask_question_11
     examples: |
       - Học phần A là điều kiện tiên quyết của học phần B, SV muốn hủy điểm tổng kết của học phần A để học lại thì có được không?
       - Nếu học phần A là điều kiện tiên quyết của học phần B, sinh viên có thể hủy điểm tổng kết của học phần A để học lại không?

@@ -186,8 +186,15 @@ class ResponseInfoSub(Action):
             case.clear()
             return []
 
-def textSearchConditionSubject(list, check, term, case, subs, cres):
-      if subs or cres:
+def textSearchConditionSubject(list, check, term, case, subs):
+      if subs:
+            temp_Case_1 = []
+            if len(case) == 1:
+                  cursor = conn.cursor()
+                  cursor.execute('SELECT Name FROM Subject WHERE Subject.Id = \'%s\'' % case[0])
+                  temp_Case_1.append(cursor.fetchall())
+                  cursor.close()
+                  check.append(True)
             index = 0
             for i in range (0, len(term[0])):
                   temp = []
@@ -209,6 +216,19 @@ def textSearchConditionSubject(list, check, term, case, subs, cres):
                         temp.clear()
       return list, check
 
+def textSearchConditionTerm(list, cres, check):
+      if int(cres[0]) < 100:
+            check.append(False)
+      else:
+            check.append(True)
+            l = []
+            cursor = conn.cursor()
+            cursor.execute('SELECT * FROM Subject WHERE Subject.Condition_Term = \'%d\'' % int(cres[0]))
+            l.append(cursor.fetchall())
+            list.append(l[0][0][2])
+            cursor.close()
+      return list, check
+      
 class ResponseOfferSub(Action):
       def name(self) -> Text:
             return "response_offer_sub"
@@ -228,6 +248,12 @@ class ResponseOfferSub(Action):
                         elif sub == "máy":
                               sub = "Học máy"
                               case.append(sub.lower())
+            list = []
+            check = []
+      
+            for i in range(0, 5):
+                  list, check = textSearchConditionSubject(list, check, CNTT[i], case, subs)
+                  
             if cres:
                   cres = cres.split()
                   for cre in cres:
@@ -241,15 +267,13 @@ class ResponseOfferSub(Action):
                                     case.append(120)
                                     case.append(110)
                                     case.append(100)
-            
-            list = []
-            check = []
-            for i in range(0, 5):
-                  list, check = textSearchConditionSubject(list, check, CNTT[i], case, subs, cres)
+                  list, check = textSearchConditionTerm(list, cres, check)
 
+            print(list)
+                        
             if True not in check:
                   text = "Vui lòng kiểm tra lại thông tin bạn cung cấp"
-            elif True in check and len(list):
+            elif True in check and len(list) <= 0:
                   text = "Những môn học này hiện tại không phải điều kiện tiên quyết của môn học nào"
             else:
                   text = ""

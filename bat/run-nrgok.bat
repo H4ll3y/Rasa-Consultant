@@ -1,4 +1,4 @@
 @echo off
 cls
 cd ..
-ngrok http 5005
+ngrok http --domain=pretty-herring-internally.ngrok-free.app 5005
