@@ -1,0 +1,276 @@
+[
+  {
+    "text": "Với năm 2 kỳ 2, tôi cần chọn những môn học nào?",
+    "entities": [
+      {
+        "start": 8,
+        "end": 9,
+        "value": "2",
+        "entity": "year"
+      },
+      {
+        "start": 13,
+        "end": 14,
+        "value": "2",
+        "entity": "semester"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "semester",
+        "start": 8,
+        "end": 9,
+        "confidence_entity": 0.8317162990570068,
+        "value": "2",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "semester",
+        "start": 13,
+        "end": 14,
+        "confidence_entity": 0.6289755702018738,
+        "value": "2",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Năm 1 học kỳ 1, tôi nên đăng ký môn học gì?",
+    "entities": [
+      {
+        "start": 4,
+        "end": 5,
+        "value": "1",
+        "entity": "year"
+      },
+      {
+        "start": 13,
+        "end": 14,
+        "value": "1",
+        "entity": "semester"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "semester",
+        "start": 4,
+        "end": 5,
+        "confidence_entity": 0.5629132986068726,
+        "value": "1",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "semester",
+        "start": 13,
+        "end": 14,
+        "confidence_entity": 0.9739019274711609,
+        "value": "1",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Tôi sắp đăng ký học cho kỳ 3 năm 1 tôi nên chọn môn gì?",
+    "entities": [
+      {
+        "start": 27,
+        "end": 28,
+        "value": "3",
+        "entity": "semester"
+      },
+      {
+        "start": 33,
+        "end": 34,
+        "value": "1",
+        "entity": "year"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "semester",
+        "start": 27,
+        "end": 28,
+        "confidence_entity": 0.7992712259292603,
+        "value": "3",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "semester",
+        "start": 33,
+        "end": 34,
+        "confidence_entity": 0.6147013902664185,
+        "value": "1",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Năm 4 kỳ 1 tôi nên đăng ký môn học gì?",
+    "entities": [
+      {
+        "start": 4,
+        "end": 5,
+        "value": "4",
+        "entity": "year"
+      },
+      {
+        "start": 9,
+        "end": 10,
+        "value": "1",
+        "entity": "semester"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "semester",
+        "start": 4,
+        "end": 5,
+        "confidence_entity": 0.6028155088424683,
+        "value": "4",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "semester",
+        "start": 9,
+        "end": 10,
+        "confidence_entity": 0.9778969287872314,
+        "value": "1",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Năm 3 đại học kỳ 2",
+    "entities": [
+      {
+        "start": 4,
+        "end": 5,
+        "value": "3",
+        "entity": "year"
+      },
+      {
+        "start": 17,
+        "end": 18,
+        "value": "2",
+        "entity": "semester"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "semester",
+        "start": 4,
+        "end": 5,
+        "confidence_entity": 0.5514855980873108,
+        "value": "3",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "semester",
+        "start": 17,
+        "end": 18,
+        "confidence_entity": 0.982944667339325,
+        "value": "2",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Kỳ 3 năm 2",
+    "entities": [
+      {
+        "start": 3,
+        "end": 4,
+        "value": "3",
+        "entity": "semester"
+      },
+      {
+        "start": 9,
+        "end": 10,
+        "value": "2",
+        "entity": "year"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "semester",
+        "start": 3,
+        "end": 4,
+        "confidence_entity": 0.8601507544517517,
+        "value": "3",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "semester",
+        "start": 9,
+        "end": 10,
+        "confidence_entity": 0.7471507787704468,
+        "value": "2",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Năm cuối kỳ học cuối thì nên học gì?",
+    "entities": [
+      {
+        "start": 4,
+        "end": 8,
+        "value": "cuối",
+        "entity": "year"
+      },
+      {
+        "start": 16,
+        "end": 20,
+        "value": "cuối",
+        "entity": "semester"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "semester",
+        "start": 4,
+        "end": 8,
+        "confidence_entity": 0.6099545359611511,
+        "value": "cuối",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "semester",
+        "start": 16,
+        "end": 20,
+        "confidence_entity": 0.9521554708480835,
+        "value": "cuối",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Tại sao trong thời gian đăng ký học, sinh viên muốn đăng ký học (ĐKH) học phần Đại số tuyến tính có trong thời khóa biểu (TKB) chung toàn trường nhưng không hiển thị trong danh sách các học phần có thể đăng ký học của mình?",
+    "entities": [
+      {
+        "start": 79,
+        "end": 96,
+        "value": "Đại số tuyến tính",
+        "entity": "name_subject"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "name_subject",
+        "start": 79,
+        "end": 96,
+        "confidence_entity": 0.9955223798751831,
+        "value": "Đại số tuyến tính",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "name_subject",
+        "start": 138,
+        "end": 144,
+        "confidence_entity": 0.8259830474853516,
+        "value": "trường",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  }
+]

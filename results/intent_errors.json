@@ -1,0 +1,10 @@
+[
+  {
+    "text": "Các môn Học phần đại cương là gì?",
+    "intent": "need_info_sub",
+    "intent_prediction": {
+      "name": "ask_question_2",
+      "confidence": 0.2240249067544937
+    }
+  }
+]

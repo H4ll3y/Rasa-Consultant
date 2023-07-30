@@ -1,0 +1,79 @@
+{
+  "subject": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 302,
+    "confused_with": {}
+  },
+  "type": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 44,
+    "confused_with": {}
+  },
+  "year": {
+    "precision": 1.0,
+    "recall": 0.9014084507042254,
+    "f1-score": 0.9481481481481481,
+    "support": 71,
+    "confused_with": {
+      "semester": 7
+    }
+  },
+  "semester": {
+    "precision": 0.8852459016393442,
+    "recall": 1.0,
+    "f1-score": 0.9391304347826086,
+    "support": 54,
+    "confused_with": {}
+  },
+  "credit": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 105,
+    "confused_with": {}
+  },
+  "list": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 776,
+    "confused_with": {}
+  },
+  "ysem": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 64,
+    "confused_with": {}
+  },
+  "name_subject": {
+    "precision": 0.9836065573770492,
+    "recall": 1.0,
+    "f1-score": 0.9917355371900827,
+    "support": 60,
+    "confused_with": {}
+  },
+  "micro avg": {
+    "precision": 0.994583615436696,
+    "recall": 0.9952574525745257,
+    "f1-score": 0.994920419911954,
+    "support": 1476
+  },
+  "macro avg": {
+    "precision": 0.9836065573770492,
+    "recall": 0.9876760563380282,
+    "f1-score": 0.9848767650151049,
+    "support": 1476
+  },
+  "weighted avg": {
+    "precision": 0.9951352792216447,
+    "recall": 0.9952574525745257,
+    "f1-score": 0.9949428822684174,
+    "support": 1476
+  },
+  "accuracy": 0.9995712984298805
+}
